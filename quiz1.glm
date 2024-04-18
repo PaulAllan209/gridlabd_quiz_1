@@ -148,23 +148,6 @@ object overhead_line_conductor{
     diameter 0.398;
 }
 
-// ID-500 spacings
-#define AB=2.5
-#define BC=4.5
-#define AC=7.0
-#define AN=5.65685
-#define BN=4.272
-#define CN=5.0
-#define NE=24.0
-
-// ID-505 spacings
-#define AB_505=7.0
-#define AN_505=5.65685
-#define BN_505=5.0
-
-// ID-510 spacings
-#define AN_510=5.02494
-
 // line spacing objects
 object line_spacing{
     // spacing ID 500
