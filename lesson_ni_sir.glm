@@ -1,0 +1,136 @@
+// ee 4-1 example code
+
+// Clock
+clock {
+    timezone AWST-8;
+    timestamp '2000-01-01 00:00:00';
+}
+
+// Modules
+
+module powerflow {
+    solver_method NR; // default is Gauss-Seidel; NR => Newton-Raphson
+}
+
+// Objects
+
+// Node Objects
+object node {
+    name "Node_001";
+    bustype 2; //default is PQ where through load sya
+    phases "ABCN";
+    nominal_voltage 7199.558; //line to neutral voltage
+}
+
+object node {
+    name "Node_002";
+    phases "ABCN";
+    nominal_voltage 7199.558; //line to neutral voltage
+}
+
+object node {
+    name "Node_003";
+    phases "ABCN";
+    nominal_voltage 2401.777; //line to neutral voltage
+}
+
+object node {
+    name "Node_004";
+    phases "ABCN";
+    nominal_voltage 2401.777; 
+}
+
+// Object overhead line
+object overhead_line {
+    name "ovl_001_002";
+    from "Node_001";
+    to "Node_002";
+    phases "ABCN";
+    length 2000; // lengths are default to feet in unit
+    configuration "ovl_config";
+}
+
+object overhead_line {
+    name "ovl_003_004";
+    from "Node_003";
+    to "Node_004";
+    phases "ABCN";
+    length 2500;
+    configuration "ovl_config";
+}
+
+// Line configuration objects
+object line_configuration{
+    name "ovl_config";
+    conductor_A "Phase_Conductor";
+    conductor_B "Phase_Conductor";
+    conductor_C "Phase_Conductor";
+    conductor_N "Neutral_Conductor";
+    spacing "Line_Spacing";
+}
+
+// Conductor Objects
+object overhead_line_conductor{
+    name "Phase_Conductor";
+    geometric_mean_radius 0.0244; // units in feet also
+    resistance 0.306; // units in ohms/mile
+    diameter 0.721; // units in inches
+}
+
+object overhead_line_conductor{
+    name "Neutral_Conductor";
+    geometric_mean_radius 0.00814; // units in feet also
+    resistance 0.592; // units in ohms/mile
+    diameter 0.563; // units in inches
+}
+
+// Line spacing objects
+object line_spacing {
+    name "Line_Spacing";
+    distance_AB 2.5; // default unit in ft
+    distance_BC 4.5;
+    distance_AC 7.0;
+    distance_AN 5.657;
+    distance_BN 4.272;
+    distance_CN 5;
+    distance_NE 24;
+}
+
+// Transformer objects
+object transformer {
+    name "X4mer";
+    phases "ABCN";
+    from "Node_002";
+    to "Node_003";
+    configuration "x4mer_config";
+
+}
+
+// Tranformer configuration object
+object transformer_configuration{
+    name "x4mer_config";
+    connect_type 1;
+    primary_voltage 12470; // units in V not kV
+    secondary_voltage 4160; // units in V not kV
+    power_rating 6000; // units in kVA
+    resistance 0.01; // units in percent so convert it into decimal
+    reactance 0.06; // units in percent so convert it into decimal
+
+}
+
+// Load object
+object load {
+    name "Load_004";
+    parent "Node_004";
+    phases "ABCN";
+    constant_power_A 1800000+871779.789j; // units in VA or W and VAR
+    constant_power_B 1800000+871779.789j;
+    constant_power_C 1800000+871779.789j;
+    nominal_voltage 2401.777; // dapat same ng nominal voltage ng mga icoconnect na node
+}
+
+// Dump files
+object voltdump {
+    file "vdump_lower_v.csv";
+}
+

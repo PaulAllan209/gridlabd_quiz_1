@@ -1,0 +1,94 @@
+module powerflow {
+        bool show_matrix_values;
+        double primary_voltage_ratio;
+        double nominal_frequency;
+        bool require_voltage_control;
+        double geographic_degree;
+        complex fault_impedance;
+        complex ground_impedance;
+        double warning_underfrequency;
+        double warning_overfrequency;
+        double warning_undervoltage;
+        double warning_overvoltage;
+        double warning_voltageangle;
+        double maximum_voltage_error;
+        enumeration {NR=2, GS=1, FBS=0} solver_method;
+        char256 NR_matrix_file;
+        enumeration {ALL=3, PER_CALL=2, ONCE=1, NEVER=0} NR_matrix_output_interval;
+        bool NR_matrix_output_references;
+        bool NR_island_failure_handled; // Indicates if an island fails if it should be removed from service
+        bool line_capacitance;
+        bool line_limits;
+        char256 lu_solver;
+        int64 NR_iteration_limit;
+        int64 NR_deltamode_iteration_limit;
+        int32 NR_superLU_procs;
+        double default_maximum_voltage_error;
+        double default_maximum_power_error;
+        bool NR_admit_change;
+        bool enable_subsecond_models; // Enable deltamode capabilities within the powerflow module
+        bool all_powerflow_delta; // Forces all powerflow objects that are capable to participate in deltamode
+        double deltamode_timestep[ns]; // Desired minimum timestep for deltamode-related simulations
+        double current_frequency[Hz]; // Current system-level frequency of the powerflow system
+        bool master_frequency_update; // Tracking variable to see if an object has become the system frequency updater
+        bool enable_frequency_dependence; // Flag to enable frequency-based variations in impedance values of lines and loads
+        double default_resistance;
+        bool enable_inrush; // Flag to enable in-rush calculations for lines and transformers in deltamode
+        enumeration {BACKWARD_EULER=3, TRAPEZOIDAL=2, NONE=0} inrush_integration; // Determine the integration method utilized in in-rush calculations
+        enumeration {PLL=2, SIMPLE=1, NONE=0} all_frequency_measure_default;
+        double low_voltage_impedance_level; // Lower limit of voltage (in per-unit) at which all load types are converted to impedance for in-rush calculations
+        bool enable_mesh_fault_current; // Flag to enable mesh-based fault current calculations
+        char1024 market_price_name; // Market current price published variable name
+}
+class node {
+        parent powerflow_object;
+        class powerflow_object {
+                set {A=1, B=2, C=4, D=256, N=8, S=112, G=128} phases;
+                double nominal_voltage[V];
+                enumeration {BACKWARD_EULER=3, TRAPEZOIDAL=2, NONE=0} inrush_integration_method; // Integration method for in-rush
+        }
+
+        function interupdate_pwr_object();
+        function pwr_object_swing_swapper();
+        function pwr_current_injection_update_map();
+        function attach_vfd_to_pwr_object();
+        function pwr_object_reset_disabled_status();
+        enumeration {SWING_PQ=3, SWING=2, PV=1, PQ=0} bustype; // defines whether the node is a PQ, PV, or SWING node
+        set {ISSOURCE=2, HASSOURCE=1} busflags; // flag indicates node has a source for voltage, i.e. connects to the swing node
+        object reference_bus; // reference bus from which frequency is defined
+        double maximum_voltage_error[V]; // convergence voltage limit or convergence criteria
+        complex voltage_A[V]; // bus voltage, Phase A to ground
+        complex voltage_B[V]; // bus voltage, Phase B to ground
+        complex voltage_C[V]; // bus voltage, Phase C to ground
+        complex voltage_AB[V]; // line voltages, Phase AB
+        complex voltage_BC[V]; // line voltages, Phase BC
+        complex voltage_CA[V]; // line voltages, Phase CA
+        double mean_repair_time[s]; // Time after a fault clears for the object to be back in service
+        enumeration {PLL=3, SIMPLE=2, NONE=1} frequency_measure_type; // PLL frequency measurement
+        double sfm_Tf[s]; // Transducer time constant for simplified frequency measurement (seconds)
+        double pll_Kp[pu]; // Proportional gain of PLL frequency measurement
+        double pll_Ki[pu]; // Integration gain of PLL frequency measurement
+        double measured_angle_A[rad]; // bus angle measurement, phase A
+        double measured_frequency_A[Hz]; // frequency measurement, phase A
+        double measured_angle_B[rad]; // bus angle measurement, phase B
+        double measured_frequency_B[Hz]; // frequency measurement, phase B
+        double measured_angle_C[rad]; // bus angle measurement, phase C
+        double measured_frequency_C[Hz]; // frequency measurement, phase C
+        double measured_frequency[Hz]; // frequency measurement - average of present phases
+        enumeration {OUT_OF_SERVICE=0, IN_SERVICE=1} service_status; // In and out of service flag
+        double service_status_double; // In and out of service flag - type double - will indiscriminately override service_status - useful for schedules
+        double previous_uptime[min]; // Previous time between disconnects of node in minutes
+        double current_uptime[min]; // Current time since last disconnect of node in minutes
+        bool Norton_dynamic; // Flag to indicate a Norton-equivalent connection -- used for generators and deltamode
+        bool generator_dynamic; // Flag to indicate a voltage-sourcing or swing-type generator is present -- used for generators and deltamode
+        bool GFA_enable; // Disable/Enable Grid Friendly Appliance(TM)-type functionality
+        double GFA_freq_low_trip[Hz]; // Low frequency trip point for Grid Friendly Appliance(TM)-type functionality
+        double GFA_freq_high_trip[Hz]; // High frequency trip point for Grid Friendly Appliance(TM)-type functionality
+        double GFA_volt_low_trip[pu]; // Low voltage trip point for Grid Friendly Appliance(TM)-type functionality
+        double GFA_volt_high_trip[pu]; // High voltage trip point for Grid Friendly Appliance(TM)-type functionality
+        double GFA_reconnect_time[s]; // Reconnect time for Grid Friendly Appliance(TM)-type functionality
+        double GFA_freq_disconnect_time[s]; // Frequency violation disconnect time for Grid Friendly Appliance(TM)-type functionality
+        double GFA_volt_disconnect_time[s]; // Voltage violation disconnect time for Grid Friendly Appliance(TM)-type functionality
+        bool GFA_status; // Low frequency trip point for Grid Friendly Appliance(TM)-type functionality
+        enumeration {OVER_VOLTAGE=4, UNDER_VOLTAGE=3, OVER_FREQUENCY=2, UNDER_FREQUENCY=1, NONE=0} GFA_trip_method; // GFA trip for over-voltage
+        object topological_parent; // topological parent as per GLM configuration

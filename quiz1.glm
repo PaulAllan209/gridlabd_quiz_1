@@ -1,0 +1,284 @@
+// Clock
+clock {
+    timezone AWST-8;
+    timestamp '2000-01-01 00:00:00';
+}
+
+// Modules
+
+module powerflow {
+    // solver_method NR; // default is Gauss-Seidel; NR => Newton-Raphson
+}
+
+// Node Objects
+object node {
+    name "node_650"; //this is probably the substation (check one line diagram)
+
+    // Default values in busstype
+    //  enumeration {SWING_PQ=3, SWING=2, PV=1, PQ=0} bustype;  defines whether the node is a PQ, PV, or SWING node
+    // PV - constant voltage
+    // PQ - constant power
+    bustype 2; // in this quiz this will be determined depending sa load
+    phases "ABCN";
+    nominal_voltage 4160; //line to neutral voltage
+}
+
+object node {
+    name "node_646";
+
+    // Default values in busstype
+    //  enumeration {SWING_PQ=3, SWING=2, PV=1, PQ=0} bustype;  defines whether the node is a PQ, PV, or SWING node
+    // PV - constant voltage
+    // PQ - constant power
+    bustype 2; // in this quiz this will be determined depending sa load
+    phases "ABCN";
+    nominal_voltage 4160; //line to neutral voltage
+}
+
+object node {
+    name "node_645";
+    bustype 2; // in this quiz this will be determined depending sa load
+    phases "BCN";
+    nominal_voltage 4160; //line to neutral voltage
+}
+
+object node {
+    name "node_632";
+    bustype 2; // in this quiz this will be determined depending sa load
+    phases "ABCN";
+    nominal_voltage 4160; //line to neutral voltage
+}
+
+object node {
+    name "node_633";
+    bustype 2; // in this quiz this will be determined depending sa load
+    phases "ABCN";
+    nominal_voltage 4160; //line to neutral voltage
+}
+
+object node {
+    name "node_634";
+    bustype 2; // in this quiz this will be determined depending sa load
+    phases "ABCN";
+    nominal_voltage 4160; //line to neutral voltage
+}
+
+object node {
+    name "node_611";
+    bustype 2; // in this quiz this will be determined depending sa load
+    phases "ABCN";
+    nominal_voltage 4160; //line to neutral voltage
+}
+
+object node {
+    name "node_684";
+    bustype 2; // in this quiz this will be determined depending sa load
+    phases "ABCN";
+    nominal_voltage 4160; //line to neutral voltage
+}
+
+object node {
+    name "node_671";
+    bustype 2; // in this quiz this will be determined depending sa load
+    phases "ABCN";
+    nominal_voltage 4160; //line to neutral voltage
+}
+
+object node {
+    name "node_692";
+    bustype 2; // in this quiz this will be determined depending sa load
+    phases "ABCN";
+    nominal_voltage 4160; //line to neutral voltage
+}
+
+object node {
+    name "node_675";
+    bustype 2; // in this quiz this will be determined depending sa load
+    phases "ABCN";
+    nominal_voltage 4160; //line to neutral voltage
+}
+
+object node {
+    name "node_652";
+    bustype 2; // in this quiz this will be determined depending sa load
+    phases "ABCN";
+    nominal_voltage 4160; //line to neutral voltage
+}
+
+object node {
+    name "node_680";
+    bustype 2; // in this quiz this will be determined depending sa load
+    phases "ABCN";
+    nominal_voltage 4160; //line to neutral voltage
+}
+
+
+// Overhead line conductors
+// object overhead_line_conductor{ //TODO: Alamin kung ano yung sinasabi sa 601 config table
+//     name "ovl_cond_601";
+
+
+// }
+
+object overhead_line_conductor{
+    name "ovl_cond_602";
+    geometric_mean_radius 0.00814;
+    resistance 0.410;
+    diameter 0.563;
+}
+
+object overhead_line_conductor{
+    name "ovl_cond_603";
+    geometric_mean_radius 0.00446;
+    resistance 1.12;
+    diameter 0.398;
+}
+
+object overhead_line_conductor{
+    name "ovl_cond_604";
+    geometric_mean_radius 0.00446;
+    resistance 1.12;
+    diameter 0.398;
+}
+
+object overhead_line_conductor{
+    name "ovl_cond_605";
+    geometric_mean_radius 0.00446;
+    resistance 1.12;
+    diameter 0.398;
+}
+
+// ID-500 spacings
+#define AB=2.5
+#define BC=4.5
+#define AC=7.0
+#define AN=5.65685
+#define BN=4.272
+#define CN=5.0
+#define NE=24.0
+
+// ID-505 spacings
+#define AB_505=7.0
+#define AN_505=5.65685
+#define BN_505=5.0
+
+// ID-510 spacings
+#define AN_510=5.02494
+
+// line spacing objects
+object line_spacing{
+    // spacing ID 500
+    // phasing BACN
+    name "ovl_ls_601";
+    distance_AB 2.5;
+	distance_AC 4.5;
+	distance_BC 7.0;
+	distance_BN 5.656854;
+	distance_AN 4.272002;
+	distance_CN 5.0;
+}
+
+object line_spacing{
+    // spacing ID 500
+    // phasing CABN
+    name "ovl_ls_602";
+    distance_AC 2.5;
+	distance_AB 4.5;
+	distance_BC 7.0;
+	distance_CN 5.656854;
+	distance_AN 4.272002;
+	distance_BN 5.0;
+}
+
+object line_spacing{
+    // spacing ID 505
+    // phasing CABN
+    name "ovl_ls_603";
+    distance_AC 0.0;
+	distance_AB 0.0;
+	distance_BC 7.0;
+	distance_AN 0.0;
+	distance_CN 5.656854;
+	distance_BN 5.0;
+}
+
+object line_spacing{
+    // spacing ID 505
+    // phasing CABN
+    name "ovl_ls_604";
+    distance_AC 7.0;
+	distance_AB 0.0;
+	distance_BC 0.0;
+	distance_AN 5.656854;
+	distance_CN 5.0;
+	distance_BN 0.0;
+}
+
+object line_spacing{
+    // spacing ID 510
+    // phasing CABN
+    name "ovl_ls_605";
+    distance_CN ${AN};
+    distance_NE ${NE};
+}
+
+
+// line configuration objects
+
+// object overhead_line_configuration{
+//     name "ovl_config_601";
+// }
+
+object line_configuration{
+    name "ovl_config_602";
+    conductor_A "ovl_cond_602";
+    conductor_B "ovl_cond_602";
+    conductor_C "ovl_cond_602";
+    conductor_N "ovl_cond_602";
+    spacing "ovl_ls_602";
+}
+
+object line_configuration{
+    name "ovl_config_603";
+    conductor_B "ovl_cond_603";
+    conductor_C "ovl_cond_603";
+    conductor_N "ovl_cond_603";
+    spacing "ovl_ls_603";
+}
+
+object line_configuration{
+    name "ovl_config_604";
+    conductor_A "ovl_cond_604";
+    conductor_C "ovl_cond_604";
+    conductor_N "ovl_cond_604";
+    spacing "ovl_ls_604";
+}
+
+object line_configuration{
+    name "ovl_config_605";
+    conductor_C "ovl_cond_605";
+    conductor_N "ovl_cond_605";
+    spacing "ovl_ls_605";
+}
+
+// Overhead line objects
+object overhead_line{
+    name "ovl_632_645";
+    from "node_632";
+    to "node_645";
+    phases "CBN";
+    length 500;
+    configuration "ovl_config_603";
+}
+
+object overhead_line{
+    name "ovl_632_633";
+    from "node_632";
+    to "node_633";
+    phases "ABCN";
+    length 500;
+    configuration "ovl_config_602";
+}
+
+
+// Transformer 

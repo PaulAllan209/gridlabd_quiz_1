@@ -1,0 +1,12 @@
+class line_spacing {
+        double distance_AB[ft];
+        double distance_BC[ft];
+        double distance_AC[ft];
+        double distance_AN[ft];
+        double distance_BN[ft];
+        double distance_CN[ft];
+        double distance_AE[ft]; // distance between phase A wire and earth
+        double distance_BE[ft]; // distance between phase B wire and earth
+        double distance_CE[ft]; // distance between phase C wire and earth
+        double distance_NE[ft]; // distance between neutral wire and earth
+}

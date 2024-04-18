@@ -1,0 +1,51 @@
+module powerflow {
+        bool show_matrix_values;
+        double primary_voltage_ratio;
+        double nominal_frequency;
+        bool require_voltage_control;
+        double geographic_degree;
+        complex fault_impedance;
+        complex ground_impedance;
+        double warning_underfrequency;
+        double warning_overfrequency;
+        double warning_undervoltage;
+        double warning_overvoltage;
+        double warning_voltageangle;
+        double maximum_voltage_error;
+        enumeration {NR=2, GS=1, FBS=0} solver_method;
+        char256 NR_matrix_file;
+        enumeration {ALL=3, PER_CALL=2, ONCE=1, NEVER=0} NR_matrix_output_interval;
+        bool NR_matrix_output_references;
+        bool NR_island_failure_handled; // Indicates if an island fails if it should be removed from service
+        bool line_capacitance;
+        bool line_limits;
+        char256 lu_solver;
+        int64 NR_iteration_limit;
+        int64 NR_deltamode_iteration_limit;
+        int32 NR_superLU_procs;
+        double default_maximum_voltage_error;
+        double default_maximum_power_error;
+        bool NR_admit_change;
+        bool enable_subsecond_models; // Enable deltamode capabilities within the powerflow module
+        bool all_powerflow_delta; // Forces all powerflow objects that are capable to participate in deltamode
+        double deltamode_timestep[ns]; // Desired minimum timestep for deltamode-related simulations
+        double current_frequency[Hz]; // Current system-level frequency of the powerflow system
+        bool master_frequency_update; // Tracking variable to see if an object has become the system frequency updater
+        bool enable_frequency_dependence; // Flag to enable frequency-based variations in impedance values of lines and loads
+        double default_resistance;
+        bool enable_inrush; // Flag to enable in-rush calculations for lines and transformers in deltamode
+        enumeration {BACKWARD_EULER=3, TRAPEZOIDAL=2, NONE=0} inrush_integration; // Determine the integration method utilized in in-rush calculations
+        enumeration {PLL=2, SIMPLE=1, NONE=0} all_frequency_measure_default;
+        double low_voltage_impedance_level; // Lower limit of voltage (in per-unit) at which all load types are converted to impedance for in-rush calculations
+        bool enable_mesh_fault_current; // Flag to enable mesh-based fault current calculations
+        char1024 market_price_name; // Market current price published variable name
+}
+class overhead_line_conductor {
+        double geometric_mean_radius[ft]; // radius of the conductor
+        double resistance[Ohm/mile]; // resistance in Ohms/mile of the conductor
+        double diameter[in]; // Diameter of line for capacitance calculations
+        double rating.summer.continuous[A]; // Continuous summer amp rating
+        double rating.summer.emergency[A]; // Emergency summer amp rating
+        double rating.winter.continuous[A]; // Continuous winter amp rating
+        double rating.winter.emergency[A]; // Emergency winter amp rating
+}
