@@ -114,11 +114,11 @@ object node {
 
 
 // Overhead line conductors
-// object overhead_line_conductor{ //TODO: Alamin kung ano yung sinasabi sa 601 config table
-//     name "ovl_cond_601";
-
-
-// }
+object overhead_line_conductor{  
+    name "ovl_cond_601";
+    geometric_mean_radius 0.0313;
+    resistance 0.1859;
+}
 
 object overhead_line_conductor{
     name "ovl_cond_602";
@@ -147,6 +147,8 @@ object overhead_line_conductor{
     resistance 1.12;
     diameter 0.398;
 }
+
+// Underground line conductors
 
 // line spacing objects
 object line_spacing{
