@@ -20,7 +20,7 @@ object node {
     // PQ - constant power
     bustype 2; // in this quiz this will be determined depending sa load
     phases "ABCN";
-    nominal_voltage 4160; //line to neutral voltage
+    nominal_voltage 2401.7771; //line to neutral voltage
 }
 
 object node {
@@ -32,84 +32,84 @@ object node {
     // PQ - constant power
     bustype 2; // in this quiz this will be determined depending sa load
     phases "BC";
-    nominal_voltage 4160; //line to neutral voltage
+    nominal_voltage 2401.7771; //line to neutral voltage
 }
 
 object node {
     name "node_645";
     bustype 2; // in this quiz this will be determined depending sa load
     phases "BCN";
-    nominal_voltage 4160; //line to neutral voltage
+    nominal_voltage 2401.7771; //line to neutral voltage
 }
 
 object node {
     name "node_632";
     bustype 2; // in this quiz this will be determined depending sa load
     phases "ABCN";
-    nominal_voltage 4160; //line to neutral voltage
+    nominal_voltage 2401.7771; //line to neutral voltage
 }
 
 object node {
     name "node_633";
     bustype 2; // in this quiz this will be determined depending sa load
     phases "ABCN";
-    nominal_voltage 4160; //line to neutral voltage
+    nominal_voltage 2401.7771; //line to neutral voltage
 }
 
 object node {
     name "node_634";
     bustype 2; // in this quiz this will be determined depending sa load
     phases "ABCN";
-    nominal_voltage 4160; //line to neutral voltage
+    nominal_voltage 2401.7771; //line to neutral voltage
 }
 
 object node {
     name "node_611";
     bustype 2; // in this quiz this will be determined depending sa load
     phases "CN";
-    nominal_voltage 4160; //line to neutral voltage
+    nominal_voltage 2401.7771; //line to neutral voltage
 }
 
 object node {
     name "node_684";
     bustype 2; // in this quiz this will be determined depending sa load
     phases "ACN";
-    nominal_voltage 4160; //line to neutral voltage
+    nominal_voltage 2401.7771; //line to neutral voltage
 }
 
 object node {
     name "node_671";
     bustype 2; // in this quiz this will be determined depending sa load
     phases "ABCN";
-    nominal_voltage 4160; //line to neutral voltage
+    nominal_voltage 2401.7771; //line to neutral voltage
 }
 
 object node {
     name "node_692";
     bustype 2; // in this quiz this will be determined depending sa load
     phases "ABCN";
-    nominal_voltage 4160; //line to neutral voltage
+    nominal_voltage 2401.7771; //line to neutral voltage
 }
 
 object node {
     name "node_675";
     bustype 2; // in this quiz this will be determined depending sa load
     phases "ABCN";
-    nominal_voltage 4160; //line to neutral voltage
+    nominal_voltage 2401.7771; //line to neutral voltage
 }
 
 object node {
     name "node_652";
     bustype 2; // in this quiz this will be determined depending sa load
     phases "AN";
-    nominal_voltage 4160; //line to neutral voltage
+    nominal_voltage 2401.7771; //line to neutral voltage
 }
 
 object node {
     name "node_680";
     bustype 2; // in this quiz this will be determined depending sa load
     phases "ABCN";
-    nominal_voltage 4160; //line to neutral voltage
+    nominal_voltage 2401.7771; //line to neutral voltage
 }
 
 
@@ -363,14 +363,6 @@ object overhead_line{
     configuration "ovl_config_601"; 
 }
 
-object underground_line{
-    name "undgl_684_652";
-    from "node_684";
-    to "node_652";
-    phases "AN";
-    length 800;
-    configuration "undgl_config_607"; 
-}
 
 object overhead_line{
     name "ovl_632_671";
@@ -421,4 +413,56 @@ object underground_line{
     length 500;
     configuration "undgl_config_606"; 
 }
-// Transformer 
+
+object underground_line{
+    name "undgl_684_652";
+    from "node_684";
+    to "node_652";
+    phases "AN";
+    length 800;
+    configuration "undgl_config_607"; 
+}
+
+// Capacitor
+object capacitor{
+    name "cap_001";
+    phases "ABCN";
+    pt_phase "ABCN";
+    phases_connected "ABCN";
+    parent "node_675";
+    control VOLT;
+    capacitor_A 200000;
+    capacitor_B 200000;
+    capacitor_C 200000;
+    nominal_voltage 2401.7771;
+    voltage_set_high 2800.0;
+    voltage_set_low 2200.0;
+    time_delay 300.0;
+    dwell_time 0.0;
+    control_level INDIVIDUAL;
+    switchA CLOSED;				
+	switchB CLOSED;
+	switchC CLOSED;
+}
+
+object capacitor{
+    name "cap_002";
+    phases "CN";
+    pt_phase "CN";
+    phases_connected "CN";
+    parent "node_611";
+    control VOLT;
+    capacitor_A 0.0;
+    capacitor_B 0.0;
+    capacitor_C 200000.0;
+    nominal_voltage 2401.7771;
+    voltage_set_high 2800.0;
+    voltage_set_low 2200.0;
+    time_delay 300.0;
+    dwell_time 0.0;
+    control_level INDIVIDUAL;
+    switchA CLOSED;				
+	switchB CLOSED;
+	switchC CLOSED;
+}
+
