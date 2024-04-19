@@ -6,7 +6,7 @@
 	<version.patch>0</version.patch>
 	<version.build>19642</version.build>
 	<version.branch>0df31c0:HEAD</version.branch>
-	<command_line>"C:\Program Files\GridLAB-D 5.2.0\bin\gridlabd.exe quiz1.glm"</command_line>
+	<command_line>"C:\Program Files\GridLAB-D 5.2.0\bin\gridlabd.exe .\quiz1.glm"</command_line>
 	<environment>batch</environment>
 	<quiet>FALSE</quiet>
 	<warn>TRUE</warn>
@@ -17,7 +17,7 @@
 	<verbose>FALSE</verbose>
 	<iteration_limit>100</iteration_limit>
 	<federation_reiteration>FALSE</federation_reiteration>
-	<workdir>"C:\Users\dpaul\Desktop\Electrical engineering files\4rth year\2nd sem\Power System Analysis\gridlabd_quiz"</workdir>
+	<workdir>"C:\Users\dpaul\Electrical Engineering Files\4rth year\2nd sem\Power System Analysis\gridlabd_quiz"</workdir>
 	<lock>TRUE</lock>
 	<dumpfile>gridlabd.xml</dumpfile>
 	<savefile>""</savefile>
@@ -38,12 +38,12 @@
 	<object_scan>%[^:]:%d</object_scan>
 	<object_tree_balance>FALSE</object_tree_balance>
 	<kmlfile>""</kmlfile>
-	<modelname>quiz1.glm</modelname>
+	<modelname>.\quiz1.glm</modelname>
 	<execdir>"C:\Program Files\GridLAB-D 5.2.0\bin"</execdir>
 	<strictnames>TRUE</strictnames>
 	<website>http://www.gridlabd.org/</website>
 	<urlbase>http://www.gridlabd.org/</urlbase>
-	<randomseed>-1242091756</randomseed>
+	<randomseed>-2057231016</randomseed>
 	<include>""</include>
 	<trace>""</trace>
 	<gdb_window>FALSE</gdb_window>
@@ -118,80 +118,127 @@
 	<wget_options>"maxsize:100MB;update:newer"</wget_options>
 	<svnroot>http://gridlab-d.svn.sourceforge.net/svnroot/gridlab-d</svnroot>
 	<allow_reinclude>FALSE</allow_reinclude>
-	<AB>2.5</AB>
-	<BC>4.5</BC>
-	<AC>7.0</AC>
-	<AN>5.65685</AN>
-	<BN>4.272</BN>
-	<CN>5.0</CN>
-	<NE>24.0</NE>
-	<AB_505>7.0</AB_505>
-	<AN_505>5.65685</AN_505>
-	<BN_505>5.0</BN_505>
-	<AN_510>5.02494</AN_510>
 	<timezone>AWST-8</timezone>
 	<sync-order>
 		<pass>
 			<name>pretopdown</name>
 			<rank>
-				<ordinal>2</ordinal>
+				<ordinal>8</ordinal>
+				<object>
+					<name>node_650</name>
+					<id>0</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>7</ordinal>
+				<object>
+					<name>ovl_650_632</name>
+					<id>37</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>6</ordinal>
 				<object>
 					<name>node_632</name>
+					<id>3</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>5</ordinal>
+				<object>
+					<name>ovl_632_671</name>
+					<id>39</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>4</ordinal>
+				<object>
+					<name>node_671</name>
+					<id>8</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>3</ordinal>
+				<object>
+					<name>ovl_632_645</name>
+					<id>34</id>
+				</object>
+				<object>
+					<name>ovl_671_684</name>
+					<id>40</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>2</ordinal>
+				<object>
+					<name>node_645</name>
 					<id>2</id>
+				</object>
+				<object>
+					<name>node_684</name>
+					<id>7</id>
+				</object>
+				<object>
+					<name>node_692</name>
+					<id>9</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>1</ordinal>
 				<object>
-					<name>ovl_632_645</name>
-					<id>25</id>
+					<name>ovl_632_633</name>
+					<id>35</id>
+				</object>
+				<object>
+					<name>ovl_645_646</name>
+					<id>36</id>
+				</object>
+				<object>
+					<name>undgl_684_652</name>
+					<id>38</id>
+				</object>
+				<object>
+					<name>undgl_692_675</name>
+					<id>43</id>
+				</object>
+				<object>
+					<name>ovl_671_680</name>
+					<id>41</id>
+				</object>
+				<object>
+					<name>ovl_684_611</name>
+					<id>42</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>0</ordinal>
 				<object>
+					<name>node_680</name>
+					<id>12</id>
+				</object>
+				<object>
 					<name>node_633</name>
-					<id>3</id>
-				</object>
-				<object>
-					<name>node_646</name>
-					<id>0</id>
-				</object>
-				<object>
-					<name>node_645</name>
-					<id>1</id>
-				</object>
-				<object>
-					<name>node_652</name>
-					<id>10</id>
-				</object>
-				<object>
-					<name>node_692</name>
-					<id>8</id>
-				</object>
-				<object>
-					<name>node_671</name>
-					<id>7</id>
-				</object>
-				<object>
-					<name>node_684</name>
-					<id>6</id>
-				</object>
-				<object>
-					<name>node_611</name>
-					<id>5</id>
-				</object>
-				<object>
-					<name>node_634</name>
 					<id>4</id>
 				</object>
 				<object>
-					<name>node_675</name>
-					<id>9</id>
+					<name>node_611</name>
+					<id>6</id>
 				</object>
 				<object>
-					<name>node_680</name>
+					<name>node_675</name>
+					<id>10</id>
+				</object>
+				<object>
+					<name>node_652</name>
 					<id>11</id>
+				</object>
+				<object>
+					<name>node_634</name>
+					<id>5</id>
+				</object>
+				<object>
+					<name>node_646</name>
+					<id>1</id>
 				</object>
 			</rank>
 		</pass>
@@ -200,126 +247,242 @@
 			<rank>
 				<ordinal>0</ordinal>
 				<object>
-					<name>node_692</name>
-					<id>8</id>
+					<name>node_675</name>
+					<id>10</id>
 				</object>
 				<object>
-					<name>node_684</name>
+					<name>node_646</name>
+					<id>1</id>
+				</object>
+				<object>
+					<name>node_611</name>
 					<id>6</id>
 				</object>
 				<object>
 					<name>node_633</name>
-					<id>3</id>
-				</object>
-				<object>
-					<name>node_645</name>
-					<id>1</id>
-				</object>
-				<object>
-					<name>node_646</name>
-					<id>0</id>
-				</object>
-				<object>
-					<name>node_671</name>
-					<id>7</id>
-				</object>
-				<object>
-					<name>node_611</name>
-					<id>5</id>
-				</object>
-				<object>
-					<name>node_680</name>
-					<id>11</id>
-				</object>
-				<object>
-					<name>node_675</name>
-					<id>9</id>
-				</object>
-				<object>
-					<name>node_652</name>
-					<id>10</id>
+					<id>4</id>
 				</object>
 				<object>
 					<name>node_634</name>
-					<id>4</id>
+					<id>5</id>
+				</object>
+				<object>
+					<name>node_652</name>
+					<id>11</id>
+				</object>
+				<object>
+					<name>node_680</name>
+					<id>12</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>1</ordinal>
 				<object>
-					<name>ovl_632_645</name>
-					<id>25</id>
+					<name>ovl_684_611</name>
+					<id>42</id>
+				</object>
+				<object>
+					<name>ovl_671_680</name>
+					<id>41</id>
+				</object>
+				<object>
+					<name>ovl_645_646</name>
+					<id>36</id>
+				</object>
+				<object>
+					<name>undgl_684_652</name>
+					<id>38</id>
+				</object>
+				<object>
+					<name>undgl_692_675</name>
+					<id>43</id>
+				</object>
+				<object>
+					<name>ovl_632_633</name>
+					<id>35</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>2</ordinal>
 				<object>
-					<name>node_632</name>
+					<name>node_684</name>
+					<id>7</id>
+				</object>
+				<object>
+					<name>node_692</name>
+					<id>9</id>
+				</object>
+				<object>
+					<name>node_645</name>
 					<id>2</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>3</ordinal>
+				<object>
+					<name>ovl_632_645</name>
+					<id>34</id>
+				</object>
+				<object>
+					<name>ovl_671_684</name>
+					<id>40</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>4</ordinal>
+				<object>
+					<name>node_671</name>
+					<id>8</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>5</ordinal>
+				<object>
+					<name>ovl_632_671</name>
+					<id>39</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>6</ordinal>
+				<object>
+					<name>node_632</name>
+					<id>3</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>7</ordinal>
+				<object>
+					<name>ovl_650_632</name>
+					<id>37</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>8</ordinal>
+				<object>
+					<name>node_650</name>
+					<id>0</id>
 				</object>
 			</rank>
 		</pass>
 		<pass>
 			<name>posttopdown</name>
 			<rank>
-				<ordinal>2</ordinal>
+				<ordinal>8</ordinal>
+				<object>
+					<name>node_650</name>
+					<id>0</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>7</ordinal>
+				<object>
+					<name>ovl_650_632</name>
+					<id>37</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>6</ordinal>
 				<object>
 					<name>node_632</name>
+					<id>3</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>5</ordinal>
+				<object>
+					<name>ovl_632_671</name>
+					<id>39</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>4</ordinal>
+				<object>
+					<name>node_671</name>
+					<id>8</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>3</ordinal>
+				<object>
+					<name>ovl_632_645</name>
+					<id>34</id>
+				</object>
+				<object>
+					<name>ovl_671_684</name>
+					<id>40</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>2</ordinal>
+				<object>
+					<name>node_684</name>
+					<id>7</id>
+				</object>
+				<object>
+					<name>node_692</name>
+					<id>9</id>
+				</object>
+				<object>
+					<name>node_645</name>
 					<id>2</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>1</ordinal>
 				<object>
-					<name>ovl_632_645</name>
-					<id>25</id>
+					<name>ovl_671_680</name>
+					<id>41</id>
+				</object>
+				<object>
+					<name>ovl_684_611</name>
+					<id>42</id>
+				</object>
+				<object>
+					<name>undgl_684_652</name>
+					<id>38</id>
+				</object>
+				<object>
+					<name>ovl_645_646</name>
+					<id>36</id>
+				</object>
+				<object>
+					<name>ovl_632_633</name>
+					<id>35</id>
+				</object>
+				<object>
+					<name>undgl_692_675</name>
+					<id>43</id>
 				</object>
 			</rank>
 			<rank>
 				<ordinal>0</ordinal>
 				<object>
-					<name>node_675</name>
-					<id>9</id>
-				</object>
-				<object>
-					<name>node_652</name>
-					<id>10</id>
-				</object>
-				<object>
-					<name>node_611</name>
-					<id>5</id>
-				</object>
-				<object>
-					<name>node_692</name>
-					<id>8</id>
-				</object>
-				<object>
-					<name>node_646</name>
-					<id>0</id>
-				</object>
-				<object>
-					<name>node_684</name>
-					<id>6</id>
-				</object>
-				<object>
 					<name>node_633</name>
-					<id>3</id>
-				</object>
-				<object>
-					<name>node_634</name>
 					<id>4</id>
 				</object>
 				<object>
-					<name>node_671</name>
-					<id>7</id>
+					<name>node_652</name>
+					<id>11</id>
 				</object>
 				<object>
-					<name>node_645</name>
-					<id>1</id>
+					<name>node_675</name>
+					<id>10</id>
+				</object>
+				<object>
+					<name>node_634</name>
+					<id>5</id>
 				</object>
 				<object>
 					<name>node_680</name>
-					<id>11</id>
+					<id>12</id>
+				</object>
+				<object>
+					<name>node_611</name>
+					<id>6</id>
+				</object>
+				<object>
+					<name>node_646</name>
+					<id>1</id>
 				</object>
 			</rank>
 		</pass>
@@ -331,10 +494,10 @@
 			<inherits_from>powerflow_object</inherits_from>
 			<node>
 				<id>0</id>
-				<rank>0</rank>
+				<rank>8</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
-				<name>node_646</name>
+				<name>node_650</name>
 				<bustype>SWING</bustype>
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00416 V</maximum_voltage_error>
@@ -430,9 +593,9 @@
 				<id>1</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>ovl_632_645</parent>
+				<parent>ovl_645_646</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
-				<name>node_645</name>
+				<name>node_646</name>
 				<bustype>SWING</bustype>
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00416 V</maximum_voltage_error>
@@ -528,12 +691,13 @@
 				<id>2</id>
 				<rank>2</rank>
 				<out_svc>NEVER</out_svc>
+				<parent>ovl_632_645</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
-				<name>node_632</name>
+				<name>node_645</name>
 				<bustype>SWING</bustype>
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00416 V</maximum_voltage_error>
-				<voltage_A>+4160+0d V</voltage_A>
+				<voltage_A>+0+0d V</voltage_A>
 				<voltage_B>+4160-120d V</voltage_B>
 				<voltage_C>+4160+120d V</voltage_C>
 				<voltage_AB>+0+0d V</voltage_AB>
@@ -617,16 +781,17 @@
 				<GFA_status>TRUE</GFA_status>
 				<GFA_trip_method>NONE</GFA_trip_method>
 				<behaving_as_swing>FALSE</behaving_as_swing>
-				<phases>ABCN</phases>
+				<phases>BCN</phases>
 				<nominal_voltage>+4160 V</nominal_voltage>
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</node>
 			<node>
 				<id>3</id>
-				<rank>0</rank>
+				<rank>6</rank>
 				<out_svc>NEVER</out_svc>
+				<parent>ovl_650_632</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
-				<name>node_633</name>
+				<name>node_632</name>
 				<bustype>SWING</bustype>
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00416 V</maximum_voltage_error>
@@ -722,6 +887,104 @@
 				<id>4</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
+				<parent>ovl_632_633</parent>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>node_633</name>
+				<bustype>SWING</bustype>
+				<busflags>HASSOURCE</busflags>
+				<maximum_voltage_error>+0.00416 V</maximum_voltage_error>
+				<voltage_A>+4160+0d V</voltage_A>
+				<voltage_B>+4160-120d V</voltage_B>
+				<voltage_C>+4160+120d V</voltage_C>
+				<voltage_AB>+0+0d V</voltage_AB>
+				<voltage_BC>+0+0d V</voltage_BC>
+				<voltage_CA>+0+0d V</voltage_CA>
+				<current_A>+0+0i A</current_A>
+				<current_B>+0+0i A</current_B>
+				<current_C>+0+0i A</current_C>
+				<power_A>+0+0i VA</power_A>
+				<power_B>+0+0i VA</power_B>
+				<power_C>+0+0i VA</power_C>
+				<shunt_A>+0+0i S</shunt_A>
+				<shunt_B>+0+0i S</shunt_B>
+				<shunt_C>+0+0i S</shunt_C>
+				<prerotated_current_A>+0+0i A</prerotated_current_A>
+				<prerotated_current_B>+0+0i A</prerotated_current_B>
+				<prerotated_current_C>+0+0i A</prerotated_current_C>
+				<deltamode_generator_current_A>+0+0j A</deltamode_generator_current_A>
+				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
+				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
+				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
+				<current_AB>+0+0j A</current_AB>
+				<current_BC>+0+0j A</current_BC>
+				<current_CA>+0+0j A</current_CA>
+				<current_AN>+0+0j A</current_AN>
+				<current_BN>+0+0j A</current_BN>
+				<current_CN>+0+0j A</current_CN>
+				<power_AB>+0+0j VA</power_AB>
+				<power_BC>+0+0j VA</power_BC>
+				<power_CA>+0+0j VA</power_CA>
+				<power_AN>+0+0j VA</power_AN>
+				<power_BN>+0+0j VA</power_BN>
+				<power_CN>+0+0j VA</power_CN>
+				<shunt_AB>+0+0j S</shunt_AB>
+				<shunt_BC>+0+0j S</shunt_BC>
+				<shunt_CA>+0+0j S</shunt_CA>
+				<shunt_AN>+0+0j S</shunt_AN>
+				<shunt_BN>+0+0j S</shunt_BN>
+				<shunt_CN>+0+0j S</shunt_CN>
+				<residential_nominal_current_A>+0+0j A</residential_nominal_current_A>
+				<residential_nominal_current_B>+0+0j A</residential_nominal_current_B>
+				<residential_nominal_current_C>+0+0j A</residential_nominal_current_C>
+				<residential_nominal_current_A_real>+0 A</residential_nominal_current_A_real>
+				<residential_nominal_current_A_imag>+0 A</residential_nominal_current_A_imag>
+				<residential_nominal_current_B_real>+0 A</residential_nominal_current_B_real>
+				<residential_nominal_current_B_imag>+0 A</residential_nominal_current_B_imag>
+				<residential_nominal_current_C_real>+0 A</residential_nominal_current_C_real>
+				<residential_nominal_current_C_imag>+0 A</residential_nominal_current_C_imag>
+				<house_present>FALSE</house_present>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<frequency_measure_type>NONE</frequency_measure_type>
+				<sfm_Tf>+0.01 s</sfm_Tf>
+				<pll_Kp>+10 pu</pll_Kp>
+				<pll_Ki>+100 pu</pll_Ki>
+				<measured_angle_A>+0 rad</measured_angle_A>
+				<measured_frequency_A>+60 Hz</measured_frequency_A>
+				<measured_angle_B>+0 rad</measured_angle_B>
+				<measured_frequency_B>+60 Hz</measured_frequency_B>
+				<measured_angle_C>+0 rad</measured_angle_C>
+				<measured_frequency_C>+60 Hz</measured_frequency_C>
+				<measured_frequency>+60 Hz</measured_frequency>
+				<service_status>IN_SERVICE</service_status>
+				<service_status_double>-1</service_status_double>
+				<previous_uptime>-1 min</previous_uptime>
+				<current_uptime>+0 min</current_uptime>
+				<Norton_dynamic>FALSE</Norton_dynamic>
+				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
+				<generator_dynamic>FALSE</generator_dynamic>
+				<reset_disabled_island_state>FALSE</reset_disabled_island_state>
+				<GFA_enable>FALSE</GFA_enable>
+				<GFA_freq_low_trip>+59.5 Hz</GFA_freq_low_trip>
+				<GFA_freq_high_trip>+60.5 Hz</GFA_freq_high_trip>
+				<GFA_volt_low_trip>+0.8 pu</GFA_volt_low_trip>
+				<GFA_volt_high_trip>+1.2 pu</GFA_volt_high_trip>
+				<GFA_reconnect_time>+300 s</GFA_reconnect_time>
+				<GFA_freq_disconnect_time>+0.2 s</GFA_freq_disconnect_time>
+				<GFA_volt_disconnect_time>+0.2 s</GFA_volt_disconnect_time>
+				<GFA_status>TRUE</GFA_status>
+				<GFA_trip_method>NONE</GFA_trip_method>
+				<behaving_as_swing>FALSE</behaving_as_swing>
+				<phases>ABCN</phases>
+				<nominal_voltage>+4160 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</node>
+			<node>
+				<id>5</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>node_634</name>
 				<bustype>SWING</bustype>
@@ -749,9 +1012,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -795,104 +1058,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
-				<Norton_dynamic>FALSE</Norton_dynamic>
-				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
-				<generator_dynamic>FALSE</generator_dynamic>
-				<reset_disabled_island_state>FALSE</reset_disabled_island_state>
-				<GFA_enable>FALSE</GFA_enable>
-				<GFA_freq_low_trip>+59.5 Hz</GFA_freq_low_trip>
-				<GFA_freq_high_trip>+60.5 Hz</GFA_freq_high_trip>
-				<GFA_volt_low_trip>+0.8 pu</GFA_volt_low_trip>
-				<GFA_volt_high_trip>+1.2 pu</GFA_volt_high_trip>
-				<GFA_reconnect_time>+300 s</GFA_reconnect_time>
-				<GFA_freq_disconnect_time>+0.2 s</GFA_freq_disconnect_time>
-				<GFA_volt_disconnect_time>+0.2 s</GFA_volt_disconnect_time>
-				<GFA_status>TRUE</GFA_status>
-				<GFA_trip_method>NONE</GFA_trip_method>
-				<behaving_as_swing>FALSE</behaving_as_swing>
-				<phases>ABCN</phases>
-				<nominal_voltage>+4160 V</nominal_voltage>
-				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
-			</node>
-			<node>
-				<id>5</id>
-				<rank>0</rank>
-				<out_svc>NEVER</out_svc>
-				<clock>2000-01-01 00:00:00 AWST</clock>
-				<name>node_611</name>
-				<bustype>SWING</bustype>
-				<busflags>HASSOURCE</busflags>
-				<maximum_voltage_error>+0.00416 V</maximum_voltage_error>
-				<voltage_A>+4160+0d V</voltage_A>
-				<voltage_B>+4160-120d V</voltage_B>
-				<voltage_C>+4160+120d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
-				<current_A>+0+0i A</current_A>
-				<current_B>+0+0i A</current_B>
-				<current_C>+0+0i A</current_C>
-				<power_A>+0+0i VA</power_A>
-				<power_B>+0+0i VA</power_B>
-				<power_C>+0+0i VA</power_C>
-				<shunt_A>+0+0i S</shunt_A>
-				<shunt_B>+0+0i S</shunt_B>
-				<shunt_C>+0+0i S</shunt_C>
-				<prerotated_current_A>+0+0i A</prerotated_current_A>
-				<prerotated_current_B>+0+0i A</prerotated_current_B>
-				<prerotated_current_C>+0+0i A</prerotated_current_C>
-				<deltamode_generator_current_A>+0+0j A</deltamode_generator_current_A>
-				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
-				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
-				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
-				<current_AB>+0+0j A</current_AB>
-				<current_BC>+0+0j A</current_BC>
-				<current_CA>+0+0j A</current_CA>
-				<current_AN>+0+0j A</current_AN>
-				<current_BN>+0+0j A</current_BN>
-				<current_CN>+0+0j A</current_CN>
-				<power_AB>+0+0j VA</power_AB>
-				<power_BC>+0+0j VA</power_BC>
-				<power_CA>+0+0j VA</power_CA>
-				<power_AN>+0+0j VA</power_AN>
-				<power_BN>+0+0j VA</power_BN>
-				<power_CN>+0+0j VA</power_CN>
-				<shunt_AB>+0+0j S</shunt_AB>
-				<shunt_BC>+0+0j S</shunt_BC>
-				<shunt_CA>+0+0j S</shunt_CA>
-				<shunt_AN>+0+0j S</shunt_AN>
-				<shunt_BN>+0+0j S</shunt_BN>
-				<shunt_CN>+0+0j S</shunt_CN>
-				<residential_nominal_current_A>+0+0j A</residential_nominal_current_A>
-				<residential_nominal_current_B>+0+0j A</residential_nominal_current_B>
-				<residential_nominal_current_C>+0+0j A</residential_nominal_current_C>
-				<residential_nominal_current_A_real>+0 A</residential_nominal_current_A_real>
-				<residential_nominal_current_A_imag>+0 A</residential_nominal_current_A_imag>
-				<residential_nominal_current_B_real>+0 A</residential_nominal_current_B_real>
-				<residential_nominal_current_B_imag>+0 A</residential_nominal_current_B_imag>
-				<residential_nominal_current_C_real>+0 A</residential_nominal_current_C_real>
-				<residential_nominal_current_C_imag>+0 A</residential_nominal_current_C_imag>
-				<house_present>FALSE</house_present>
-				<mean_repair_time>+0 s</mean_repair_time>
-				<frequency_measure_type>NONE</frequency_measure_type>
-				<sfm_Tf>+0.01 s</sfm_Tf>
-				<pll_Kp>+10 pu</pll_Kp>
-				<pll_Ki>+100 pu</pll_Ki>
-				<measured_angle_A>+0 rad</measured_angle_A>
-				<measured_frequency_A>+60 Hz</measured_frequency_A>
-				<measured_angle_B>+0 rad</measured_angle_B>
-				<measured_frequency_B>+60 Hz</measured_frequency_B>
-				<measured_angle_C>+0 rad</measured_angle_C>
-				<measured_frequency_C>+60 Hz</measured_frequency_C>
-				<measured_frequency>+60 Hz</measured_frequency>
-				<service_status>IN_SERVICE</service_status>
-				<service_status_double>-1</service_status_double>
-				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -916,13 +1082,14 @@
 				<id>6</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
+				<parent>ovl_684_611</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
-				<name>node_684</name>
+				<name>node_611</name>
 				<bustype>SWING</bustype>
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00416 V</maximum_voltage_error>
-				<voltage_A>+4160+0d V</voltage_A>
-				<voltage_B>+4160-120d V</voltage_B>
+				<voltage_A>+0+0d V</voltage_A>
+				<voltage_B>+0+0d V</voltage_B>
 				<voltage_C>+4160+120d V</voltage_C>
 				<voltage_AB>+0+0d V</voltage_AB>
 				<voltage_BC>+0+0d V</voltage_BC>
@@ -943,9 +1110,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -989,7 +1156,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -1005,14 +1172,113 @@
 				<GFA_status>TRUE</GFA_status>
 				<GFA_trip_method>NONE</GFA_trip_method>
 				<behaving_as_swing>FALSE</behaving_as_swing>
-				<phases>ABCN</phases>
+				<phases>CN</phases>
 				<nominal_voltage>+4160 V</nominal_voltage>
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</node>
 			<node>
 				<id>7</id>
-				<rank>0</rank>
+				<rank>2</rank>
 				<out_svc>NEVER</out_svc>
+				<parent>ovl_671_684</parent>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>node_684</name>
+				<bustype>SWING</bustype>
+				<busflags>HASSOURCE</busflags>
+				<maximum_voltage_error>+0.00416 V</maximum_voltage_error>
+				<voltage_A>+4160+0d V</voltage_A>
+				<voltage_B>+0+0d V</voltage_B>
+				<voltage_C>+4160+120d V</voltage_C>
+				<voltage_AB>+0+0d V</voltage_AB>
+				<voltage_BC>+0+0d V</voltage_BC>
+				<voltage_CA>+0+0d V</voltage_CA>
+				<current_A>+0+0i A</current_A>
+				<current_B>+0+0i A</current_B>
+				<current_C>+0+0i A</current_C>
+				<power_A>+0+0i VA</power_A>
+				<power_B>+0+0i VA</power_B>
+				<power_C>+0+0i VA</power_C>
+				<shunt_A>+0+0i S</shunt_A>
+				<shunt_B>+0+0i S</shunt_B>
+				<shunt_C>+0+0i S</shunt_C>
+				<prerotated_current_A>+0+0i A</prerotated_current_A>
+				<prerotated_current_B>+0+0i A</prerotated_current_B>
+				<prerotated_current_C>+0+0i A</prerotated_current_C>
+				<deltamode_generator_current_A>+0+0j A</deltamode_generator_current_A>
+				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
+				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
+				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
+				<current_AB>+0+0j A</current_AB>
+				<current_BC>+0+0j A</current_BC>
+				<current_CA>+0+0j A</current_CA>
+				<current_AN>+0+0j A</current_AN>
+				<current_BN>+0+0j A</current_BN>
+				<current_CN>+0+0j A</current_CN>
+				<power_AB>+0+0j VA</power_AB>
+				<power_BC>+0+0j VA</power_BC>
+				<power_CA>+0+0j VA</power_CA>
+				<power_AN>+0+0j VA</power_AN>
+				<power_BN>+0+0j VA</power_BN>
+				<power_CN>+0+0j VA</power_CN>
+				<shunt_AB>+0+0j S</shunt_AB>
+				<shunt_BC>+0+0j S</shunt_BC>
+				<shunt_CA>+0+0j S</shunt_CA>
+				<shunt_AN>+0+0j S</shunt_AN>
+				<shunt_BN>+0+0j S</shunt_BN>
+				<shunt_CN>+0+0j S</shunt_CN>
+				<residential_nominal_current_A>+0+0j A</residential_nominal_current_A>
+				<residential_nominal_current_B>+0+0j A</residential_nominal_current_B>
+				<residential_nominal_current_C>+0+0j A</residential_nominal_current_C>
+				<residential_nominal_current_A_real>+0 A</residential_nominal_current_A_real>
+				<residential_nominal_current_A_imag>+0 A</residential_nominal_current_A_imag>
+				<residential_nominal_current_B_real>+0 A</residential_nominal_current_B_real>
+				<residential_nominal_current_B_imag>+0 A</residential_nominal_current_B_imag>
+				<residential_nominal_current_C_real>+0 A</residential_nominal_current_C_real>
+				<residential_nominal_current_C_imag>+0 A</residential_nominal_current_C_imag>
+				<house_present>FALSE</house_present>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<frequency_measure_type>NONE</frequency_measure_type>
+				<sfm_Tf>+0.01 s</sfm_Tf>
+				<pll_Kp>+10 pu</pll_Kp>
+				<pll_Ki>+100 pu</pll_Ki>
+				<measured_angle_A>+0 rad</measured_angle_A>
+				<measured_frequency_A>+60 Hz</measured_frequency_A>
+				<measured_angle_B>+0 rad</measured_angle_B>
+				<measured_frequency_B>+60 Hz</measured_frequency_B>
+				<measured_angle_C>+0 rad</measured_angle_C>
+				<measured_frequency_C>+60 Hz</measured_frequency_C>
+				<measured_frequency>+60 Hz</measured_frequency>
+				<service_status>IN_SERVICE</service_status>
+				<service_status_double>-1</service_status_double>
+				<previous_uptime>-1 min</previous_uptime>
+				<current_uptime>+0 min</current_uptime>
+				<Norton_dynamic>FALSE</Norton_dynamic>
+				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
+				<generator_dynamic>FALSE</generator_dynamic>
+				<reset_disabled_island_state>FALSE</reset_disabled_island_state>
+				<GFA_enable>FALSE</GFA_enable>
+				<GFA_freq_low_trip>+59.5 Hz</GFA_freq_low_trip>
+				<GFA_freq_high_trip>+60.5 Hz</GFA_freq_high_trip>
+				<GFA_volt_low_trip>+0.8 pu</GFA_volt_low_trip>
+				<GFA_volt_high_trip>+1.2 pu</GFA_volt_high_trip>
+				<GFA_reconnect_time>+300 s</GFA_reconnect_time>
+				<GFA_freq_disconnect_time>+0.2 s</GFA_freq_disconnect_time>
+				<GFA_volt_disconnect_time>+0.2 s</GFA_volt_disconnect_time>
+				<GFA_status>TRUE</GFA_status>
+				<GFA_trip_method>NONE</GFA_trip_method>
+				<behaving_as_swing>FALSE</behaving_as_swing>
+				<phases>ACN</phases>
+				<nominal_voltage>+4160 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</node>
+			<node>
+				<id>8</id>
+				<rank>4</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>ovl_632_671</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>node_671</name>
 				<bustype>SWING</bustype>
@@ -1040,9 +1306,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -1086,7 +1352,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -1107,8 +1373,8 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</node>
 			<node>
-				<id>8</id>
-				<rank>0</rank>
+				<id>9</id>
+				<rank>2</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>node_692</name>
@@ -1137,9 +1403,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -1183,7 +1449,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -1204,9 +1470,10 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</node>
 			<node>
-				<id>9</id>
+				<id>10</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
+				<parent>undgl_692_675</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>node_675</name>
 				<bustype>SWING</bustype>
@@ -1234,9 +1501,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -1280,104 +1547,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
-				<Norton_dynamic>FALSE</Norton_dynamic>
-				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
-				<generator_dynamic>FALSE</generator_dynamic>
-				<reset_disabled_island_state>FALSE</reset_disabled_island_state>
-				<GFA_enable>FALSE</GFA_enable>
-				<GFA_freq_low_trip>+59.5 Hz</GFA_freq_low_trip>
-				<GFA_freq_high_trip>+60.5 Hz</GFA_freq_high_trip>
-				<GFA_volt_low_trip>+0.8 pu</GFA_volt_low_trip>
-				<GFA_volt_high_trip>+1.2 pu</GFA_volt_high_trip>
-				<GFA_reconnect_time>+300 s</GFA_reconnect_time>
-				<GFA_freq_disconnect_time>+0.2 s</GFA_freq_disconnect_time>
-				<GFA_volt_disconnect_time>+0.2 s</GFA_volt_disconnect_time>
-				<GFA_status>TRUE</GFA_status>
-				<GFA_trip_method>NONE</GFA_trip_method>
-				<behaving_as_swing>FALSE</behaving_as_swing>
-				<phases>ABCN</phases>
-				<nominal_voltage>+4160 V</nominal_voltage>
-				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
-			</node>
-			<node>
-				<id>10</id>
-				<rank>0</rank>
-				<out_svc>NEVER</out_svc>
-				<clock>2000-01-01 00:00:00 AWST</clock>
-				<name>node_652</name>
-				<bustype>SWING</bustype>
-				<busflags>HASSOURCE</busflags>
-				<maximum_voltage_error>+0.00416 V</maximum_voltage_error>
-				<voltage_A>+4160+0d V</voltage_A>
-				<voltage_B>+4160-120d V</voltage_B>
-				<voltage_C>+4160+120d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
-				<current_A>+0+0i A</current_A>
-				<current_B>+0+0i A</current_B>
-				<current_C>+0+0i A</current_C>
-				<power_A>+0+0i VA</power_A>
-				<power_B>+0+0i VA</power_B>
-				<power_C>+0+0i VA</power_C>
-				<shunt_A>+0+0i S</shunt_A>
-				<shunt_B>+0+0i S</shunt_B>
-				<shunt_C>+0+0i S</shunt_C>
-				<prerotated_current_A>+0+0i A</prerotated_current_A>
-				<prerotated_current_B>+0+0i A</prerotated_current_B>
-				<prerotated_current_C>+0+0i A</prerotated_current_C>
-				<deltamode_generator_current_A>+0+0j A</deltamode_generator_current_A>
-				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
-				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
-				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
-				<current_AB>+0+0j A</current_AB>
-				<current_BC>+0+0j A</current_BC>
-				<current_CA>+0+0j A</current_CA>
-				<current_AN>+0+0j A</current_AN>
-				<current_BN>+0+0j A</current_BN>
-				<current_CN>+0+0j A</current_CN>
-				<power_AB>+0+0j VA</power_AB>
-				<power_BC>+0+0j VA</power_BC>
-				<power_CA>+0+0j VA</power_CA>
-				<power_AN>+0+0j VA</power_AN>
-				<power_BN>+0+0j VA</power_BN>
-				<power_CN>+0+0j VA</power_CN>
-				<shunt_AB>+0+0j S</shunt_AB>
-				<shunt_BC>+0+0j S</shunt_BC>
-				<shunt_CA>+0+0j S</shunt_CA>
-				<shunt_AN>+0+0j S</shunt_AN>
-				<shunt_BN>+0+0j S</shunt_BN>
-				<shunt_CN>+0+0j S</shunt_CN>
-				<residential_nominal_current_A>+0+0j A</residential_nominal_current_A>
-				<residential_nominal_current_B>+0+0j A</residential_nominal_current_B>
-				<residential_nominal_current_C>+0+0j A</residential_nominal_current_C>
-				<residential_nominal_current_A_real>+0 A</residential_nominal_current_A_real>
-				<residential_nominal_current_A_imag>+0 A</residential_nominal_current_A_imag>
-				<residential_nominal_current_B_real>+0 A</residential_nominal_current_B_real>
-				<residential_nominal_current_B_imag>+0 A</residential_nominal_current_B_imag>
-				<residential_nominal_current_C_real>+0 A</residential_nominal_current_C_real>
-				<residential_nominal_current_C_imag>+0 A</residential_nominal_current_C_imag>
-				<house_present>FALSE</house_present>
-				<mean_repair_time>+0 s</mean_repair_time>
-				<frequency_measure_type>NONE</frequency_measure_type>
-				<sfm_Tf>+0.01 s</sfm_Tf>
-				<pll_Kp>+10 pu</pll_Kp>
-				<pll_Ki>+100 pu</pll_Ki>
-				<measured_angle_A>+0 rad</measured_angle_A>
-				<measured_frequency_A>+60 Hz</measured_frequency_A>
-				<measured_angle_B>+0 rad</measured_angle_B>
-				<measured_frequency_B>+60 Hz</measured_frequency_B>
-				<measured_angle_C>+0 rad</measured_angle_C>
-				<measured_frequency_C>+60 Hz</measured_frequency_C>
-				<measured_frequency>+60 Hz</measured_frequency>
-				<service_status>IN_SERVICE</service_status>
-				<service_status_double>-1</service_status_double>
-				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -1401,6 +1571,105 @@
 				<id>11</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
+				<parent>undgl_684_652</parent>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>node_652</name>
+				<bustype>SWING</bustype>
+				<busflags>HASSOURCE</busflags>
+				<maximum_voltage_error>+0.00416 V</maximum_voltage_error>
+				<voltage_A>+4160+0d V</voltage_A>
+				<voltage_B>+0+0d V</voltage_B>
+				<voltage_C>+0+0d V</voltage_C>
+				<voltage_AB>+0+0d V</voltage_AB>
+				<voltage_BC>+0+0d V</voltage_BC>
+				<voltage_CA>+0+0d V</voltage_CA>
+				<current_A>+0+0i A</current_A>
+				<current_B>+0+0i A</current_B>
+				<current_C>+0+0i A</current_C>
+				<power_A>+0+0i VA</power_A>
+				<power_B>+0+0i VA</power_B>
+				<power_C>+0+0i VA</power_C>
+				<shunt_A>+0+0i S</shunt_A>
+				<shunt_B>+0+0i S</shunt_B>
+				<shunt_C>+0+0i S</shunt_C>
+				<prerotated_current_A>+0+0i A</prerotated_current_A>
+				<prerotated_current_B>+0+0i A</prerotated_current_B>
+				<prerotated_current_C>+0+0i A</prerotated_current_C>
+				<deltamode_generator_current_A>+0+0j A</deltamode_generator_current_A>
+				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
+				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
+				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
+				<current_AB>+0+0j A</current_AB>
+				<current_BC>+0+0j A</current_BC>
+				<current_CA>+0+0j A</current_CA>
+				<current_AN>+0+0j A</current_AN>
+				<current_BN>+0+0j A</current_BN>
+				<current_CN>+0+0j A</current_CN>
+				<power_AB>+0+0j VA</power_AB>
+				<power_BC>+0+0j VA</power_BC>
+				<power_CA>+0+0j VA</power_CA>
+				<power_AN>+0+0j VA</power_AN>
+				<power_BN>+0+0j VA</power_BN>
+				<power_CN>+0+0j VA</power_CN>
+				<shunt_AB>+0+0j S</shunt_AB>
+				<shunt_BC>+0+0j S</shunt_BC>
+				<shunt_CA>+0+0j S</shunt_CA>
+				<shunt_AN>+0+0j S</shunt_AN>
+				<shunt_BN>+0+0j S</shunt_BN>
+				<shunt_CN>+0+0j S</shunt_CN>
+				<residential_nominal_current_A>+0+0j A</residential_nominal_current_A>
+				<residential_nominal_current_B>+0+0j A</residential_nominal_current_B>
+				<residential_nominal_current_C>+0+0j A</residential_nominal_current_C>
+				<residential_nominal_current_A_real>+0 A</residential_nominal_current_A_real>
+				<residential_nominal_current_A_imag>+0 A</residential_nominal_current_A_imag>
+				<residential_nominal_current_B_real>+0 A</residential_nominal_current_B_real>
+				<residential_nominal_current_B_imag>+0 A</residential_nominal_current_B_imag>
+				<residential_nominal_current_C_real>+0 A</residential_nominal_current_C_real>
+				<residential_nominal_current_C_imag>+0 A</residential_nominal_current_C_imag>
+				<house_present>FALSE</house_present>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<frequency_measure_type>NONE</frequency_measure_type>
+				<sfm_Tf>+0.01 s</sfm_Tf>
+				<pll_Kp>+10 pu</pll_Kp>
+				<pll_Ki>+100 pu</pll_Ki>
+				<measured_angle_A>+0 rad</measured_angle_A>
+				<measured_frequency_A>+60 Hz</measured_frequency_A>
+				<measured_angle_B>+0 rad</measured_angle_B>
+				<measured_frequency_B>+60 Hz</measured_frequency_B>
+				<measured_angle_C>+0 rad</measured_angle_C>
+				<measured_frequency_C>+60 Hz</measured_frequency_C>
+				<measured_frequency>+60 Hz</measured_frequency>
+				<service_status>IN_SERVICE</service_status>
+				<service_status_double>-1</service_status_double>
+				<previous_uptime>-1 min</previous_uptime>
+				<current_uptime>+0 min</current_uptime>
+				<Norton_dynamic>FALSE</Norton_dynamic>
+				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
+				<generator_dynamic>FALSE</generator_dynamic>
+				<reset_disabled_island_state>FALSE</reset_disabled_island_state>
+				<GFA_enable>FALSE</GFA_enable>
+				<GFA_freq_low_trip>+59.5 Hz</GFA_freq_low_trip>
+				<GFA_freq_high_trip>+60.5 Hz</GFA_freq_high_trip>
+				<GFA_volt_low_trip>+0.8 pu</GFA_volt_low_trip>
+				<GFA_volt_high_trip>+1.2 pu</GFA_volt_high_trip>
+				<GFA_reconnect_time>+300 s</GFA_reconnect_time>
+				<GFA_freq_disconnect_time>+0.2 s</GFA_freq_disconnect_time>
+				<GFA_volt_disconnect_time>+0.2 s</GFA_volt_disconnect_time>
+				<GFA_status>TRUE</GFA_status>
+				<GFA_trip_method>NONE</GFA_trip_method>
+				<behaving_as_swing>FALSE</behaving_as_swing>
+				<phases>AN</phases>
+				<nominal_voltage>+4160 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</node>
+			<node>
+				<id>12</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>ovl_671_680</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>node_680</name>
 				<bustype>SWING</bustype>
@@ -1428,9 +1697,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -1474,7 +1743,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -1512,7 +1781,7 @@
 		</line_list>
 		<line_spacing_list>
 			<line_spacing>
-				<id>16</id>
+				<id>20</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1526,10 +1795,10 @@
 				<distance_AE>+0 ft</distance_AE>
 				<distance_BE>+0 ft</distance_BE>
 				<distance_CE>+0 ft</distance_CE>
-				<distance_NE>+24 ft</distance_NE>
+				<distance_NE>+0 ft</distance_NE>
 			</line_spacing>
 			<line_spacing>
-				<id>17</id>
+				<id>21</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1543,10 +1812,10 @@
 				<distance_AE>+0 ft</distance_AE>
 				<distance_BE>+0 ft</distance_BE>
 				<distance_CE>+0 ft</distance_CE>
-				<distance_NE>+24 ft</distance_NE>
+				<distance_NE>+0 ft</distance_NE>
 			</line_spacing>
 			<line_spacing>
-				<id>18</id>
+				<id>22</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1555,15 +1824,15 @@
 				<distance_BC>+7 ft</distance_BC>
 				<distance_AC>+0 ft</distance_AC>
 				<distance_AN>+0 ft</distance_AN>
-				<distance_BN>+5.65685 ft</distance_BN>
-				<distance_CN>+5 ft</distance_CN>
+				<distance_BN>+5 ft</distance_BN>
+				<distance_CN>+5.65685 ft</distance_CN>
 				<distance_AE>+0 ft</distance_AE>
 				<distance_BE>+0 ft</distance_BE>
 				<distance_CE>+0 ft</distance_CE>
-				<distance_NE>+24 ft</distance_NE>
+				<distance_NE>+0 ft</distance_NE>
 			</line_spacing>
 			<line_spacing>
-				<id>19</id>
+				<id>23</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1577,10 +1846,10 @@
 				<distance_AE>+0 ft</distance_AE>
 				<distance_BE>+0 ft</distance_BE>
 				<distance_CE>+0 ft</distance_CE>
-				<distance_NE>+24 ft</distance_NE>
+				<distance_NE>+0 ft</distance_NE>
 			</line_spacing>
 			<line_spacing>
-				<id>20</id>
+				<id>24</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1590,18 +1859,52 @@
 				<distance_AC>+0 ft</distance_AC>
 				<distance_AN>+0 ft</distance_AN>
 				<distance_BN>+0 ft</distance_BN>
-				<distance_CN>+5.65685 ft</distance_CN>
+				<distance_CN>+5.02494 ft</distance_CN>
 				<distance_AE>+0 ft</distance_AE>
 				<distance_BE>+0 ft</distance_BE>
 				<distance_CE>+0 ft</distance_CE>
-				<distance_NE>+24 ft</distance_NE>
+				<distance_NE>+0 ft</distance_NE>
+			</line_spacing>
+			<line_spacing>
+				<id>25</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>undgl_ls_515</name>
+				<distance_AB>+6 ft</distance_AB>
+				<distance_BC>+6 ft</distance_BC>
+				<distance_AC>+12 ft</distance_AC>
+				<distance_AN>+0 ft</distance_AN>
+				<distance_BN>+0 ft</distance_BN>
+				<distance_CN>+0 ft</distance_CN>
+				<distance_AE>+0 ft</distance_AE>
+				<distance_BE>+0 ft</distance_BE>
+				<distance_CE>+0 ft</distance_CE>
+				<distance_NE>+0 ft</distance_NE>
+			</line_spacing>
+			<line_spacing>
+				<id>26</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>undgl_ls_520</name>
+				<distance_AB>+1 ft</distance_AB>
+				<distance_BC>+0 ft</distance_BC>
+				<distance_AC>+0 ft</distance_AC>
+				<distance_AN>+0 ft</distance_AN>
+				<distance_BN>+0 ft</distance_BN>
+				<distance_CN>+0 ft</distance_CN>
+				<distance_AE>+0 ft</distance_AE>
+				<distance_BE>+0 ft</distance_BE>
+				<distance_CE>+0 ft</distance_CE>
+				<distance_NE>+0 ft</distance_NE>
 			</line_spacing>
 		</line_spacing_list>
 		<overhead_line_list>
 			<inherits_from>line</inherits_from>
 			<overhead_line>
-				<id>25</id>
-				<rank>1</rank>
+				<id>34</id>
+				<rank>3</rank>
 				<out_svc>NEVER</out_svc>
 				<parent>node_632</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1657,13 +1960,549 @@
 				<nominal_voltage>+0 V</nominal_voltage>
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</overhead_line>
+			<overhead_line>
+				<id>35</id>
+				<rank>1</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>node_632</parent>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>ovl_632_633</name>
+				<configuration>ovl_config_602</configuration>
+				<length>+500 ft</length>
+				<status>CLOSED</status>
+				<from>node_632</from>
+				<to>node_633</to>
+				<power_in>+0+0j VA</power_in>
+				<power_out>+0+0j VA</power_out>
+				<power_out_real>+0 W</power_out_real>
+				<power_losses>+0+0j VA</power_losses>
+				<power_in_A>+0+0j VA</power_in_A>
+				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+0+0j VA</power_out_A>
+				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0+0j VA</power_losses_A>
+				<power_losses_B>+0+0j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>+0+0i A</current_out_A>
+				<current_out_B>+0+0i A</current_out_B>
+				<current_out_C>+0+0i A</current_out_C>
+				<current_in_A>+0+0i A</current_in_A>
+				<current_in_B>+0+0i A</current_in_B>
+				<current_in_C>+0+0i A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<fault_voltage_A>+0+0i A</fault_voltage_A>
+				<fault_voltage_B>+0+0i A</fault_voltage_B>
+				<fault_voltage_C>+0+0i A</fault_voltage_C>
+				<overloaded_status>FALSE</overloaded_status>
+				<flow_direction>UNKNOWN</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating_A>+1000 A</continuous_rating_A>
+				<continuous_rating_B>+1000 A</continuous_rating_B>
+				<continuous_rating_C>+1000 A</continuous_rating_C>
+				<emergency_rating_A>+2000 A</emergency_rating_A>
+				<emergency_rating_B>+2000 A</emergency_rating_B>
+				<emergency_rating_C>+2000 A</emergency_rating_C>
+				<inrush_convergence_value>+0.0001 V</inrush_convergence_value>
+				<triplex_neutral_1_value>+0+0i</triplex_neutral_1_value>
+				<triplex_neutral_2_value>+0+0i</triplex_neutral_2_value>
+				<inrush_integration_method_capacitance>UNDEFINED</inrush_integration_method_capacitance>
+				<inrush_integration_method_inductance>UNDEFINED</inrush_integration_method_inductance>
+				<phases>ABCN</phases>
+				<nominal_voltage>+0 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</overhead_line>
+			<overhead_line>
+				<id>36</id>
+				<rank>1</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>node_645</parent>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>ovl_645_646</name>
+				<configuration>ovl_config_603</configuration>
+				<length>+300 ft</length>
+				<status>CLOSED</status>
+				<from>node_645</from>
+				<to>node_646</to>
+				<power_in>+0+0j VA</power_in>
+				<power_out>+0+0j VA</power_out>
+				<power_out_real>+0 W</power_out_real>
+				<power_losses>+0+0j VA</power_losses>
+				<power_in_A>+0+0j VA</power_in_A>
+				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+0+0j VA</power_out_A>
+				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0+0j VA</power_losses_A>
+				<power_losses_B>+0+0j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>+0+0i A</current_out_A>
+				<current_out_B>+0+0i A</current_out_B>
+				<current_out_C>+0+0i A</current_out_C>
+				<current_in_A>+0+0i A</current_in_A>
+				<current_in_B>+0+0i A</current_in_B>
+				<current_in_C>+0+0i A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<fault_voltage_A>+0+0i A</fault_voltage_A>
+				<fault_voltage_B>+0+0i A</fault_voltage_B>
+				<fault_voltage_C>+0+0i A</fault_voltage_C>
+				<overloaded_status>FALSE</overloaded_status>
+				<flow_direction>UNKNOWN</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating_A>+1000 A</continuous_rating_A>
+				<continuous_rating_B>+1000 A</continuous_rating_B>
+				<continuous_rating_C>+1000 A</continuous_rating_C>
+				<emergency_rating_A>+2000 A</emergency_rating_A>
+				<emergency_rating_B>+2000 A</emergency_rating_B>
+				<emergency_rating_C>+2000 A</emergency_rating_C>
+				<inrush_convergence_value>+0.0001 V</inrush_convergence_value>
+				<triplex_neutral_1_value>+0+0i</triplex_neutral_1_value>
+				<triplex_neutral_2_value>+0+0i</triplex_neutral_2_value>
+				<inrush_integration_method_capacitance>UNDEFINED</inrush_integration_method_capacitance>
+				<inrush_integration_method_inductance>UNDEFINED</inrush_integration_method_inductance>
+				<phases>BCN</phases>
+				<nominal_voltage>+0 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</overhead_line>
+			<overhead_line>
+				<id>37</id>
+				<rank>7</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>node_650</parent>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>ovl_650_632</name>
+				<configuration>ovl_config_601</configuration>
+				<length>+2000 ft</length>
+				<status>CLOSED</status>
+				<from>node_650</from>
+				<to>node_632</to>
+				<power_in>+0+0j VA</power_in>
+				<power_out>+0+0j VA</power_out>
+				<power_out_real>+0 W</power_out_real>
+				<power_losses>+0+0j VA</power_losses>
+				<power_in_A>+0+0j VA</power_in_A>
+				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+0+0j VA</power_out_A>
+				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0+0j VA</power_losses_A>
+				<power_losses_B>+0+0j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>+0+0i A</current_out_A>
+				<current_out_B>+0+0i A</current_out_B>
+				<current_out_C>+0+0i A</current_out_C>
+				<current_in_A>+0+0i A</current_in_A>
+				<current_in_B>+0+0i A</current_in_B>
+				<current_in_C>+0+0i A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<fault_voltage_A>+0+0i A</fault_voltage_A>
+				<fault_voltage_B>+0+0i A</fault_voltage_B>
+				<fault_voltage_C>+0+0i A</fault_voltage_C>
+				<overloaded_status>FALSE</overloaded_status>
+				<flow_direction>UNKNOWN</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating_A>+1000 A</continuous_rating_A>
+				<continuous_rating_B>+1000 A</continuous_rating_B>
+				<continuous_rating_C>+1000 A</continuous_rating_C>
+				<emergency_rating_A>+2000 A</emergency_rating_A>
+				<emergency_rating_B>+2000 A</emergency_rating_B>
+				<emergency_rating_C>+2000 A</emergency_rating_C>
+				<inrush_convergence_value>+0.0001 V</inrush_convergence_value>
+				<triplex_neutral_1_value>+0+0i</triplex_neutral_1_value>
+				<triplex_neutral_2_value>+0+0i</triplex_neutral_2_value>
+				<inrush_integration_method_capacitance>UNDEFINED</inrush_integration_method_capacitance>
+				<inrush_integration_method_inductance>UNDEFINED</inrush_integration_method_inductance>
+				<phases>ABCN</phases>
+				<nominal_voltage>+0 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</overhead_line>
+			<overhead_line>
+				<id>39</id>
+				<rank>5</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>node_632</parent>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>ovl_632_671</name>
+				<configuration>ovl_config_601</configuration>
+				<length>+2000 ft</length>
+				<status>CLOSED</status>
+				<from>node_632</from>
+				<to>node_671</to>
+				<power_in>+0+0j VA</power_in>
+				<power_out>+0+0j VA</power_out>
+				<power_out_real>+0 W</power_out_real>
+				<power_losses>+0+0j VA</power_losses>
+				<power_in_A>+0+0j VA</power_in_A>
+				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+0+0j VA</power_out_A>
+				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0+0j VA</power_losses_A>
+				<power_losses_B>+0+0j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>+0+0i A</current_out_A>
+				<current_out_B>+0+0i A</current_out_B>
+				<current_out_C>+0+0i A</current_out_C>
+				<current_in_A>+0+0i A</current_in_A>
+				<current_in_B>+0+0i A</current_in_B>
+				<current_in_C>+0+0i A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<fault_voltage_A>+0+0i A</fault_voltage_A>
+				<fault_voltage_B>+0+0i A</fault_voltage_B>
+				<fault_voltage_C>+0+0i A</fault_voltage_C>
+				<overloaded_status>FALSE</overloaded_status>
+				<flow_direction>UNKNOWN</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating_A>+1000 A</continuous_rating_A>
+				<continuous_rating_B>+1000 A</continuous_rating_B>
+				<continuous_rating_C>+1000 A</continuous_rating_C>
+				<emergency_rating_A>+2000 A</emergency_rating_A>
+				<emergency_rating_B>+2000 A</emergency_rating_B>
+				<emergency_rating_C>+2000 A</emergency_rating_C>
+				<inrush_convergence_value>+0.0001 V</inrush_convergence_value>
+				<triplex_neutral_1_value>+0+0i</triplex_neutral_1_value>
+				<triplex_neutral_2_value>+0+0i</triplex_neutral_2_value>
+				<inrush_integration_method_capacitance>UNDEFINED</inrush_integration_method_capacitance>
+				<inrush_integration_method_inductance>UNDEFINED</inrush_integration_method_inductance>
+				<phases>ABCN</phases>
+				<nominal_voltage>+0 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</overhead_line>
+			<overhead_line>
+				<id>40</id>
+				<rank>3</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>node_671</parent>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>ovl_671_684</name>
+				<configuration>ovl_config_604</configuration>
+				<length>+300 ft</length>
+				<status>CLOSED</status>
+				<from>node_671</from>
+				<to>node_684</to>
+				<power_in>+0+0j VA</power_in>
+				<power_out>+0+0j VA</power_out>
+				<power_out_real>+0 W</power_out_real>
+				<power_losses>+0+0j VA</power_losses>
+				<power_in_A>+0+0j VA</power_in_A>
+				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+0+0j VA</power_out_A>
+				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0+0j VA</power_losses_A>
+				<power_losses_B>+0+0j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>+0+0i A</current_out_A>
+				<current_out_B>+0+0i A</current_out_B>
+				<current_out_C>+0+0i A</current_out_C>
+				<current_in_A>+0+0i A</current_in_A>
+				<current_in_B>+0+0i A</current_in_B>
+				<current_in_C>+0+0i A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<fault_voltage_A>+0+0i A</fault_voltage_A>
+				<fault_voltage_B>+0+0i A</fault_voltage_B>
+				<fault_voltage_C>+0+0i A</fault_voltage_C>
+				<overloaded_status>FALSE</overloaded_status>
+				<flow_direction>UNKNOWN</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating_A>+1000 A</continuous_rating_A>
+				<continuous_rating_B>+1000 A</continuous_rating_B>
+				<continuous_rating_C>+1000 A</continuous_rating_C>
+				<emergency_rating_A>+2000 A</emergency_rating_A>
+				<emergency_rating_B>+2000 A</emergency_rating_B>
+				<emergency_rating_C>+2000 A</emergency_rating_C>
+				<inrush_convergence_value>+0.0001 V</inrush_convergence_value>
+				<triplex_neutral_1_value>+0+0i</triplex_neutral_1_value>
+				<triplex_neutral_2_value>+0+0i</triplex_neutral_2_value>
+				<inrush_integration_method_capacitance>UNDEFINED</inrush_integration_method_capacitance>
+				<inrush_integration_method_inductance>UNDEFINED</inrush_integration_method_inductance>
+				<phases>ACN</phases>
+				<nominal_voltage>+0 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</overhead_line>
+			<overhead_line>
+				<id>41</id>
+				<rank>1</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>node_671</parent>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>ovl_671_680</name>
+				<configuration>ovl_config_601</configuration>
+				<length>+1000 ft</length>
+				<status>CLOSED</status>
+				<from>node_671</from>
+				<to>node_680</to>
+				<power_in>+0+0j VA</power_in>
+				<power_out>+0+0j VA</power_out>
+				<power_out_real>+0 W</power_out_real>
+				<power_losses>+0+0j VA</power_losses>
+				<power_in_A>+0+0j VA</power_in_A>
+				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+0+0j VA</power_out_A>
+				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0+0j VA</power_losses_A>
+				<power_losses_B>+0+0j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>+0+0i A</current_out_A>
+				<current_out_B>+0+0i A</current_out_B>
+				<current_out_C>+0+0i A</current_out_C>
+				<current_in_A>+0+0i A</current_in_A>
+				<current_in_B>+0+0i A</current_in_B>
+				<current_in_C>+0+0i A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<fault_voltage_A>+0+0i A</fault_voltage_A>
+				<fault_voltage_B>+0+0i A</fault_voltage_B>
+				<fault_voltage_C>+0+0i A</fault_voltage_C>
+				<overloaded_status>FALSE</overloaded_status>
+				<flow_direction>UNKNOWN</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating_A>+1000 A</continuous_rating_A>
+				<continuous_rating_B>+1000 A</continuous_rating_B>
+				<continuous_rating_C>+1000 A</continuous_rating_C>
+				<emergency_rating_A>+2000 A</emergency_rating_A>
+				<emergency_rating_B>+2000 A</emergency_rating_B>
+				<emergency_rating_C>+2000 A</emergency_rating_C>
+				<inrush_convergence_value>+0.0001 V</inrush_convergence_value>
+				<triplex_neutral_1_value>+0+0i</triplex_neutral_1_value>
+				<triplex_neutral_2_value>+0+0i</triplex_neutral_2_value>
+				<inrush_integration_method_capacitance>UNDEFINED</inrush_integration_method_capacitance>
+				<inrush_integration_method_inductance>UNDEFINED</inrush_integration_method_inductance>
+				<phases>ABCN</phases>
+				<nominal_voltage>+0 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</overhead_line>
+			<overhead_line>
+				<id>42</id>
+				<rank>1</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>node_684</parent>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>ovl_684_611</name>
+				<configuration>ovl_config_605</configuration>
+				<length>+300 ft</length>
+				<status>CLOSED</status>
+				<from>node_684</from>
+				<to>node_611</to>
+				<power_in>+0+0j VA</power_in>
+				<power_out>+0+0j VA</power_out>
+				<power_out_real>+0 W</power_out_real>
+				<power_losses>+0+0j VA</power_losses>
+				<power_in_A>+0+0j VA</power_in_A>
+				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+0+0j VA</power_out_A>
+				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0+0j VA</power_losses_A>
+				<power_losses_B>+0+0j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>+0+0i A</current_out_A>
+				<current_out_B>+0+0i A</current_out_B>
+				<current_out_C>+0+0i A</current_out_C>
+				<current_in_A>+0+0i A</current_in_A>
+				<current_in_B>+0+0i A</current_in_B>
+				<current_in_C>+0+0i A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<fault_voltage_A>+0+0i A</fault_voltage_A>
+				<fault_voltage_B>+0+0i A</fault_voltage_B>
+				<fault_voltage_C>+0+0i A</fault_voltage_C>
+				<overloaded_status>FALSE</overloaded_status>
+				<flow_direction>UNKNOWN</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating_A>+1000 A</continuous_rating_A>
+				<continuous_rating_B>+1000 A</continuous_rating_B>
+				<continuous_rating_C>+1000 A</continuous_rating_C>
+				<emergency_rating_A>+2000 A</emergency_rating_A>
+				<emergency_rating_B>+2000 A</emergency_rating_B>
+				<emergency_rating_C>+2000 A</emergency_rating_C>
+				<inrush_convergence_value>+0.0001 V</inrush_convergence_value>
+				<triplex_neutral_1_value>+0+0i</triplex_neutral_1_value>
+				<triplex_neutral_2_value>+0+0i</triplex_neutral_2_value>
+				<inrush_integration_method_capacitance>UNDEFINED</inrush_integration_method_capacitance>
+				<inrush_integration_method_inductance>UNDEFINED</inrush_integration_method_inductance>
+				<phases>CN</phases>
+				<nominal_voltage>+0 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</overhead_line>
 		</overhead_line_list>
 		<underground_line_list>
 			<inherits_from>line</inherits_from>
+			<underground_line>
+				<id>38</id>
+				<rank>1</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>node_684</parent>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>undgl_684_652</name>
+				<configuration>undgl_config_607</configuration>
+				<length>+800 ft</length>
+				<status>CLOSED</status>
+				<from>node_684</from>
+				<to>node_652</to>
+				<power_in>+0+0j VA</power_in>
+				<power_out>+0+0j VA</power_out>
+				<power_out_real>+0 W</power_out_real>
+				<power_losses>+0+0j VA</power_losses>
+				<power_in_A>+0+0j VA</power_in_A>
+				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+0+0j VA</power_out_A>
+				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0+0j VA</power_losses_A>
+				<power_losses_B>+0+0j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>+0+0i A</current_out_A>
+				<current_out_B>+0+0i A</current_out_B>
+				<current_out_C>+0+0i A</current_out_C>
+				<current_in_A>+0+0i A</current_in_A>
+				<current_in_B>+0+0i A</current_in_B>
+				<current_in_C>+0+0i A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<fault_voltage_A>+0+0i A</fault_voltage_A>
+				<fault_voltage_B>+0+0i A</fault_voltage_B>
+				<fault_voltage_C>+0+0i A</fault_voltage_C>
+				<overloaded_status>FALSE</overloaded_status>
+				<flow_direction>UNKNOWN</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating_A>+1000 A</continuous_rating_A>
+				<continuous_rating_B>+1000 A</continuous_rating_B>
+				<continuous_rating_C>+1000 A</continuous_rating_C>
+				<emergency_rating_A>+2000 A</emergency_rating_A>
+				<emergency_rating_B>+2000 A</emergency_rating_B>
+				<emergency_rating_C>+2000 A</emergency_rating_C>
+				<inrush_convergence_value>+0.0001 V</inrush_convergence_value>
+				<triplex_neutral_1_value>+0+0i</triplex_neutral_1_value>
+				<triplex_neutral_2_value>+0+0i</triplex_neutral_2_value>
+				<inrush_integration_method_capacitance>UNDEFINED</inrush_integration_method_capacitance>
+				<inrush_integration_method_inductance>UNDEFINED</inrush_integration_method_inductance>
+				<phases>AN</phases>
+				<nominal_voltage>+0 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</underground_line>
+			<underground_line>
+				<id>43</id>
+				<rank>1</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>node_692</parent>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>undgl_692_675</name>
+				<configuration>undgl_config_606</configuration>
+				<length>+500 ft</length>
+				<status>CLOSED</status>
+				<from>node_692</from>
+				<to>node_675</to>
+				<power_in>+0+0j VA</power_in>
+				<power_out>+0+0j VA</power_out>
+				<power_out_real>+0 W</power_out_real>
+				<power_losses>+0+0j VA</power_losses>
+				<power_in_A>+0+0j VA</power_in_A>
+				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+0+0j VA</power_out_A>
+				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0+0j VA</power_losses_A>
+				<power_losses_B>+0+0j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>+0+0i A</current_out_A>
+				<current_out_B>+0+0i A</current_out_B>
+				<current_out_C>+0+0i A</current_out_C>
+				<current_in_A>+0+0i A</current_in_A>
+				<current_in_B>+0+0i A</current_in_B>
+				<current_in_C>+0+0i A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<fault_voltage_A>+0+0i A</fault_voltage_A>
+				<fault_voltage_B>+0+0i A</fault_voltage_B>
+				<fault_voltage_C>+0+0i A</fault_voltage_C>
+				<overloaded_status>FALSE</overloaded_status>
+				<flow_direction>UNKNOWN</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating_A>+1000 A</continuous_rating_A>
+				<continuous_rating_B>+1000 A</continuous_rating_B>
+				<continuous_rating_C>+1000 A</continuous_rating_C>
+				<emergency_rating_A>+2000 A</emergency_rating_A>
+				<emergency_rating_B>+2000 A</emergency_rating_B>
+				<emergency_rating_C>+2000 A</emergency_rating_C>
+				<inrush_convergence_value>+0.0001 V</inrush_convergence_value>
+				<triplex_neutral_1_value>+0+0i</triplex_neutral_1_value>
+				<triplex_neutral_2_value>+0+0i</triplex_neutral_2_value>
+				<inrush_integration_method_capacitance>UNDEFINED</inrush_integration_method_capacitance>
+				<inrush_integration_method_inductance>UNDEFINED</inrush_integration_method_inductance>
+				<phases>ABCN</phases>
+				<nominal_voltage>+0 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</underground_line>
 		</underground_line_list>
 		<overhead_line_conductor_list>
 			<overhead_line_conductor>
-				<id>12</id>
+				<id>13</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>ovl_cond_601</name>
+				<geometric_mean_radius>+0.0313 ft</geometric_mean_radius>
+				<resistance>+0.1859 Ohm/mile</resistance>
+				<diameter>+0 in</diameter>
+				<rating.summer.continuous>+1000 A</rating.summer.continuous>
+				<rating.summer.emergency>+2000 A</rating.summer.emergency>
+				<rating.winter.continuous>+1000 A</rating.winter.continuous>
+				<rating.winter.emergency>+2000 A</rating.winter.emergency>
+			</overhead_line_conductor>
+			<overhead_line_conductor>
+				<id>14</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1677,7 +2516,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</overhead_line_conductor>
 			<overhead_line_conductor>
-				<id>13</id>
+				<id>15</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1691,7 +2530,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</overhead_line_conductor>
 			<overhead_line_conductor>
-				<id>14</id>
+				<id>16</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1705,7 +2544,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</overhead_line_conductor>
 			<overhead_line_conductor>
-				<id>15</id>
+				<id>17</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1720,10 +2559,92 @@
 			</overhead_line_conductor>
 		</overhead_line_conductor_list>
 		<underground_line_conductor_list>
+			<underground_line_conductor>
+				<id>18</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>undgl_cond_606</name>
+				<outer_diameter>+1.29 in</outer_diameter>
+				<conductor_gmr>+0.0171 ft</conductor_gmr>
+				<conductor_diameter>+0.567 in</conductor_diameter>
+				<conductor_resistance>+0.41 Ohm/mile</conductor_resistance>
+				<neutral_gmr>+0.00208 ft</neutral_gmr>
+				<neutral_diameter>+0.0640837 in</neutral_diameter>
+				<neutral_resistance>+14.872 Ohm/mile</neutral_resistance>
+				<neutral_strands>13</neutral_strands>
+				<shield_thickness>+0 in</shield_thickness>
+				<shield_diameter>+0 in</shield_diameter>
+				<insulation_relative_permitivitty>+1 unit</insulation_relative_permitivitty>
+				<shield_gmr>+0 ft</shield_gmr>
+				<shield_resistance>+0 Ohm/mile</shield_resistance>
+				<rating.summer.continuous>+1000 A</rating.summer.continuous>
+				<rating.summer.emergency>+2000 A</rating.summer.emergency>
+				<rating.winter.continuous>+1000 A</rating.winter.continuous>
+				<rating.winter.emergency>+2000 A</rating.winter.emergency>
+			</underground_line_conductor>
+			<underground_line_conductor>
+				<id>19</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>undgl_cond_607</name>
+				<outer_diameter>+1.06 in</outer_diameter>
+				<conductor_gmr>+0.0111 ft</conductor_gmr>
+				<conductor_diameter>+0.368 in</conductor_diameter>
+				<conductor_resistance>+0.97 Ohm/mile</conductor_resistance>
+				<neutral_gmr>+0.0111 ft</neutral_gmr>
+				<neutral_diameter>+0.0640837 in</neutral_diameter>
+				<neutral_resistance>+0.97 Ohm/mile</neutral_resistance>
+				<neutral_strands>6</neutral_strands>
+				<shield_thickness>+0 in</shield_thickness>
+				<shield_diameter>+0 in</shield_diameter>
+				<insulation_relative_permitivitty>+1 unit</insulation_relative_permitivitty>
+				<shield_gmr>+0 ft</shield_gmr>
+				<shield_resistance>+0 Ohm/mile</shield_resistance>
+				<rating.summer.continuous>+1000 A</rating.summer.continuous>
+				<rating.summer.emergency>+2000 A</rating.summer.emergency>
+				<rating.winter.continuous>+1000 A</rating.winter.continuous>
+				<rating.winter.emergency>+2000 A</rating.winter.emergency>
+			</underground_line_conductor>
 		</underground_line_conductor_list>
 		<line_configuration_list>
 			<line_configuration>
-				<id>21</id>
+				<id>27</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>ovl_config_601</name>
+				<conductor_A>ovl_cond_601</conductor_A>
+				<conductor_B>ovl_cond_601</conductor_B>
+				<conductor_C>ovl_cond_601</conductor_C>
+				<conductor_N>ovl_cond_601</conductor_N>
+				<spacing>ovl_ls_601</spacing>
+				<z11>+0+0j Ohm/mile</z11>
+				<z12>+0+0j Ohm/mile</z12>
+				<z13>+0+0j Ohm/mile</z13>
+				<z21>+0+0j Ohm/mile</z21>
+				<z22>+0+0j Ohm/mile</z22>
+				<z23>+0+0j Ohm/mile</z23>
+				<z31>+0+0j Ohm/mile</z31>
+				<z32>+0+0j Ohm/mile</z32>
+				<z33>+0+0j Ohm/mile</z33>
+				<c11>+0 nF/mile</c11>
+				<c12>+0 nF/mile</c12>
+				<c13>+0 nF/mile</c13>
+				<c21>+0 nF/mile</c21>
+				<c22>+0 nF/mile</c22>
+				<c23>+0 nF/mile</c23>
+				<c31>+0 nF/mile</c31>
+				<c32>+0 nF/mile</c32>
+				<c33>+0 nF/mile</c33>
+				<rating.summer.continuous>+1000 A</rating.summer.continuous>
+				<rating.summer.emergency>+2000 A</rating.summer.emergency>
+				<rating.winter.continuous>+1000 A</rating.winter.continuous>
+				<rating.winter.emergency>+2000 A</rating.winter.emergency>
+			</line_configuration>
+			<line_configuration>
+				<id>28</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1757,7 +2678,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</line_configuration>
 			<line_configuration>
-				<id>22</id>
+				<id>29</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1790,7 +2711,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</line_configuration>
 			<line_configuration>
-				<id>23</id>
+				<id>30</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1823,7 +2744,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</line_configuration>
 			<line_configuration>
-				<id>24</id>
+				<id>31</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1831,6 +2752,72 @@
 				<conductor_C>ovl_cond_605</conductor_C>
 				<conductor_N>ovl_cond_605</conductor_N>
 				<spacing>ovl_ls_605</spacing>
+				<z11>+0+0j Ohm/mile</z11>
+				<z12>+0+0j Ohm/mile</z12>
+				<z13>+0+0j Ohm/mile</z13>
+				<z21>+0+0j Ohm/mile</z21>
+				<z22>+0+0j Ohm/mile</z22>
+				<z23>+0+0j Ohm/mile</z23>
+				<z31>+0+0j Ohm/mile</z31>
+				<z32>+0+0j Ohm/mile</z32>
+				<z33>+0+0j Ohm/mile</z33>
+				<c11>+0 nF/mile</c11>
+				<c12>+0 nF/mile</c12>
+				<c13>+0 nF/mile</c13>
+				<c21>+0 nF/mile</c21>
+				<c22>+0 nF/mile</c22>
+				<c23>+0 nF/mile</c23>
+				<c31>+0 nF/mile</c31>
+				<c32>+0 nF/mile</c32>
+				<c33>+0 nF/mile</c33>
+				<rating.summer.continuous>+1000 A</rating.summer.continuous>
+				<rating.summer.emergency>+2000 A</rating.summer.emergency>
+				<rating.winter.continuous>+1000 A</rating.winter.continuous>
+				<rating.winter.emergency>+2000 A</rating.winter.emergency>
+			</line_configuration>
+			<line_configuration>
+				<id>32</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>undgl_config_606</name>
+				<conductor_A>undgl_cond_606</conductor_A>
+				<conductor_B>undgl_cond_606</conductor_B>
+				<conductor_C>undgl_cond_606</conductor_C>
+				<conductor_N>undgl_cond_606</conductor_N>
+				<spacing>undgl_ls_515</spacing>
+				<z11>+0+0j Ohm/mile</z11>
+				<z12>+0+0j Ohm/mile</z12>
+				<z13>+0+0j Ohm/mile</z13>
+				<z21>+0+0j Ohm/mile</z21>
+				<z22>+0+0j Ohm/mile</z22>
+				<z23>+0+0j Ohm/mile</z23>
+				<z31>+0+0j Ohm/mile</z31>
+				<z32>+0+0j Ohm/mile</z32>
+				<z33>+0+0j Ohm/mile</z33>
+				<c11>+0 nF/mile</c11>
+				<c12>+0 nF/mile</c12>
+				<c13>+0 nF/mile</c13>
+				<c21>+0 nF/mile</c21>
+				<c22>+0 nF/mile</c22>
+				<c23>+0 nF/mile</c23>
+				<c31>+0 nF/mile</c31>
+				<c32>+0 nF/mile</c32>
+				<c33>+0 nF/mile</c33>
+				<rating.summer.continuous>+1000 A</rating.summer.continuous>
+				<rating.summer.emergency>+2000 A</rating.summer.emergency>
+				<rating.winter.continuous>+1000 A</rating.winter.continuous>
+				<rating.winter.emergency>+2000 A</rating.winter.emergency>
+			</line_configuration>
+			<line_configuration>
+				<id>33</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>undgl_config_607</name>
+				<conductor_A>undgl_cond_607</conductor_A>
+				<conductor_N>undgl_cond_607</conductor_N>
+				<spacing>undgl_ls_520</spacing>
 				<z11>+0+0j Ohm/mile</z11>
 				<z12>+0+0j Ohm/mile</z12>
 				<z13>+0+0j Ohm/mile</z13>

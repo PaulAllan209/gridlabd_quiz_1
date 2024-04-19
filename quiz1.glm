@@ -31,7 +31,7 @@ object node {
     // PV - constant voltage
     // PQ - constant power
     bustype 2; // in this quiz this will be determined depending sa load
-    phases "ABCN";
+    phases "BC";
     nominal_voltage 4160; //line to neutral voltage
 }
 
@@ -66,14 +66,14 @@ object node {
 object node {
     name "node_611";
     bustype 2; // in this quiz this will be determined depending sa load
-    phases "ABCN";
+    phases "CN";
     nominal_voltage 4160; //line to neutral voltage
 }
 
 object node {
     name "node_684";
     bustype 2; // in this quiz this will be determined depending sa load
-    phases "ABCN";
+    phases "ACN";
     nominal_voltage 4160; //line to neutral voltage
 }
 
@@ -101,7 +101,7 @@ object node {
 object node {
     name "node_652";
     bustype 2; // in this quiz this will be determined depending sa load
-    phases "ABCN";
+    phases "AN";
     nominal_voltage 4160; //line to neutral voltage
 }
 
@@ -148,7 +148,36 @@ object overhead_line_conductor{
     diameter 0.398;
 }
 
+
+// TODO: Recheck values for underground line conductors
 // Underground line conductors
+object underground_line_conductor{
+    name "undgl_cond_606";
+    outer_diameter 1.290000;
+    conductor_gmr 0.017100;
+    conductor_diameter 0.567000;
+    conductor_resistance 0.410000;
+    neutral_gmr 0.0020800; 
+    neutral_resistance 14.87200;  
+    neutral_diameter 0.0640837;
+    neutral_strands 13.000000;
+    shield_gmr 0.000000;
+    shield_resistance 0.000000;
+}
+
+object underground_line_conductor{
+    name "undgl_cond_607";
+    outer_diameter 1.06;
+    conductor_gmr 0.0111;
+    conductor_diameter 0.368;
+    conductor_resistance 0.97;
+    neutral_gmr 0.0111;
+    neutral_resistance 0.97;
+    neutral_diameter 0.0640837;
+    neutral_strands 6.0;
+    shield_gmr 0.0;
+    shield_resistance 0.0;
+}
 
 // line spacing objects
 object line_spacing{
@@ -203,16 +232,46 @@ object line_spacing{
     // spacing ID 510
     // phasing CABN
     name "ovl_ls_605";
-    distance_CN ${AN};
-    distance_NE ${NE};
+    distance_AC 0.0;
+	distance_AB 0.0;
+	distance_BC 0.0;
+	distance_AN 0.0;
+	distance_CN 5.02494; // magkaiba ito sa IEEE 13 na file
+	distance_BN 0.0;
+}
+
+// Underground line spacing
+object line_spacing{
+    name "undgl_ls_515";
+    distance_AB 6.0;
+    distance_BC 6.0;
+    distance_AC 12.0;
+    distance_AN 0.0;
+    distance_BN 0.0;
+    distance_CN 0.0;
+}
+
+object line_spacing{
+    name "undgl_ls_520";
+    distance_AB 1.0;
+    distance_BC 0.0;
+    distance_AC 0.0;
+    distance_AN 0.0;
+    distance_BN 0.0;
+    distance_CN 0.0;
 }
 
 
 // line configuration objects
 
-// object overhead_line_configuration{
-//     name "ovl_config_601";
-// }
+object line_configuration{
+    name "ovl_config_601";
+    conductor_A "ovl_cond_601";
+    conductor_B "ovl_cond_601";
+    conductor_C "ovl_cond_601";
+    conductor_N "ovl_cond_601";
+    spacing "ovl_ls_601";
+}
 
 object line_configuration{
     name "ovl_config_602";
@@ -246,6 +305,23 @@ object line_configuration{
     spacing "ovl_ls_605";
 }
 
+// Underground line configuration
+object line_configuration{
+    name "undgl_config_606";
+    conductor_A "undgl_cond_606";
+    conductor_B "undgl_cond_606";
+    conductor_C "undgl_cond_606";
+    conductor_N "undgl_cond_606";
+    spacing "undgl_ls_515";
+}
+
+object line_configuration{
+    name "undgl_config_607";
+    conductor_A "undgl_cond_607";
+    conductor_N "undgl_cond_607";
+    spacing "undgl_ls_520";
+}
+
 // Overhead line objects
 object overhead_line{
     name "ovl_632_645";
@@ -265,5 +341,84 @@ object overhead_line{
     configuration "ovl_config_602";
 }
 
+// object overhead_line{ //TODO:for transformer line
 
+// }
+
+object overhead_line{
+    name "ovl_645_646";
+    from "node_645";
+    to "node_646";
+    phases "CBN";
+    length 300;
+    configuration "ovl_config_603"; 
+}
+
+object overhead_line{
+    name "ovl_650_632";
+    from "node_650";
+    to "node_632";
+    phases "ABCN";
+    length 2000;
+    configuration "ovl_config_601"; 
+}
+
+object underground_line{
+    name "undgl_684_652";
+    from "node_684";
+    to "node_652";
+    phases "AN";
+    length 800;
+    configuration "undgl_config_607"; 
+}
+
+object overhead_line{
+    name "ovl_632_671";
+    from "node_632";
+    to "node_671";
+    phases "ABCN";
+    length 2000;
+    configuration "ovl_config_601"; 
+}
+
+object overhead_line{
+    name "ovl_671_684";
+    from "node_671";
+    to "node_684";
+    phases "ACN";
+    length 300;
+    configuration "ovl_config_604"; 
+}
+
+object overhead_line{
+    name "ovl_671_680";
+    from "node_671";
+    to "node_680";
+    phases "ABCN";
+    length 1000;
+    configuration "ovl_config_601"; 
+}
+
+// object overhead_line{ //TODO: object line segment for switch 671-692
+
+
+// }
+
+object overhead_line{
+    name "ovl_684_611";
+    from "node_684";
+    to "node_611";
+    phases "CN";
+    length 300;
+    configuration "ovl_config_605"; 
+}
+
+object underground_line{
+    name "undgl_692_675";
+    from "node_692";
+    to "node_675";
+    phases "ABCN";
+    length 500;
+    configuration "undgl_config_606"; 
+}
 // Transformer 
