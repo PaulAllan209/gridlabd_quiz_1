@@ -43,7 +43,7 @@
 	<strictnames>TRUE</strictnames>
 	<website>http://www.gridlabd.org/</website>
 	<urlbase>http://www.gridlabd.org/</urlbase>
-	<randomseed>194468496</randomseed>
+	<randomseed>425889112</randomseed>
 	<include>""</include>
 	<trace>""</trace>
 	<gdb_window>FALSE</gdb_window>
@@ -102,12 +102,12 @@
 	<sanitize_prefix>GLD_</sanitize_prefix>
 	<sanitize_index>.txt</sanitize_index>
 	<sanitize_offset>""</sanitize_offset>
-	<simulation_mode>INIT</simulation_mode>
+	<simulation_mode>EVENT</simulation_mode>
 	<deltamode_timestep>+1e+07 ns</deltamode_timestep>
 	<deltamode_maximumtime>+3.6e+12 ns</deltamode_maximumtime>
 	<deltaclock>0</deltaclock>
-	<delta_current_clock>+0</delta_current_clock>
-	<deltamode_updateorder>""</deltamode_updateorder>
+	<delta_current_clock>+9.46656e+08</delta_current_clock>
+	<deltamode_updateorder>powerflow</deltamode_updateorder>
 	<deltamode_iteration_limit>10</deltamode_iteration_limit>
 	<deltamode_forced_extra_timesteps>0</deltamode_forced_extra_timesteps>
 	<deltamode_forced_always>FALSE</deltamode_forced_always>
@@ -120,6 +120,417 @@
 	<allow_reinclude>FALSE</allow_reinclude>
 	<timezone>AWST-8</timezone>
 	<sync-order>
+		<pass>
+			<name>pretopdown</name>
+			<rank>
+				<ordinal>9</ordinal>
+				<object>
+					<name>node_650</name>
+					<id>0</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>8</ordinal>
+				<object>
+					<name>ovl_650_632</name>
+					<id>37</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>7</ordinal>
+				<object>
+					<name>node_632</name>
+					<id>3</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>6</ordinal>
+				<object>
+					<name>ovl_632_671</name>
+					<id>38</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>5</ordinal>
+				<object>
+					<name>node_671</name>
+					<id>8</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>4</ordinal>
+				<object>
+					<name>ovl_671_684</name>
+					<id>39</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>3</ordinal>
+				<object>
+					<name>node_684</name>
+					<id>7</id>
+				</object>
+				<object>
+					<name>ovl_632_645</name>
+					<id>34</id>
+				</object>
+				<object>
+					<name>node_692</name>
+					<id>9</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>2</ordinal>
+				<object>
+					<name>ovl_684_611</name>
+					<id>41</id>
+				</object>
+				<object>
+					<name>node_645</name>
+					<id>2</id>
+				</object>
+				<object>
+					<name>undgl_692_675</name>
+					<id>42</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>1</ordinal>
+				<object>
+					<name>ovl_671_680</name>
+					<id>40</id>
+				</object>
+				<object>
+					<name>node_611</name>
+					<id>6</id>
+				</object>
+				<object>
+					<name>undgl_684_652</name>
+					<id>43</id>
+				</object>
+				<object>
+					<name>ovl_645_646</name>
+					<id>36</id>
+				</object>
+				<object>
+					<name>ovl_632_633</name>
+					<id>35</id>
+				</object>
+				<object>
+					<name>node_675</name>
+					<id>10</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>0</ordinal>
+				<object>
+					<name>node_633</name>
+					<id>4</id>
+				</object>
+				<object>
+					<name>node_646</name>
+					<id>1</id>
+				</object>
+				<object>
+					<name>cap_002</name>
+					<id>45</id>
+				</object>
+				<object>
+					<name>node_680</name>
+					<id>12</id>
+				</object>
+				<object>
+					<name>cap_001</name>
+					<id>44</id>
+				</object>
+				<object>
+					<name>node_652</name>
+					<id>11</id>
+				</object>
+				<object>
+					<name>reg_001</name>
+					<id>47</id>
+				</object>
+				<object>
+					<name>node_634</name>
+					<id>5</id>
+				</object>
+			</rank>
+		</pass>
+		<pass>
+			<name>bottomup</name>
+			<rank>
+				<ordinal>0</ordinal>
+				<object>
+					<name>reg_001</name>
+					<id>47</id>
+				</object>
+				<object>
+					<name>node_652</name>
+					<id>11</id>
+				</object>
+				<object>
+					<name>cap_002</name>
+					<id>45</id>
+				</object>
+				<object>
+					<name>node_680</name>
+					<id>12</id>
+				</object>
+				<object>
+					<name>node_646</name>
+					<id>1</id>
+				</object>
+				<object>
+					<name>cap_001</name>
+					<id>44</id>
+				</object>
+				<object>
+					<name>node_634</name>
+					<id>5</id>
+				</object>
+				<object>
+					<name>node_633</name>
+					<id>4</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>1</ordinal>
+				<object>
+					<name>ovl_671_680</name>
+					<id>40</id>
+				</object>
+				<object>
+					<name>undgl_684_652</name>
+					<id>43</id>
+				</object>
+				<object>
+					<name>node_675</name>
+					<id>10</id>
+				</object>
+				<object>
+					<name>ovl_632_633</name>
+					<id>35</id>
+				</object>
+				<object>
+					<name>node_611</name>
+					<id>6</id>
+				</object>
+				<object>
+					<name>ovl_645_646</name>
+					<id>36</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>2</ordinal>
+				<object>
+					<name>node_645</name>
+					<id>2</id>
+				</object>
+				<object>
+					<name>ovl_684_611</name>
+					<id>41</id>
+				</object>
+				<object>
+					<name>undgl_692_675</name>
+					<id>42</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>3</ordinal>
+				<object>
+					<name>ovl_632_645</name>
+					<id>34</id>
+				</object>
+				<object>
+					<name>node_684</name>
+					<id>7</id>
+				</object>
+				<object>
+					<name>node_692</name>
+					<id>9</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>4</ordinal>
+				<object>
+					<name>ovl_671_684</name>
+					<id>39</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>5</ordinal>
+				<object>
+					<name>node_671</name>
+					<id>8</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>6</ordinal>
+				<object>
+					<name>ovl_632_671</name>
+					<id>38</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>7</ordinal>
+				<object>
+					<name>node_632</name>
+					<id>3</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>8</ordinal>
+				<object>
+					<name>ovl_650_632</name>
+					<id>37</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>9</ordinal>
+				<object>
+					<name>node_650</name>
+					<id>0</id>
+				</object>
+			</rank>
+		</pass>
+		<pass>
+			<name>posttopdown</name>
+			<rank>
+				<ordinal>9</ordinal>
+				<object>
+					<name>node_650</name>
+					<id>0</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>8</ordinal>
+				<object>
+					<name>ovl_650_632</name>
+					<id>37</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>7</ordinal>
+				<object>
+					<name>node_632</name>
+					<id>3</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>6</ordinal>
+				<object>
+					<name>ovl_632_671</name>
+					<id>38</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>5</ordinal>
+				<object>
+					<name>node_671</name>
+					<id>8</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>4</ordinal>
+				<object>
+					<name>ovl_671_684</name>
+					<id>39</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>3</ordinal>
+				<object>
+					<name>node_684</name>
+					<id>7</id>
+				</object>
+				<object>
+					<name>ovl_632_645</name>
+					<id>34</id>
+				</object>
+				<object>
+					<name>node_692</name>
+					<id>9</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>2</ordinal>
+				<object>
+					<name>node_645</name>
+					<id>2</id>
+				</object>
+				<object>
+					<name>ovl_684_611</name>
+					<id>41</id>
+				</object>
+				<object>
+					<name>undgl_692_675</name>
+					<id>42</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>1</ordinal>
+				<object>
+					<name>undgl_684_652</name>
+					<id>43</id>
+				</object>
+				<object>
+					<name>ovl_671_680</name>
+					<id>40</id>
+				</object>
+				<object>
+					<name>ovl_645_646</name>
+					<id>36</id>
+				</object>
+				<object>
+					<name>ovl_632_633</name>
+					<id>35</id>
+				</object>
+				<object>
+					<name>node_675</name>
+					<id>10</id>
+				</object>
+				<object>
+					<name>node_611</name>
+					<id>6</id>
+				</object>
+			</rank>
+			<rank>
+				<ordinal>0</ordinal>
+				<object>
+					<name>node_633</name>
+					<id>4</id>
+				</object>
+				<object>
+					<name>node_680</name>
+					<id>12</id>
+				</object>
+				<object>
+					<name>node_634</name>
+					<id>5</id>
+				</object>
+				<object>
+					<name>cap_001</name>
+					<id>44</id>
+				</object>
+				<object>
+					<name>node_652</name>
+					<id>11</id>
+				</object>
+				<object>
+					<name>cap_002</name>
+					<id>45</id>
+				</object>
+				<object>
+					<name>reg_001</name>
+					<id>47</id>
+				</object>
+				<object>
+					<name>node_646</name>
+					<id>1</id>
+				</object>
+			</rank>
+		</pass>
 	</sync-order>
 	<powerflow>
 		<version.major>5</version.major>
@@ -128,7 +539,7 @@
 			<inherits_from>powerflow_object</inherits_from>
 			<node>
 				<id>0</id>
-				<rank>8</rank>
+				<rank>9</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>node_650</name>
@@ -138,9 +549,9 @@
 				<voltage_A>+2401.78+0d V</voltage_A>
 				<voltage_B>+2401.78-120d V</voltage_B>
 				<voltage_C>+2401.78+120d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
+				<voltage_AB>+4160+30d V</voltage_AB>
+				<voltage_BC>+4160-90d V</voltage_BC>
+				<voltage_CA>+4160+150d V</voltage_CA>
 				<current_A>+0+0i A</current_A>
 				<current_B>+0+0i A</current_B>
 				<current_C>+0+0i A</current_C>
@@ -157,9 +568,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>-36.745-20.9146j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -203,7 +614,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -234,11 +645,11 @@
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00240178 V</maximum_voltage_error>
 				<voltage_A>+0+0d V</voltage_A>
-				<voltage_B>+2401.78-120d V</voltage_B>
-				<voltage_C>+2401.78+120d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
+				<voltage_B>+2398.22-120.088d V</voltage_B>
+				<voltage_C>+2417.13+119.898d V</voltage_C>
+				<voltage_AB>+2398.22+59.9116d V</voltage_AB>
+				<voltage_BC>+4170.5-89.9651d V</voltage_BC>
+				<voltage_CA>+2417.13+119.898d V</voltage_CA>
 				<current_A>+0+0i A</current_A>
 				<current_B>+0+0i A</current_B>
 				<current_C>+0+0i A</current_C>
@@ -255,9 +666,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -301,7 +712,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -332,11 +743,11 @@
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00240178 V</maximum_voltage_error>
 				<voltage_A>+0+0d V</voltage_A>
-				<voltage_B>+2401.78-120d V</voltage_B>
-				<voltage_C>+2401.78+120d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
+				<voltage_B>+2398.22-120.088d V</voltage_B>
+				<voltage_C>+2417.13+119.898d V</voltage_C>
+				<voltage_AB>+2398.22+59.9116d V</voltage_AB>
+				<voltage_BC>+4170.5-89.9651d V</voltage_BC>
+				<voltage_CA>+2417.13+119.898d V</voltage_CA>
 				<current_A>+0+0i A</current_A>
 				<current_B>+0+0i A</current_B>
 				<current_C>+0+0i A</current_C>
@@ -353,9 +764,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -399,7 +810,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -421,7 +832,7 @@
 			</node>
 			<node>
 				<id>3</id>
-				<rank>6</rank>
+				<rank>7</rank>
 				<out_svc>NEVER</out_svc>
 				<parent>ovl_650_632</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -429,12 +840,12 @@
 				<bustype>SWING</bustype>
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00240178 V</maximum_voltage_error>
-				<voltage_A>+2401.78+0d V</voltage_A>
-				<voltage_B>+2401.78-120d V</voltage_B>
-				<voltage_C>+2401.78+120d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
+				<voltage_A>+2416.79+0d V</voltage_A>
+				<voltage_B>+2416.79-120d V</voltage_B>
+				<voltage_C>+2416.79+120d V</voltage_C>
+				<voltage_AB>+4160.03+30.0077d V</voltage_AB>
+				<voltage_BC>+4170.5-89.9651d V</voltage_BC>
+				<voltage_CA>+4166.98+149.897d V</voltage_CA>
 				<current_A>+0+0i A</current_A>
 				<current_B>+0+0i A</current_B>
 				<current_C>+0+0i A</current_C>
@@ -451,9 +862,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>-36.745-20.9146j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -497,7 +908,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -527,12 +938,12 @@
 				<bustype>SWING</bustype>
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00240178 V</maximum_voltage_error>
-				<voltage_A>+2401.78+0d V</voltage_A>
-				<voltage_B>+2401.78-120d V</voltage_B>
-				<voltage_C>+2401.78+120d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
+				<voltage_A>+2400.1+0.129586d V</voltage_A>
+				<voltage_B>+2398.22-120.088d V</voltage_B>
+				<voltage_C>+2417.13+119.898d V</voltage_C>
+				<voltage_AB>+4160.03+30.0077d V</voltage_AB>
+				<voltage_BC>+4170.5-89.9651d V</voltage_BC>
+				<voltage_CA>+4166.98+149.897d V</voltage_CA>
 				<current_A>+0+0i A</current_A>
 				<current_B>+0+0i A</current_B>
 				<current_C>+0+0i A</current_C>
@@ -549,9 +960,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -595,7 +1006,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -627,9 +1038,9 @@
 				<voltage_A>+2401.78+0d V</voltage_A>
 				<voltage_B>+2401.78-120d V</voltage_B>
 				<voltage_C>+2401.78+120d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
+				<voltage_AB>+4160+30d V</voltage_AB>
+				<voltage_BC>+4160-90d V</voltage_BC>
+				<voltage_CA>+4160+150d V</voltage_CA>
 				<current_A>+0+0i A</current_A>
 				<current_B>+0+0i A</current_B>
 				<current_C>+0+0i A</current_C>
@@ -646,9 +1057,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -692,7 +1103,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -714,7 +1125,7 @@
 			</node>
 			<node>
 				<id>6</id>
-				<rank>0</rank>
+				<rank>1</rank>
 				<out_svc>NEVER</out_svc>
 				<parent>ovl_684_611</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -724,10 +1135,10 @@
 				<maximum_voltage_error>+0.00240178 V</maximum_voltage_error>
 				<voltage_A>+0+0d V</voltage_A>
 				<voltage_B>+0+0d V</voltage_B>
-				<voltage_C>+2401.78+120d V</voltage_C>
+				<voltage_C>+2438.95+119.648d V</voltage_C>
 				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
+				<voltage_BC>+2438.95-60.3522d V</voltage_BC>
+				<voltage_CA>+2438.95+119.648d V</voltage_CA>
 				<current_A>+0+0i A</current_A>
 				<current_B>+0+0i A</current_B>
 				<current_C>+0+0i A</current_C>
@@ -744,9 +1155,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>-36.745-20.9146j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -790,7 +1201,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -812,7 +1223,7 @@
 			</node>
 			<node>
 				<id>7</id>
-				<rank>2</rank>
+				<rank>3</rank>
 				<out_svc>NEVER</out_svc>
 				<parent>ovl_671_684</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -820,12 +1231,12 @@
 				<bustype>SWING</bustype>
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00240178 V</maximum_voltage_error>
-				<voltage_A>+2401.78+0d V</voltage_A>
+				<voltage_A>+2398.33+0.28813d V</voltage_A>
 				<voltage_B>+0+0d V</voltage_B>
-				<voltage_C>+2401.78+120d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
+				<voltage_C>+2435.71+119.723d V</voltage_C>
+				<voltage_AB>+2398.33+0.28813d V</voltage_AB>
+				<voltage_BC>+2435.71-60.2771d V</voltage_BC>
+				<voltage_CA>+4174.47+149.747d V</voltage_CA>
 				<current_A>+0+0i A</current_A>
 				<current_B>+0+0i A</current_B>
 				<current_C>+0+0i A</current_C>
@@ -842,9 +1253,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>-36.745-20.9146j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -888,7 +1299,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -910,7 +1321,7 @@
 			</node>
 			<node>
 				<id>8</id>
-				<rank>4</rank>
+				<rank>5</rank>
 				<out_svc>NEVER</out_svc>
 				<parent>ovl_632_671</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -918,12 +1329,12 @@
 				<bustype>SWING</bustype>
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00240178 V</maximum_voltage_error>
-				<voltage_A>+2401.78+0d V</voltage_A>
-				<voltage_B>+2401.78-120d V</voltage_B>
-				<voltage_C>+2401.78+120d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
+				<voltage_A>+2398.44+0.259353d V</voltage_A>
+				<voltage_B>+2394.67-120.177d V</voltage_B>
+				<voltage_C>+2432.48+119.798d V</voltage_C>
+				<voltage_AB>+4160.05+30.0154d V</voltage_AB>
+				<voltage_BC>+4181-89.9304d V</voltage_BC>
+				<voltage_CA>+4173.98+149.794d V</voltage_CA>
 				<current_A>+0+0i A</current_A>
 				<current_B>+0+0i A</current_B>
 				<current_C>+0+0i A</current_C>
@@ -940,9 +1351,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>-36.745-20.9146j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -986,7 +1397,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -1018,9 +1429,9 @@
 				<voltage_A>+2401.78+0d V</voltage_A>
 				<voltage_B>+2401.78-120d V</voltage_B>
 				<voltage_C>+2401.78+120d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
+				<voltage_AB>+4160+30d V</voltage_AB>
+				<voltage_BC>+4160-90d V</voltage_BC>
+				<voltage_CA>+4160+150d V</voltage_CA>
 				<current_A>+0+0i A</current_A>
 				<current_B>+0+0i A</current_B>
 				<current_C>+0+0i A</current_C>
@@ -1037,9 +1448,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0.19075+83.4291j A</current_inj_A>
+				<current_inj_B>+72.1655-41.8654j A</current_inj_B>
+				<current_inj_C>-72.3599-41.5704j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -1083,7 +1494,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -1113,12 +1524,12 @@
 				<bustype>SWING</bustype>
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00240178 V</maximum_voltage_error>
-				<voltage_A>+2401.78+0d V</voltage_A>
-				<voltage_B>+2401.78-120d V</voltage_B>
-				<voltage_C>+2401.78+120d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
+				<voltage_A>+2406.32-0.130999d V</voltage_A>
+				<voltage_B>+2406.35-120.119d V</voltage_B>
+				<voltage_C>+2406.95+119.877d V</voltage_C>
+				<voltage_AB>+4167.65+29.875d V</voltage_AB>
+				<voltage_BC>+4168.51-90.117d V</voltage_BC>
+				<voltage_CA>+4168.59+149.869d V</voltage_CA>
 				<current_A>+0+0i A</current_A>
 				<current_B>+0+0i A</current_B>
 				<current_C>+0+0i A</current_C>
@@ -1135,9 +1546,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0.19075+83.4291j A</current_inj_A>
+				<current_inj_B>+72.1655-41.8654j A</current_inj_B>
+				<current_inj_C>-72.3599-41.5704j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -1181,7 +1592,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -1211,12 +1622,12 @@
 				<bustype>SWING</bustype>
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00240178 V</maximum_voltage_error>
-				<voltage_A>+2401.78+0d V</voltage_A>
+				<voltage_A>+2398.33+0.28813d V</voltage_A>
 				<voltage_B>+0+0d V</voltage_B>
 				<voltage_C>+0+0d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
+				<voltage_AB>+2398.33+0.28813d V</voltage_AB>
 				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
+				<voltage_CA>+2398.33-179.712d V</voltage_CA>
 				<current_A>+0+0i A</current_A>
 				<current_B>+0+0i A</current_B>
 				<current_C>+0+0i A</current_C>
@@ -1233,9 +1644,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -1279,7 +1690,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -1309,12 +1720,12 @@
 				<bustype>SWING</bustype>
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00240178 V</maximum_voltage_error>
-				<voltage_A>+2401.78+0d V</voltage_A>
-				<voltage_B>+2401.78-120d V</voltage_B>
-				<voltage_C>+2401.78+120d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
+				<voltage_A>+2398.44+0.259353d V</voltage_A>
+				<voltage_B>+2394.67-120.177d V</voltage_B>
+				<voltage_C>+2432.48+119.798d V</voltage_C>
+				<voltage_AB>+4160.05+30.0154d V</voltage_AB>
+				<voltage_BC>+4181-89.9304d V</voltage_BC>
+				<voltage_CA>+4173.98+149.794d V</voltage_CA>
 				<current_A>+0+0i A</current_A>
 				<current_B>+0+0i A</current_B>
 				<current_C>+0+0i A</current_C>
@@ -1331,9 +1742,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>+0+0j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -1377,7 +1788,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -1416,9 +1827,9 @@
 				<switchB>CLOSED</switchB>
 				<switchC>CLOSED</switchC>
 				<control>VOLT</control>
-				<cap_A_switch_count>-1</cap_A_switch_count>
-				<cap_B_switch_count>-1</cap_B_switch_count>
-				<cap_C_switch_count>-1</cap_C_switch_count>
+				<cap_A_switch_count>+0</cap_A_switch_count>
+				<cap_B_switch_count>+0</cap_B_switch_count>
+				<cap_C_switch_count>+0</cap_C_switch_count>
 				<voltage_set_high>+2800 V</voltage_set_high>
 				<voltage_set_low>+2200 V</voltage_set_low>
 				<voltage_deadband_center>-1 V</voltage_deadband_center>
@@ -1434,29 +1845,29 @@
 				<capacitor_A>+200000 VAr</capacitor_A>
 				<capacitor_B>+200000 VAr</capacitor_B>
 				<capacitor_C>+200000 VAr</capacitor_C>
-				<cap_nominal_voltage>+0 V</cap_nominal_voltage>
+				<cap_nominal_voltage>+2401.78 V</cap_nominal_voltage>
 				<time_delay>+300 s</time_delay>
 				<dwell_time>+0 s</dwell_time>
 				<lockout_time>+0 s</lockout_time>
 				<control_level>INDIVIDUAL</control_level>
 				<bustype>PQ</bustype>
 				<busflags>HASSOURCE</busflags>
-				<maximum_voltage_error>+0 V</maximum_voltage_error>
-				<voltage_A>+0+0d V</voltage_A>
-				<voltage_B>+0+0d V</voltage_B>
-				<voltage_C>+0+0d V</voltage_C>
-				<voltage_AB>+0+0d V</voltage_AB>
-				<voltage_BC>+0+0d V</voltage_BC>
-				<voltage_CA>+0+0d V</voltage_CA>
+				<maximum_voltage_error>+0.00240178 V</maximum_voltage_error>
+				<voltage_A>+2406.32-0.130999d V</voltage_A>
+				<voltage_B>+2406.35-120.119d V</voltage_B>
+				<voltage_C>+2406.95+119.877d V</voltage_C>
+				<voltage_AB>+4167.65+29.875d V</voltage_AB>
+				<voltage_BC>+4168.51-90.117d V</voltage_BC>
+				<voltage_CA>+4168.59+149.869d V</voltage_CA>
 				<current_A>+0+0i A</current_A>
 				<current_B>+0+0i A</current_B>
 				<current_C>+0+0i A</current_C>
 				<power_A>+0+0i VA</power_A>
 				<power_B>+0+0i VA</power_B>
 				<power_C>+0+0i VA</power_C>
-				<shunt_A>+0+0i S</shunt_A>
-				<shunt_B>+0+0i S</shunt_B>
-				<shunt_C>+0+0i S</shunt_C>
+				<shunt_A>+0+0.0346709j S</shunt_A>
+				<shunt_B>+0+0.0346709j S</shunt_B>
+				<shunt_C>+0+0.0346709j S</shunt_C>
 				<prerotated_current_A>+0+0i A</prerotated_current_A>
 				<prerotated_current_B>+0+0i A</prerotated_current_B>
 				<prerotated_current_C>+0+0i A</prerotated_current_C>
@@ -1464,9 +1875,9 @@
 				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
 				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
 				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
-				<current_inj_A>+0+0i A</current_inj_A>
-				<current_inj_B>+0+0i A</current_inj_B>
-				<current_inj_C>+0+0i A</current_inj_C>
+				<current_inj_A>+0.19075+83.4291j A</current_inj_A>
+				<current_inj_B>+72.1655-41.8654j A</current_inj_B>
+				<current_inj_C>-72.3599-41.5704j A</current_inj_C>
 				<current_AB>+0+0j A</current_AB>
 				<current_BC>+0+0j A</current_BC>
 				<current_CA>+0+0j A</current_CA>
@@ -1510,7 +1921,7 @@
 				<service_status>IN_SERVICE</service_status>
 				<service_status_double>-1</service_status_double>
 				<previous_uptime>-1 min</previous_uptime>
-				<current_uptime>-1 min</current_uptime>
+				<current_uptime>+0 min</current_uptime>
 				<Norton_dynamic>FALSE</Norton_dynamic>
 				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
 				<generator_dynamic>FALSE</generator_dynamic>
@@ -1527,6 +1938,135 @@
 				<GFA_trip_method>NONE</GFA_trip_method>
 				<topological_parent>node_675</topological_parent>
 				<behaving_as_swing>FALSE</behaving_as_swing>
+				<phases>ABCN</phases>
+				<nominal_voltage>+2401.78 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</capacitor>
+			<capacitor>
+				<id>45</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>node_611</parent>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>cap_002</name>
+				<pt_phase>NC</pt_phase>
+				<phases_connected>NC</phases_connected>
+				<switchA>CLOSED</switchA>
+				<switchB>CLOSED</switchB>
+				<switchC>CLOSED</switchC>
+				<control>VOLT</control>
+				<cap_A_switch_count>+0</cap_A_switch_count>
+				<cap_B_switch_count>+0</cap_B_switch_count>
+				<cap_C_switch_count>+0</cap_C_switch_count>
+				<voltage_set_high>+2800 V</voltage_set_high>
+				<voltage_set_low>+2200 V</voltage_set_low>
+				<voltage_deadband_center>-1 V</voltage_deadband_center>
+				<voltage_deadband>-1 V</voltage_deadband>
+				<VAr_set_high>+0 VAr</VAr_set_high>
+				<VAr_set_low>+0 VAr</VAr_set_low>
+				<VAr_deadband_center>-1 VAr</VAr_deadband_center>
+				<VAr_deadband>-1 VAr</VAr_deadband>
+				<current_set_low>+0 A</current_set_low>
+				<current_set_high>+0 A</current_set_high>
+				<current_deadband_center>-1 A</current_deadband_center>
+				<current_deadband>-1 A</current_deadband>
+				<capacitor_A>+0 VAr</capacitor_A>
+				<capacitor_B>+0 VAr</capacitor_B>
+				<capacitor_C>+100000 VAr</capacitor_C>
+				<cap_nominal_voltage>+2401.78 V</cap_nominal_voltage>
+				<time_delay>+300 s</time_delay>
+				<dwell_time>+0 s</dwell_time>
+				<lockout_time>+0 s</lockout_time>
+				<control_level>INDIVIDUAL</control_level>
+				<bustype>PQ</bustype>
+				<busflags>HASSOURCE</busflags>
+				<maximum_voltage_error>+0.00240178 V</maximum_voltage_error>
+				<voltage_A>+0+0d V</voltage_A>
+				<voltage_B>+0+0d V</voltage_B>
+				<voltage_C>+2438.95+119.648d V</voltage_C>
+				<voltage_AB>+0+0d V</voltage_AB>
+				<voltage_BC>+2438.95-60.3522d V</voltage_BC>
+				<voltage_CA>+2438.95+119.648d V</voltage_CA>
+				<current_A>+0+0i A</current_A>
+				<current_B>+0+0i A</current_B>
+				<current_C>+0+0i A</current_C>
+				<power_A>+0+0i VA</power_A>
+				<power_B>+0+0i VA</power_B>
+				<power_C>+0+0i VA</power_C>
+				<shunt_A>+0+0i S</shunt_A>
+				<shunt_B>+0+0i S</shunt_B>
+				<shunt_C>+0+0.0173354j S</shunt_C>
+				<prerotated_current_A>+0+0i A</prerotated_current_A>
+				<prerotated_current_B>+0+0i A</prerotated_current_B>
+				<prerotated_current_C>+0+0i A</prerotated_current_C>
+				<deltamode_generator_current_A>+0+0j A</deltamode_generator_current_A>
+				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
+				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
+				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
+				<current_inj_A>+0+0j A</current_inj_A>
+				<current_inj_B>+0+0j A</current_inj_B>
+				<current_inj_C>-36.745-20.9146j A</current_inj_C>
+				<current_AB>+0+0j A</current_AB>
+				<current_BC>+0+0j A</current_BC>
+				<current_CA>+0+0j A</current_CA>
+				<current_AN>+0+0j A</current_AN>
+				<current_BN>+0+0j A</current_BN>
+				<current_CN>+0+0j A</current_CN>
+				<power_AB>+0+0j VA</power_AB>
+				<power_BC>+0+0j VA</power_BC>
+				<power_CA>+0+0j VA</power_CA>
+				<power_AN>+0+0j VA</power_AN>
+				<power_BN>+0+0j VA</power_BN>
+				<power_CN>+0+0j VA</power_CN>
+				<shunt_AB>+0+0j S</shunt_AB>
+				<shunt_BC>+0+0j S</shunt_BC>
+				<shunt_CA>+0+0j S</shunt_CA>
+				<shunt_AN>+0+0j S</shunt_AN>
+				<shunt_BN>+0+0j S</shunt_BN>
+				<shunt_CN>+0+0j S</shunt_CN>
+				<residential_nominal_current_A>+0+0j A</residential_nominal_current_A>
+				<residential_nominal_current_B>+0+0j A</residential_nominal_current_B>
+				<residential_nominal_current_C>+0+0j A</residential_nominal_current_C>
+				<residential_nominal_current_A_real>+0 A</residential_nominal_current_A_real>
+				<residential_nominal_current_A_imag>+0 A</residential_nominal_current_A_imag>
+				<residential_nominal_current_B_real>+0 A</residential_nominal_current_B_real>
+				<residential_nominal_current_B_imag>+0 A</residential_nominal_current_B_imag>
+				<residential_nominal_current_C_real>+0 A</residential_nominal_current_C_real>
+				<residential_nominal_current_C_imag>+0 A</residential_nominal_current_C_imag>
+				<house_present>FALSE</house_present>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<frequency_measure_type>NONE</frequency_measure_type>
+				<sfm_Tf>+0.01 s</sfm_Tf>
+				<pll_Kp>+10 pu</pll_Kp>
+				<pll_Ki>+100 pu</pll_Ki>
+				<measured_angle_A>+0 rad</measured_angle_A>
+				<measured_frequency_A>+60 Hz</measured_frequency_A>
+				<measured_angle_B>+0 rad</measured_angle_B>
+				<measured_frequency_B>+60 Hz</measured_frequency_B>
+				<measured_angle_C>+0 rad</measured_angle_C>
+				<measured_frequency_C>+60 Hz</measured_frequency_C>
+				<measured_frequency>+60 Hz</measured_frequency>
+				<service_status>IN_SERVICE</service_status>
+				<service_status_double>-1</service_status_double>
+				<previous_uptime>-1 min</previous_uptime>
+				<current_uptime>+0 min</current_uptime>
+				<Norton_dynamic>FALSE</Norton_dynamic>
+				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
+				<generator_dynamic>FALSE</generator_dynamic>
+				<reset_disabled_island_state>FALSE</reset_disabled_island_state>
+				<GFA_enable>FALSE</GFA_enable>
+				<GFA_freq_low_trip>+59.5 Hz</GFA_freq_low_trip>
+				<GFA_freq_high_trip>+60.5 Hz</GFA_freq_high_trip>
+				<GFA_volt_low_trip>+0.8 pu</GFA_volt_low_trip>
+				<GFA_volt_high_trip>+1.2 pu</GFA_volt_high_trip>
+				<GFA_reconnect_time>+300 s</GFA_reconnect_time>
+				<GFA_freq_disconnect_time>+0.2 s</GFA_freq_disconnect_time>
+				<GFA_volt_disconnect_time>+0.2 s</GFA_volt_disconnect_time>
+				<GFA_status>TRUE</GFA_status>
+				<GFA_trip_method>NONE</GFA_trip_method>
+				<topological_parent>node_611</topological_parent>
+				<behaving_as_swing>FALSE</behaving_as_swing>
+				<phases>CN</phases>
 				<nominal_voltage>+2401.78 V</nominal_voltage>
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</capacitor>
@@ -1680,20 +2220,20 @@
 				<power_out_real>+0 W</power_out_real>
 				<power_losses>+0+0j VA</power_losses>
 				<power_in_A>+0+0j VA</power_in_A>
-				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_B>-0+0j VA</power_in_B>
 				<power_in_C>+0+0j VA</power_in_C>
 				<power_out_A>+0+0j VA</power_out_A>
-				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_B>-0+0j VA</power_out_B>
 				<power_out_C>+0+0j VA</power_out_C>
 				<power_losses_A>+0+0j VA</power_losses_A>
 				<power_losses_B>+0+0j VA</power_losses_B>
 				<power_losses_C>+0+0j VA</power_losses_C>
-				<current_out_A>+0+0i A</current_out_A>
-				<current_out_B>+0+0i A</current_out_B>
-				<current_out_C>+0+0i A</current_out_C>
-				<current_in_A>+0+0i A</current_in_A>
-				<current_in_B>+0+0i A</current_in_B>
-				<current_in_C>+0+0i A</current_in_C>
+				<current_out_A>+0+0j A</current_out_A>
+				<current_out_B>+0+0j A</current_out_B>
+				<current_out_C>+0+0j A</current_out_C>
+				<current_in_A>+0+0j A</current_in_A>
+				<current_in_B>+0+0j A</current_in_B>
+				<current_in_C>+0+0j A</current_in_C>
 				<fault_current_in_A>+0+0j A</fault_current_in_A>
 				<fault_current_in_B>+0+0j A</fault_current_in_B>
 				<fault_current_in_C>+0+0j A</fault_current_in_C>
@@ -1704,7 +2244,7 @@
 				<fault_voltage_B>+0+0i A</fault_voltage_B>
 				<fault_voltage_C>+0+0i A</fault_voltage_C>
 				<overloaded_status>FALSE</overloaded_status>
-				<flow_direction>UNKNOWN</flow_direction>
+				<flow_direction>CN|BN|AN</flow_direction>
 				<mean_repair_time>+0 s</mean_repair_time>
 				<continuous_rating_A>+1000 A</continuous_rating_A>
 				<continuous_rating_B>+1000 A</continuous_rating_B>
@@ -1738,20 +2278,20 @@
 				<power_out_real>+0 W</power_out_real>
 				<power_losses>+0+0j VA</power_losses>
 				<power_in_A>+0+0j VA</power_in_A>
-				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_B>-0+0j VA</power_in_B>
 				<power_in_C>+0+0j VA</power_in_C>
 				<power_out_A>+0+0j VA</power_out_A>
-				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_B>-0+0j VA</power_out_B>
 				<power_out_C>+0+0j VA</power_out_C>
 				<power_losses_A>+0+0j VA</power_losses_A>
 				<power_losses_B>+0+0j VA</power_losses_B>
 				<power_losses_C>+0+0j VA</power_losses_C>
-				<current_out_A>+0+0i A</current_out_A>
-				<current_out_B>+0+0i A</current_out_B>
-				<current_out_C>+0+0i A</current_out_C>
-				<current_in_A>+0+0i A</current_in_A>
-				<current_in_B>+0+0i A</current_in_B>
-				<current_in_C>+0+0i A</current_in_C>
+				<current_out_A>+0+0j A</current_out_A>
+				<current_out_B>+0+0j A</current_out_B>
+				<current_out_C>+0+0j A</current_out_C>
+				<current_in_A>+0+0j A</current_in_A>
+				<current_in_B>+0+0j A</current_in_B>
+				<current_in_C>+0+0j A</current_in_C>
 				<fault_current_in_A>+0+0j A</fault_current_in_A>
 				<fault_current_in_B>+0+0j A</fault_current_in_B>
 				<fault_current_in_C>+0+0j A</fault_current_in_C>
@@ -1762,7 +2302,7 @@
 				<fault_voltage_B>+0+0i A</fault_voltage_B>
 				<fault_voltage_C>+0+0i A</fault_voltage_C>
 				<overloaded_status>FALSE</overloaded_status>
-				<flow_direction>UNKNOWN</flow_direction>
+				<flow_direction>CN|BN|AN</flow_direction>
 				<mean_repair_time>+0 s</mean_repair_time>
 				<continuous_rating_A>+1000 A</continuous_rating_A>
 				<continuous_rating_B>+1000 A</continuous_rating_B>
@@ -1796,20 +2336,20 @@
 				<power_out_real>+0 W</power_out_real>
 				<power_losses>+0+0j VA</power_losses>
 				<power_in_A>+0+0j VA</power_in_A>
-				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_B>-0+0j VA</power_in_B>
 				<power_in_C>+0+0j VA</power_in_C>
 				<power_out_A>+0+0j VA</power_out_A>
-				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_B>-0+0j VA</power_out_B>
 				<power_out_C>+0+0j VA</power_out_C>
 				<power_losses_A>+0+0j VA</power_losses_A>
 				<power_losses_B>+0+0j VA</power_losses_B>
 				<power_losses_C>+0+0j VA</power_losses_C>
-				<current_out_A>+0+0i A</current_out_A>
-				<current_out_B>+0+0i A</current_out_B>
-				<current_out_C>+0+0i A</current_out_C>
-				<current_in_A>+0+0i A</current_in_A>
-				<current_in_B>+0+0i A</current_in_B>
-				<current_in_C>+0+0i A</current_in_C>
+				<current_out_A>+0+0j A</current_out_A>
+				<current_out_B>+0+0j A</current_out_B>
+				<current_out_C>+0+0j A</current_out_C>
+				<current_in_A>+0+0j A</current_in_A>
+				<current_in_B>+0+0j A</current_in_B>
+				<current_in_C>+0+0j A</current_in_C>
 				<fault_current_in_A>+0+0j A</fault_current_in_A>
 				<fault_current_in_B>+0+0j A</fault_current_in_B>
 				<fault_current_in_C>+0+0j A</fault_current_in_C>
@@ -1820,7 +2360,7 @@
 				<fault_voltage_B>+0+0i A</fault_voltage_B>
 				<fault_voltage_C>+0+0i A</fault_voltage_C>
 				<overloaded_status>FALSE</overloaded_status>
-				<flow_direction>UNKNOWN</flow_direction>
+				<flow_direction>CN|BN|AN</flow_direction>
 				<mean_repair_time>+0 s</mean_repair_time>
 				<continuous_rating_A>+1000 A</continuous_rating_A>
 				<continuous_rating_B>+1000 A</continuous_rating_B>
@@ -1839,7 +2379,7 @@
 			</overhead_line>
 			<overhead_line>
 				<id>37</id>
-				<rank>7</rank>
+				<rank>8</rank>
 				<out_svc>NEVER</out_svc>
 				<parent>node_650</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1849,25 +2389,25 @@
 				<status>CLOSED</status>
 				<from>node_650</from>
 				<to>node_632</to>
-				<power_in>+0+0j VA</power_in>
-				<power_out>+0+0j VA</power_out>
-				<power_out_real>+0 W</power_out_real>
-				<power_losses>+0+0j VA</power_losses>
-				<power_in_A>+0+0j VA</power_in_A>
-				<power_in_B>+0+0j VA</power_in_B>
-				<power_in_C>+0+0j VA</power_in_C>
+				<power_in>+101548-89.6478d VA</power_in>
+				<power_out>+447.099-102196j VA</power_out>
+				<power_out_real>+447.099 W</power_out_real>
+				<power_losses>+673.598+74.7597d VA</power_losses>
+				<power_in_A>+0+0d VA</power_in_A>
+				<power_in_B>+0+0d VA</power_in_B>
+				<power_in_C>+101548-89.6478d VA</power_in_C>
 				<power_out_A>+0+0j VA</power_out_A>
-				<power_out_B>+0+0j VA</power_out_B>
-				<power_out_C>+0+0j VA</power_out_C>
-				<power_losses_A>+0+0j VA</power_losses_A>
-				<power_losses_B>+0+0j VA</power_losses_B>
-				<power_losses_C>+0+0j VA</power_losses_C>
-				<current_out_A>+0+0i A</current_out_A>
-				<current_out_B>+0+0i A</current_out_B>
-				<current_out_C>+0+0i A</current_out_C>
-				<current_in_A>+0+0i A</current_in_A>
-				<current_in_B>+0+0i A</current_in_B>
-				<current_in_C>+0+0i A</current_in_C>
+				<power_out_B>-0+0j VA</power_out_B>
+				<power_out_C>+447.099-102196j VA</power_out_C>
+				<power_losses_A>+0+0d VA</power_losses_A>
+				<power_losses_B>+0+0d VA</power_losses_B>
+				<power_losses_C>+673.598+74.7597d VA</power_losses_C>
+				<current_out_A>+0+0j A</current_out_A>
+				<current_out_B>+0+0j A</current_out_B>
+				<current_out_C>-36.745-20.9146j A</current_out_C>
+				<current_in_A>+0+0j A</current_in_A>
+				<current_in_B>+0+0j A</current_in_B>
+				<current_in_C>-36.745-20.9146j A</current_in_C>
 				<fault_current_in_A>+0+0j A</fault_current_in_A>
 				<fault_current_in_B>+0+0j A</fault_current_in_B>
 				<fault_current_in_C>+0+0j A</fault_current_in_C>
@@ -1878,7 +2418,7 @@
 				<fault_voltage_B>+0+0i A</fault_voltage_B>
 				<fault_voltage_C>+0+0i A</fault_voltage_C>
 				<overloaded_status>FALSE</overloaded_status>
-				<flow_direction>UNKNOWN</flow_direction>
+				<flow_direction>CR|BN|AN</flow_direction>
 				<mean_repair_time>+0 s</mean_repair_time>
 				<continuous_rating_A>+1000 A</continuous_rating_A>
 				<continuous_rating_B>+1000 A</continuous_rating_B>
@@ -1897,7 +2437,7 @@
 			</overhead_line>
 			<overhead_line>
 				<id>38</id>
-				<rank>5</rank>
+				<rank>6</rank>
 				<out_svc>NEVER</out_svc>
 				<parent>node_632</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1907,25 +2447,25 @@
 				<status>CLOSED</status>
 				<from>node_632</from>
 				<to>node_671</to>
-				<power_in>+0+0j VA</power_in>
-				<power_out>+0+0j VA</power_out>
-				<power_out_real>+0 W</power_out_real>
-				<power_losses>+0+0j VA</power_losses>
+				<power_in>+447.099-102196j VA</power_in>
+				<power_out>+270.031-102846j VA</power_out>
+				<power_out_real>+270.031 W</power_out_real>
+				<power_losses>+177.068+649.909j VA</power_losses>
 				<power_in_A>+0+0j VA</power_in_A>
-				<power_in_B>+0+0j VA</power_in_B>
-				<power_in_C>+0+0j VA</power_in_C>
+				<power_in_B>-0+0j VA</power_in_B>
+				<power_in_C>+447.099-102196j VA</power_in_C>
 				<power_out_A>+0+0j VA</power_out_A>
-				<power_out_B>+0+0j VA</power_out_B>
-				<power_out_C>+0+0j VA</power_out_C>
+				<power_out_B>-0+0j VA</power_out_B>
+				<power_out_C>+270.031-102846j VA</power_out_C>
 				<power_losses_A>+0+0j VA</power_losses_A>
 				<power_losses_B>+0+0j VA</power_losses_B>
-				<power_losses_C>+0+0j VA</power_losses_C>
-				<current_out_A>+0+0i A</current_out_A>
-				<current_out_B>+0+0i A</current_out_B>
-				<current_out_C>+0+0i A</current_out_C>
-				<current_in_A>+0+0i A</current_in_A>
-				<current_in_B>+0+0i A</current_in_B>
-				<current_in_C>+0+0i A</current_in_C>
+				<power_losses_C>+177.068+649.909j VA</power_losses_C>
+				<current_out_A>+0+0j A</current_out_A>
+				<current_out_B>+0+0j A</current_out_B>
+				<current_out_C>-36.745-20.9146j A</current_out_C>
+				<current_in_A>+0+0j A</current_in_A>
+				<current_in_B>+0+0j A</current_in_B>
+				<current_in_C>-36.745-20.9146j A</current_in_C>
 				<fault_current_in_A>+0+0j A</fault_current_in_A>
 				<fault_current_in_B>+0+0j A</fault_current_in_B>
 				<fault_current_in_C>+0+0j A</fault_current_in_C>
@@ -1936,7 +2476,7 @@
 				<fault_voltage_B>+0+0i A</fault_voltage_B>
 				<fault_voltage_C>+0+0i A</fault_voltage_C>
 				<overloaded_status>FALSE</overloaded_status>
-				<flow_direction>UNKNOWN</flow_direction>
+				<flow_direction>CR|BN|AN</flow_direction>
 				<mean_repair_time>+0 s</mean_repair_time>
 				<continuous_rating_A>+1000 A</continuous_rating_A>
 				<continuous_rating_B>+1000 A</continuous_rating_B>
@@ -1955,7 +2495,7 @@
 			</overhead_line>
 			<overhead_line>
 				<id>39</id>
-				<rank>3</rank>
+				<rank>4</rank>
 				<out_svc>NEVER</out_svc>
 				<parent>node_671</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1965,25 +2505,25 @@
 				<status>CLOSED</status>
 				<from>node_671</from>
 				<to>node_684</to>
-				<power_in>+0+0j VA</power_in>
-				<power_out>+0+0j VA</power_out>
-				<power_out_real>+0 W</power_out_real>
-				<power_losses>+0+0j VA</power_losses>
+				<power_in>+270.031-102846j VA</power_in>
+				<power_out>+135.004-102982j VA</power_out>
+				<power_out_real>+135.004 W</power_out_real>
+				<power_losses>+135.027+136.822j VA</power_losses>
 				<power_in_A>+0+0j VA</power_in_A>
-				<power_in_B>+0+0j VA</power_in_B>
-				<power_in_C>+0+0j VA</power_in_C>
+				<power_in_B>-0+0j VA</power_in_B>
+				<power_in_C>+270.031-102846j VA</power_in_C>
 				<power_out_A>+0+0j VA</power_out_A>
 				<power_out_B>+0+0j VA</power_out_B>
-				<power_out_C>+0+0j VA</power_out_C>
+				<power_out_C>+135.004-102982j VA</power_out_C>
 				<power_losses_A>+0+0j VA</power_losses_A>
-				<power_losses_B>+0+0j VA</power_losses_B>
-				<power_losses_C>+0+0j VA</power_losses_C>
-				<current_out_A>+0+0i A</current_out_A>
-				<current_out_B>+0+0i A</current_out_B>
-				<current_out_C>+0+0i A</current_out_C>
-				<current_in_A>+0+0i A</current_in_A>
-				<current_in_B>+0+0i A</current_in_B>
-				<current_in_C>+0+0i A</current_in_C>
+				<power_losses_B>-0+0j VA</power_losses_B>
+				<power_losses_C>+135.027+136.822j VA</power_losses_C>
+				<current_out_A>+0+0j A</current_out_A>
+				<current_out_B>+0+0j A</current_out_B>
+				<current_out_C>-36.745-20.9146j A</current_out_C>
+				<current_in_A>+0+0j A</current_in_A>
+				<current_in_B>+0+0j A</current_in_B>
+				<current_in_C>-36.745-20.9146j A</current_in_C>
 				<fault_current_in_A>+0+0j A</fault_current_in_A>
 				<fault_current_in_B>+0+0j A</fault_current_in_B>
 				<fault_current_in_C>+0+0j A</fault_current_in_C>
@@ -1994,7 +2534,7 @@
 				<fault_voltage_B>+0+0i A</fault_voltage_B>
 				<fault_voltage_C>+0+0i A</fault_voltage_C>
 				<overloaded_status>FALSE</overloaded_status>
-				<flow_direction>UNKNOWN</flow_direction>
+				<flow_direction>CR|BN|AN</flow_direction>
 				<mean_repair_time>+0 s</mean_repair_time>
 				<continuous_rating_A>+1000 A</continuous_rating_A>
 				<continuous_rating_B>+1000 A</continuous_rating_B>
@@ -2028,20 +2568,20 @@
 				<power_out_real>+0 W</power_out_real>
 				<power_losses>+0+0j VA</power_losses>
 				<power_in_A>+0+0j VA</power_in_A>
-				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_B>-0+0j VA</power_in_B>
 				<power_in_C>+0+0j VA</power_in_C>
 				<power_out_A>+0+0j VA</power_out_A>
-				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_B>-0+0j VA</power_out_B>
 				<power_out_C>+0+0j VA</power_out_C>
 				<power_losses_A>+0+0j VA</power_losses_A>
 				<power_losses_B>+0+0j VA</power_losses_B>
 				<power_losses_C>+0+0j VA</power_losses_C>
-				<current_out_A>+0+0i A</current_out_A>
-				<current_out_B>+0+0i A</current_out_B>
-				<current_out_C>+0+0i A</current_out_C>
-				<current_in_A>+0+0i A</current_in_A>
-				<current_in_B>+0+0i A</current_in_B>
-				<current_in_C>+0+0i A</current_in_C>
+				<current_out_A>+0+0j A</current_out_A>
+				<current_out_B>+0+0j A</current_out_B>
+				<current_out_C>+0+0j A</current_out_C>
+				<current_in_A>+0+0j A</current_in_A>
+				<current_in_B>+0+0j A</current_in_B>
+				<current_in_C>+0+0j A</current_in_C>
 				<fault_current_in_A>+0+0j A</fault_current_in_A>
 				<fault_current_in_B>+0+0j A</fault_current_in_B>
 				<fault_current_in_C>+0+0j A</fault_current_in_C>
@@ -2052,7 +2592,7 @@
 				<fault_voltage_B>+0+0i A</fault_voltage_B>
 				<fault_voltage_C>+0+0i A</fault_voltage_C>
 				<overloaded_status>FALSE</overloaded_status>
-				<flow_direction>UNKNOWN</flow_direction>
+				<flow_direction>CN|BN|AN</flow_direction>
 				<mean_repair_time>+0 s</mean_repair_time>
 				<continuous_rating_A>+1000 A</continuous_rating_A>
 				<continuous_rating_B>+1000 A</continuous_rating_B>
@@ -2071,7 +2611,7 @@
 			</overhead_line>
 			<overhead_line>
 				<id>41</id>
-				<rank>1</rank>
+				<rank>2</rank>
 				<out_svc>NEVER</out_svc>
 				<parent>node_684</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -2081,25 +2621,25 @@
 				<status>CLOSED</status>
 				<from>node_684</from>
 				<to>node_611</to>
-				<power_in>+0+0j VA</power_in>
-				<power_out>+0+0j VA</power_out>
+				<power_in>+135.004-102982j VA</power_in>
+				<power_out>+0-103119j VA</power_out>
 				<power_out_real>+0 W</power_out_real>
-				<power_losses>+0+0j VA</power_losses>
+				<power_losses>+135.004+136.862j VA</power_losses>
 				<power_in_A>+0+0j VA</power_in_A>
 				<power_in_B>+0+0j VA</power_in_B>
-				<power_in_C>+0+0j VA</power_in_C>
+				<power_in_C>+135.004-102982j VA</power_in_C>
 				<power_out_A>+0+0j VA</power_out_A>
 				<power_out_B>+0+0j VA</power_out_B>
-				<power_out_C>+0+0j VA</power_out_C>
+				<power_out_C>+0-103119j VA</power_out_C>
 				<power_losses_A>+0+0j VA</power_losses_A>
 				<power_losses_B>+0+0j VA</power_losses_B>
-				<power_losses_C>+0+0j VA</power_losses_C>
-				<current_out_A>+0+0i A</current_out_A>
-				<current_out_B>+0+0i A</current_out_B>
-				<current_out_C>+0+0i A</current_out_C>
-				<current_in_A>+0+0i A</current_in_A>
-				<current_in_B>+0+0i A</current_in_B>
-				<current_in_C>+0+0i A</current_in_C>
+				<power_losses_C>+135.004+136.862j VA</power_losses_C>
+				<current_out_A>+0+0j A</current_out_A>
+				<current_out_B>+0+0j A</current_out_B>
+				<current_out_C>-36.745-20.9146j A</current_out_C>
+				<current_in_A>+0+0j A</current_in_A>
+				<current_in_B>+0+0j A</current_in_B>
+				<current_in_C>-36.745-20.9146j A</current_in_C>
 				<fault_current_in_A>+0+0j A</fault_current_in_A>
 				<fault_current_in_B>+0+0j A</fault_current_in_B>
 				<fault_current_in_C>+0+0j A</fault_current_in_C>
@@ -2110,7 +2650,7 @@
 				<fault_voltage_B>+0+0i A</fault_voltage_B>
 				<fault_voltage_C>+0+0i A</fault_voltage_C>
 				<overloaded_status>FALSE</overloaded_status>
-				<flow_direction>UNKNOWN</flow_direction>
+				<flow_direction>CR|BN|AN</flow_direction>
 				<mean_repair_time>+0 s</mean_repair_time>
 				<continuous_rating_A>+1000 A</continuous_rating_A>
 				<continuous_rating_B>+1000 A</continuous_rating_B>
@@ -2142,25 +2682,25 @@
 				<status>CLOSED</status>
 				<from>node_692</from>
 				<to>node_675</to>
-				<power_in>+0+0j VA</power_in>
-				<power_out>+0+0j VA</power_out>
-				<power_out_real>+0 W</power_out_real>
-				<power_losses>+0+0j VA</power_losses>
-				<power_in_A>+0+0j VA</power_in_A>
-				<power_in_B>+0+0j VA</power_in_B>
-				<power_in_C>+0+0j VA</power_in_C>
-				<power_out_A>+0+0j VA</power_out_A>
-				<power_out_B>+0+0j VA</power_out_B>
-				<power_out_C>+0+0j VA</power_out_C>
-				<power_losses_A>+0+0j VA</power_losses_A>
-				<power_losses_B>+0+0j VA</power_losses_B>
-				<power_losses_C>+0+0j VA</power_losses_C>
-				<current_out_A>+0+0i A</current_out_A>
-				<current_out_B>+0+0i A</current_out_B>
-				<current_out_C>+0+0i A</current_out_C>
-				<current_in_A>+0+0i A</current_in_A>
-				<current_in_B>+0+0i A</current_in_B>
-				<current_in_C>+0+0i A</current_in_C>
+				<power_in>+601190-89.8756d VA</power_in>
+				<power_out>+1.45519e-11-602381j VA</power_out>
+				<power_out_real>+1.45519e-11 W</power_out_real>
+				<power_losses>+1768.53+42.4359d VA</power_losses>
+				<power_in_A>+200379-89.869d VA</power_in_A>
+				<power_in_B>+200380-89.8807d VA</power_in_B>
+				<power_in_C>+200430-89.8772d VA</power_in_C>
+				<power_out_A>+0-200758j VA</power_out_A>
+				<power_out_B>+1.45519e-11-200762j VA</power_out_B>
+				<power_out_C>+0-200862j VA</power_out_C>
+				<power_losses_A>+595.173+39.6677d VA</power_losses_A>
+				<power_losses_B>+565.514+42.4364d VA</power_losses_B>
+				<power_losses_C>+609.218+45.1399d VA</power_losses_C>
+				<current_out_A>+0.19075+83.4291j A</current_out_A>
+				<current_out_B>+72.1655-41.8654j A</current_out_B>
+				<current_out_C>-72.3599-41.5704j A</current_out_C>
+				<current_in_A>+0.19075+83.4291j A</current_in_A>
+				<current_in_B>+72.1655-41.8654j A</current_in_B>
+				<current_in_C>-72.3599-41.5704j A</current_in_C>
 				<fault_current_in_A>+0+0j A</fault_current_in_A>
 				<fault_current_in_B>+0+0j A</fault_current_in_B>
 				<fault_current_in_C>+0+0j A</fault_current_in_C>
@@ -2171,7 +2711,7 @@
 				<fault_voltage_B>+0+0i A</fault_voltage_B>
 				<fault_voltage_C>+0+0i A</fault_voltage_C>
 				<overloaded_status>FALSE</overloaded_status>
-				<flow_direction>UNKNOWN</flow_direction>
+				<flow_direction>CR|BR|AR</flow_direction>
 				<mean_repair_time>+0 s</mean_repair_time>
 				<continuous_rating_A>+1000 A</continuous_rating_A>
 				<continuous_rating_B>+1000 A</continuous_rating_B>
@@ -2213,12 +2753,12 @@
 				<power_losses_A>+0+0j VA</power_losses_A>
 				<power_losses_B>+0+0j VA</power_losses_B>
 				<power_losses_C>+0+0j VA</power_losses_C>
-				<current_out_A>+0+0i A</current_out_A>
-				<current_out_B>+0+0i A</current_out_B>
-				<current_out_C>+0+0i A</current_out_C>
-				<current_in_A>+0+0i A</current_in_A>
-				<current_in_B>+0+0i A</current_in_B>
-				<current_in_C>+0+0i A</current_in_C>
+				<current_out_A>+0+0j A</current_out_A>
+				<current_out_B>+0+0j A</current_out_B>
+				<current_out_C>+0+0j A</current_out_C>
+				<current_in_A>+0+0j A</current_in_A>
+				<current_in_B>+0+0j A</current_in_B>
+				<current_in_C>+0+0j A</current_in_C>
 				<fault_current_in_A>+0+0j A</fault_current_in_A>
 				<fault_current_in_B>+0+0j A</fault_current_in_B>
 				<fault_current_in_C>+0+0j A</fault_current_in_C>
@@ -2229,7 +2769,7 @@
 				<fault_voltage_B>+0+0i A</fault_voltage_B>
 				<fault_voltage_C>+0+0i A</fault_voltage_C>
 				<overloaded_status>FALSE</overloaded_status>
-				<flow_direction>UNKNOWN</flow_direction>
+				<flow_direction>CN|BN|AN</flow_direction>
 				<mean_repair_time>+0 s</mean_repair_time>
 				<continuous_rating_A>+1000 A</continuous_rating_A>
 				<continuous_rating_B>+1000 A</continuous_rating_B>
@@ -2612,9 +3152,109 @@
 			<inherits_from>node</inherits_from>
 		</load_list>
 		<regulator_configuration_list>
+			<regulator_configuration>
+				<id>46</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>reg_config_001</name>
+				<connect_type>WYE_WYE</connect_type>
+				<band_center>+2401.78 V</band_center>
+				<band_width>+2 V</band_width>
+				<time_delay>+30 s</time_delay>
+				<dwell_time>+0 s</dwell_time>
+				<raise_taps>16</raise_taps>
+				<lower_taps>16</lower_taps>
+				<current_transducer_ratio>+700 pu</current_transducer_ratio>
+				<power_transducer_ratio>+20 pu</power_transducer_ratio>
+				<compensator_r_setting_A>+3 V</compensator_r_setting_A>
+				<compensator_r_setting_B>+3 V</compensator_r_setting_B>
+				<compensator_r_setting_C>+3 V</compensator_r_setting_C>
+				<compensator_x_setting_A>+9 V</compensator_x_setting_A>
+				<compensator_x_setting_B>+9 V</compensator_x_setting_B>
+				<compensator_x_setting_C>+9 V</compensator_x_setting_C>
+				<CT_phase>CBA</CT_phase>
+				<PT_phase>CBA</PT_phase>
+				<regulation>+0.1</regulation>
+				<control_level>INDIVIDUAL</control_level>
+				<Control>OUTPUT_VOLTAGE</Control>
+				<reverse_flow_control>LOCK_NONE</reverse_flow_control>
+				<Type>A</Type>
+				<tap_pos_A>1</tap_pos_A>
+				<tap_pos_B>1</tap_pos_B>
+				<tap_pos_C>1</tap_pos_C>
+			</regulator_configuration>
 		</regulator_configuration_list>
 		<regulator_list>
 			<inherits_from>link</inherits_from>
+			<regulator>
+				<id>47</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<parent>node_650</parent>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>reg_001</name>
+				<configuration>reg_config_001</configuration>
+				<tap_A>1</tap_A>
+				<tap_B>1</tap_B>
+				<tap_C>1</tap_C>
+				<msg_mode>INTERNAL</msg_mode>
+				<remote_voltage_A>+2416.79+0d V</remote_voltage_A>
+				<remote_voltage_B>+2416.79-120d V</remote_voltage_B>
+				<remote_voltage_C>+2416.79+120d V</remote_voltage_C>
+				<tap_A_change_count>+0</tap_A_change_count>
+				<tap_B_change_count>+0</tap_B_change_count>
+				<tap_C_change_count>+0</tap_C_change_count>
+				<regulator_resistance>-1 Ohm</regulator_resistance>
+				<status>CLOSED</status>
+				<from>node_650</from>
+				<to>node_632</to>
+				<power_in>+0+0d VA</power_in>
+				<power_out>+628.068-102180j VA</power_out>
+				<power_out_real>+628.068 W</power_out_real>
+				<power_losses>+102182+89.6478d VA</power_losses>
+				<power_in_A>+0+0d VA</power_in_A>
+				<power_in_B>+0+0d VA</power_in_B>
+				<power_in_C>+0+0d VA</power_in_C>
+				<power_out_A>+0+0j VA</power_out_A>
+				<power_out_B>-0+0j VA</power_out_B>
+				<power_out_C>+628.068-102180j VA</power_out_C>
+				<power_losses_A>+0+0d VA</power_losses_A>
+				<power_losses_B>+0+0d VA</power_losses_B>
+				<power_losses_C>+102182+89.6478d VA</power_losses_C>
+				<current_out_A>+0+0j A</current_out_A>
+				<current_out_B>+0+0j A</current_out_B>
+				<current_out_C>-36.745-20.9146j A</current_out_C>
+				<current_in_A>+0+0j A</current_in_A>
+				<current_in_B>+0+0j A</current_in_B>
+				<current_in_C>+0+0j A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<fault_voltage_A>+0+0i A</fault_voltage_A>
+				<fault_voltage_B>+0+0i A</fault_voltage_B>
+				<fault_voltage_C>+0+0i A</fault_voltage_C>
+				<overloaded_status>FALSE</overloaded_status>
+				<flow_direction>CR|BN|AN</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating_A>+1000 A</continuous_rating_A>
+				<continuous_rating_B>+1000 A</continuous_rating_B>
+				<continuous_rating_C>+1000 A</continuous_rating_C>
+				<emergency_rating_A>+2000 A</emergency_rating_A>
+				<emergency_rating_B>+2000 A</emergency_rating_B>
+				<emergency_rating_C>+2000 A</emergency_rating_C>
+				<inrush_convergence_value>+0.0001 V</inrush_convergence_value>
+				<triplex_neutral_1_value>+0+0i</triplex_neutral_1_value>
+				<triplex_neutral_2_value>+0+0i</triplex_neutral_2_value>
+				<inrush_integration_method_capacitance>UNDEFINED</inrush_integration_method_capacitance>
+				<inrush_integration_method_inductance>UNDEFINED</inrush_integration_method_inductance>
+				<phases>ABC</phases>
+				<nominal_voltage>+0 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</regulator>
 		</regulator_list>
 		<triplex_node_list>
 			<inherits_from>powerflow_object</inherits_from>

@@ -454,7 +454,7 @@ object capacitor{
     control VOLT;
     capacitor_A 0.0;
     capacitor_B 0.0;
-    capacitor_C 200000.0;
+    capacitor_C 100000.0;
     nominal_voltage 2401.7771;
     voltage_set_high 2800.0;
     voltage_set_low 2200.0;
@@ -464,5 +464,40 @@ object capacitor{
     switchA CLOSED;				
 	switchB CLOSED;
 	switchC CLOSED;
+}
+
+// Regulators
+object regulator_configuration{
+    name "reg_config_001";
+    connect_type 1;
+    band_center 2401.7771;
+    band_width 2.0;
+    time_delay 30.0;
+    raise_taps 16;
+    lower_taps 16;
+    current_transducer_ratio 700;
+    power_transducer_ratio 20;
+    compensator_r_setting_A 3.0;
+    compensator_r_setting_B 3.0;
+    compensator_r_setting_C 3.0;
+    compensator_x_setting_A 9.0;
+    compensator_x_setting_B 9.0;
+    compensator_x_setting_C 9.0;
+    CT_phase "ABC";
+    PT_phase "ABC";
+    regulation 0.10;
+    Control OUTPUT_VOLTAGE;
+    Type A;
+    tap_pos_A 1;
+    tap_pos_B 1;
+    tap_pos_C 1;
+}
+
+object regulator{
+    name "reg_001";
+    phases "ABC";
+    from "node_650";
+    to "node_632";
+    configuration "reg_config_001";
 }
 
