@@ -7,7 +7,7 @@ clock {
 // Modules
 
 module powerflow {
-    // solver_method NR; // default is Gauss-Seidel; NR => Newton-Raphson
+    solver_method NR; // default is Gauss-Seidel; NR => Newton-Raphson
 }
 
 // Node Objects
@@ -562,7 +562,7 @@ object load{
     nominal_voltage 2401.7771;
 }
 
-// object voltdump {
-// 	file "Quiz2.csv";
-// }
+object voltdump {
+	file "Quiz2.csv";
+}
 
