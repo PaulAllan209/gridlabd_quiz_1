@@ -43,7 +43,7 @@
 	<strictnames>TRUE</strictnames>
 	<website>http://www.gridlabd.org/</website>
 	<urlbase>http://www.gridlabd.org/</urlbase>
-	<randomseed>-208247072</randomseed>
+	<randomseed>-888434792</randomseed>
 	<include>""</include>
 	<trace>""</trace>
 	<gdb_window>FALSE</gdb_window>
@@ -133,6 +133,103 @@
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>node_650</name>
 				<bustype>SWING</bustype>
+				<busflags>HASSOURCE</busflags>
+				<maximum_voltage_error>+0 V</maximum_voltage_error>
+				<voltage_A>+2401.78+0d V</voltage_A>
+				<voltage_B>+2401.78-120d V</voltage_B>
+				<voltage_C>+2401.78+120d V</voltage_C>
+				<voltage_AB>+0+0d V</voltage_AB>
+				<voltage_BC>+0+0d V</voltage_BC>
+				<voltage_CA>+0+0d V</voltage_CA>
+				<current_A>+0+0i A</current_A>
+				<current_B>+0+0i A</current_B>
+				<current_C>+0+0i A</current_C>
+				<power_A>+0+0i VA</power_A>
+				<power_B>+0+0i VA</power_B>
+				<power_C>+0+0i VA</power_C>
+				<shunt_A>+0+0i S</shunt_A>
+				<shunt_B>+0+0i S</shunt_B>
+				<shunt_C>+0+0i S</shunt_C>
+				<prerotated_current_A>+0+0i A</prerotated_current_A>
+				<prerotated_current_B>+0+0i A</prerotated_current_B>
+				<prerotated_current_C>+0+0i A</prerotated_current_C>
+				<deltamode_generator_current_A>+0+0j A</deltamode_generator_current_A>
+				<deltamode_generator_current_B>+0+0j A</deltamode_generator_current_B>
+				<deltamode_generator_current_C>+0+0j A</deltamode_generator_current_C>
+				<deltamode_PGenTotal>+0+0j</deltamode_PGenTotal>
+				<current_inj_A>+0+0i A</current_inj_A>
+				<current_inj_B>+0+0i A</current_inj_B>
+				<current_inj_C>+0+0i A</current_inj_C>
+				<current_AB>+0+0j A</current_AB>
+				<current_BC>+0+0j A</current_BC>
+				<current_CA>+0+0j A</current_CA>
+				<current_AN>+0+0j A</current_AN>
+				<current_BN>+0+0j A</current_BN>
+				<current_CN>+0+0j A</current_CN>
+				<power_AB>+0+0j VA</power_AB>
+				<power_BC>+0+0j VA</power_BC>
+				<power_CA>+0+0j VA</power_CA>
+				<power_AN>+0+0j VA</power_AN>
+				<power_BN>+0+0j VA</power_BN>
+				<power_CN>+0+0j VA</power_CN>
+				<shunt_AB>+0+0j S</shunt_AB>
+				<shunt_BC>+0+0j S</shunt_BC>
+				<shunt_CA>+0+0j S</shunt_CA>
+				<shunt_AN>+0+0j S</shunt_AN>
+				<shunt_BN>+0+0j S</shunt_BN>
+				<shunt_CN>+0+0j S</shunt_CN>
+				<residential_nominal_current_A>+0+0j A</residential_nominal_current_A>
+				<residential_nominal_current_B>+0+0j A</residential_nominal_current_B>
+				<residential_nominal_current_C>+0+0j A</residential_nominal_current_C>
+				<residential_nominal_current_A_real>+0 A</residential_nominal_current_A_real>
+				<residential_nominal_current_A_imag>+0 A</residential_nominal_current_A_imag>
+				<residential_nominal_current_B_real>+0 A</residential_nominal_current_B_real>
+				<residential_nominal_current_B_imag>+0 A</residential_nominal_current_B_imag>
+				<residential_nominal_current_C_real>+0 A</residential_nominal_current_C_real>
+				<residential_nominal_current_C_imag>+0 A</residential_nominal_current_C_imag>
+				<house_present>FALSE</house_present>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<frequency_measure_type>NONE</frequency_measure_type>
+				<sfm_Tf>+0.01 s</sfm_Tf>
+				<pll_Kp>+10 pu</pll_Kp>
+				<pll_Ki>+100 pu</pll_Ki>
+				<measured_angle_A>+0 rad</measured_angle_A>
+				<measured_frequency_A>+60 Hz</measured_frequency_A>
+				<measured_angle_B>+0 rad</measured_angle_B>
+				<measured_frequency_B>+60 Hz</measured_frequency_B>
+				<measured_angle_C>+0 rad</measured_angle_C>
+				<measured_frequency_C>+60 Hz</measured_frequency_C>
+				<measured_frequency>+60 Hz</measured_frequency>
+				<service_status>IN_SERVICE</service_status>
+				<service_status_double>-1</service_status_double>
+				<previous_uptime>-1 min</previous_uptime>
+				<current_uptime>-1 min</current_uptime>
+				<Norton_dynamic>FALSE</Norton_dynamic>
+				<Norton_dynamic_child>FALSE</Norton_dynamic_child>
+				<generator_dynamic>FALSE</generator_dynamic>
+				<reset_disabled_island_state>FALSE</reset_disabled_island_state>
+				<GFA_enable>FALSE</GFA_enable>
+				<GFA_freq_low_trip>+59.5 Hz</GFA_freq_low_trip>
+				<GFA_freq_high_trip>+60.5 Hz</GFA_freq_high_trip>
+				<GFA_volt_low_trip>+0.8 pu</GFA_volt_low_trip>
+				<GFA_volt_high_trip>+1.2 pu</GFA_volt_high_trip>
+				<GFA_reconnect_time>+300 s</GFA_reconnect_time>
+				<GFA_freq_disconnect_time>+0.2 s</GFA_freq_disconnect_time>
+				<GFA_volt_disconnect_time>+0.2 s</GFA_volt_disconnect_time>
+				<GFA_status>TRUE</GFA_status>
+				<GFA_trip_method>NONE</GFA_trip_method>
+				<behaving_as_swing>FALSE</behaving_as_swing>
+				<phases>ABCN</phases>
+				<nominal_voltage>+2401.78 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</node>
+			<node>
+				<id>1</id>
+				<rank>5</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>node_632_1</name>
+				<bustype>PQ</bustype>
 				<busflags>HASSOURCE</busflags>
 				<maximum_voltage_error>+0.00240178 V</maximum_voltage_error>
 				<voltage_A>+2401.78+0d V</voltage_A>
@@ -224,8 +321,8 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</node>
 			<node>
-				<id>1</id>
-				<rank>7</rank>
+				<id>2</id>
+				<rank>5</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>node_632</name>
@@ -321,10 +418,9 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</node>
 			<node>
-				<id>2</id>
-				<rank>0</rank>
+				<id>3</id>
+				<rank>5</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>ovl_632_633</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>node_633</name>
 				<bustype>SWING</bustype>
@@ -419,8 +515,8 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</node>
 			<node>
-				<id>3</id>
-				<rank>0</rank>
+				<id>4</id>
+				<rank>5</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>node_634</name>
@@ -516,10 +612,9 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</node>
 			<node>
-				<id>4</id>
-				<rank>3</rank>
+				<id>5</id>
+				<rank>5</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>ovl_671_684</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>node_684</name>
 				<bustype>SWING</bustype>
@@ -614,10 +709,9 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</node>
 			<node>
-				<id>5</id>
-				<rank>0</rank>
+				<id>6</id>
+				<rank>5</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>ovl_671_680</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>node_680</name>
 				<bustype>SWING</bustype>
@@ -718,7 +812,7 @@
 		<capacitor_list>
 			<inherits_from>node</inherits_from>
 			<capacitor>
-				<id>36</id>
+				<id>39</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<parent>load_675</parent>
@@ -844,7 +938,7 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</capacitor>
 			<capacitor>
-				<id>37</id>
+				<id>40</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<parent>load_611</parent>
@@ -981,7 +1075,7 @@
 		</line_list>
 		<line_spacing_list>
 			<line_spacing>
-				<id>13</id>
+				<id>14</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -998,7 +1092,7 @@
 				<distance_NE>+0 ft</distance_NE>
 			</line_spacing>
 			<line_spacing>
-				<id>14</id>
+				<id>15</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1015,7 +1109,7 @@
 				<distance_NE>+0 ft</distance_NE>
 			</line_spacing>
 			<line_spacing>
-				<id>15</id>
+				<id>16</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1032,7 +1126,7 @@
 				<distance_NE>+0 ft</distance_NE>
 			</line_spacing>
 			<line_spacing>
-				<id>16</id>
+				<id>17</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1049,7 +1143,7 @@
 				<distance_NE>+0 ft</distance_NE>
 			</line_spacing>
 			<line_spacing>
-				<id>17</id>
+				<id>18</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1066,7 +1160,7 @@
 				<distance_NE>+0 ft</distance_NE>
 			</line_spacing>
 			<line_spacing>
-				<id>18</id>
+				<id>19</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1083,7 +1177,7 @@
 				<distance_NE>+0 ft</distance_NE>
 			</line_spacing>
 			<line_spacing>
-				<id>19</id>
+				<id>20</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1103,10 +1197,9 @@
 		<overhead_line_list>
 			<inherits_from>line</inherits_from>
 			<overhead_line>
-				<id>27</id>
-				<rank>3</rank>
+				<id>28</id>
+				<rank>2</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>node_632</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>ovl_632_645</name>
 				<configuration>ovl_config_603</configuration>
@@ -1161,10 +1254,9 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</overhead_line>
 			<overhead_line>
-				<id>28</id>
-				<rank>1</rank>
+				<id>29</id>
+				<rank>2</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>node_632</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>ovl_632_633</name>
 				<configuration>ovl_config_602</configuration>
@@ -1219,10 +1311,9 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</overhead_line>
 			<overhead_line>
-				<id>29</id>
-				<rank>1</rank>
+				<id>30</id>
+				<rank>2</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>load_645</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>ovl_645_646</name>
 				<configuration>ovl_config_603</configuration>
@@ -1277,17 +1368,16 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</overhead_line>
 			<overhead_line>
-				<id>30</id>
-				<rank>6</rank>
+				<id>31</id>
+				<rank>2</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>node_632</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
-				<name>ovl_632_671</name>
+				<name>ovl_632_1_632</name>
 				<configuration>ovl_config_601</configuration>
 				<length>+2000 ft</length>
 				<status>CLOSED</status>
-				<from>node_632</from>
-				<to>load_671</to>
+				<from>node_632_1</from>
+				<to>node_632</to>
 				<power_in>+0+0j VA</power_in>
 				<power_out>+0+0j VA</power_out>
 				<power_out_real>+0 W</power_out_real>
@@ -1335,10 +1425,9 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</overhead_line>
 			<overhead_line>
-				<id>31</id>
-				<rank>4</rank>
+				<id>32</id>
+				<rank>2</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>load_671</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>ovl_671_684</name>
 				<configuration>ovl_config_604</configuration>
@@ -1393,10 +1482,9 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</overhead_line>
 			<overhead_line>
-				<id>32</id>
-				<rank>1</rank>
+				<id>33</id>
+				<rank>2</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>load_671</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>ovl_671_680</name>
 				<configuration>ovl_config_601</configuration>
@@ -1451,10 +1539,9 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</overhead_line>
 			<overhead_line>
-				<id>33</id>
+				<id>34</id>
 				<rank>2</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>node_684</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>ovl_684_611</name>
 				<configuration>ovl_config_605</configuration>
@@ -1508,14 +1595,126 @@
 				<nominal_voltage>+0 V</nominal_voltage>
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</overhead_line>
+			<overhead_line>
+				<id>37</id>
+				<rank>2</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>ovl_632_load_632_1</name>
+				<configuration>ovl_config_601</configuration>
+				<length>+500 ft</length>
+				<status>CLOSED</status>
+				<from>node_632</from>
+				<to>load_632_1</to>
+				<power_in>+0+0j VA</power_in>
+				<power_out>+0+0j VA</power_out>
+				<power_out_real>+0 W</power_out_real>
+				<power_losses>+0+0j VA</power_losses>
+				<power_in_A>+0+0j VA</power_in_A>
+				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+0+0j VA</power_out_A>
+				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0+0j VA</power_losses_A>
+				<power_losses_B>+0+0j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>+0+0i A</current_out_A>
+				<current_out_B>+0+0i A</current_out_B>
+				<current_out_C>+0+0i A</current_out_C>
+				<current_in_A>+0+0i A</current_in_A>
+				<current_in_B>+0+0i A</current_in_B>
+				<current_in_C>+0+0i A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<fault_voltage_A>+0+0i A</fault_voltage_A>
+				<fault_voltage_B>+0+0i A</fault_voltage_B>
+				<fault_voltage_C>+0+0i A</fault_voltage_C>
+				<overloaded_status>FALSE</overloaded_status>
+				<flow_direction>UNKNOWN</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating_A>+1000 A</continuous_rating_A>
+				<continuous_rating_B>+1000 A</continuous_rating_B>
+				<continuous_rating_C>+1000 A</continuous_rating_C>
+				<emergency_rating_A>+2000 A</emergency_rating_A>
+				<emergency_rating_B>+2000 A</emergency_rating_B>
+				<emergency_rating_C>+2000 A</emergency_rating_C>
+				<inrush_convergence_value>+0.0001 V</inrush_convergence_value>
+				<triplex_neutral_1_value>+0+0i</triplex_neutral_1_value>
+				<triplex_neutral_2_value>+0+0i</triplex_neutral_2_value>
+				<inrush_integration_method_capacitance>UNDEFINED</inrush_integration_method_capacitance>
+				<inrush_integration_method_inductance>UNDEFINED</inrush_integration_method_inductance>
+				<phases>ABCN</phases>
+				<nominal_voltage>+0 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</overhead_line>
+			<overhead_line>
+				<id>38</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2000-01-01 00:00:00 AWST</clock>
+				<name>ovl_load_632_1_load_671</name>
+				<configuration>ovl_config_601</configuration>
+				<length>+1500 ft</length>
+				<status>CLOSED</status>
+				<from>load_632_1</from>
+				<to>load_671</to>
+				<power_in>+0+0j VA</power_in>
+				<power_out>+0+0j VA</power_out>
+				<power_out_real>+0 W</power_out_real>
+				<power_losses>+0+0j VA</power_losses>
+				<power_in_A>+0+0j VA</power_in_A>
+				<power_in_B>+0+0j VA</power_in_B>
+				<power_in_C>+0+0j VA</power_in_C>
+				<power_out_A>+0+0j VA</power_out_A>
+				<power_out_B>+0+0j VA</power_out_B>
+				<power_out_C>+0+0j VA</power_out_C>
+				<power_losses_A>+0+0j VA</power_losses_A>
+				<power_losses_B>+0+0j VA</power_losses_B>
+				<power_losses_C>+0+0j VA</power_losses_C>
+				<current_out_A>+0+0i A</current_out_A>
+				<current_out_B>+0+0i A</current_out_B>
+				<current_out_C>+0+0i A</current_out_C>
+				<current_in_A>+0+0i A</current_in_A>
+				<current_in_B>+0+0i A</current_in_B>
+				<current_in_C>+0+0i A</current_in_C>
+				<fault_current_in_A>+0+0j A</fault_current_in_A>
+				<fault_current_in_B>+0+0j A</fault_current_in_B>
+				<fault_current_in_C>+0+0j A</fault_current_in_C>
+				<fault_current_out_A>+0+0j A</fault_current_out_A>
+				<fault_current_out_B>+0+0j A</fault_current_out_B>
+				<fault_current_out_C>+0+0j A</fault_current_out_C>
+				<fault_voltage_A>+0+0i A</fault_voltage_A>
+				<fault_voltage_B>+0+0i A</fault_voltage_B>
+				<fault_voltage_C>+0+0i A</fault_voltage_C>
+				<overloaded_status>FALSE</overloaded_status>
+				<flow_direction>UNKNOWN</flow_direction>
+				<mean_repair_time>+0 s</mean_repair_time>
+				<continuous_rating_A>+1000 A</continuous_rating_A>
+				<continuous_rating_B>+1000 A</continuous_rating_B>
+				<continuous_rating_C>+1000 A</continuous_rating_C>
+				<emergency_rating_A>+2000 A</emergency_rating_A>
+				<emergency_rating_B>+2000 A</emergency_rating_B>
+				<emergency_rating_C>+2000 A</emergency_rating_C>
+				<inrush_convergence_value>+0.0001 V</inrush_convergence_value>
+				<triplex_neutral_1_value>+0+0i</triplex_neutral_1_value>
+				<triplex_neutral_2_value>+0+0i</triplex_neutral_2_value>
+				<inrush_integration_method_capacitance>UNDEFINED</inrush_integration_method_capacitance>
+				<inrush_integration_method_inductance>UNDEFINED</inrush_integration_method_inductance>
+				<nominal_voltage>+0 V</nominal_voltage>
+				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
+			</overhead_line>
 		</overhead_line_list>
 		<underground_line_list>
 			<inherits_from>line</inherits_from>
 			<underground_line>
-				<id>34</id>
+				<id>35</id>
 				<rank>2</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>load_692</parent>
 				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>undgl_692_675</name>
 				<configuration>undgl_config_606</configuration>
@@ -1565,14 +1764,15 @@
 				<triplex_neutral_2_value>+0+0i</triplex_neutral_2_value>
 				<inrush_integration_method_capacitance>UNDEFINED</inrush_integration_method_capacitance>
 				<inrush_integration_method_inductance>UNDEFINED</inrush_integration_method_inductance>
-				<phases>ABCN</phases>
+				<phases>ABC</phases>
 				<nominal_voltage>+0 V</nominal_voltage>
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</underground_line>
 			<underground_line>
-				<id>35</id>
-				<rank>0</rank>
+				<id>36</id>
+				<rank>2</rank>
 				<out_svc>NEVER</out_svc>
+				<clock>2000-01-01 00:00:00 AWST</clock>
 				<name>undgl_684_652</name>
 				<configuration>undgl_config_607</configuration>
 				<length>+800 ft</length>
@@ -1628,7 +1828,7 @@
 		</underground_line_list>
 		<overhead_line_conductor_list>
 			<overhead_line_conductor>
-				<id>6</id>
+				<id>7</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1642,7 +1842,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</overhead_line_conductor>
 			<overhead_line_conductor>
-				<id>7</id>
+				<id>8</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1656,7 +1856,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</overhead_line_conductor>
 			<overhead_line_conductor>
-				<id>8</id>
+				<id>9</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1670,7 +1870,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</overhead_line_conductor>
 			<overhead_line_conductor>
-				<id>9</id>
+				<id>10</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1684,7 +1884,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</overhead_line_conductor>
 			<overhead_line_conductor>
-				<id>10</id>
+				<id>11</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1700,7 +1900,7 @@
 		</overhead_line_conductor_list>
 		<underground_line_conductor_list>
 			<underground_line_conductor>
-				<id>11</id>
+				<id>12</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1724,7 +1924,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</underground_line_conductor>
 			<underground_line_conductor>
-				<id>12</id>
+				<id>13</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1750,7 +1950,7 @@
 		</underground_line_conductor_list>
 		<line_configuration_list>
 			<line_configuration>
-				<id>20</id>
+				<id>21</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1758,7 +1958,7 @@
 				<conductor_A>ovl_cond_601</conductor_A>
 				<conductor_B>ovl_cond_601</conductor_B>
 				<conductor_C>ovl_cond_601</conductor_C>
-				<conductor_N>ovl_cond_601</conductor_N>
+				<conductor_N>ovl_cond_602</conductor_N>
 				<spacing>ovl_ls_601</spacing>
 				<z11>+0+0j Ohm/mile</z11>
 				<z12>+0+0j Ohm/mile</z12>
@@ -1784,7 +1984,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</line_configuration>
 			<line_configuration>
-				<id>21</id>
+				<id>22</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1818,7 +2018,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</line_configuration>
 			<line_configuration>
-				<id>22</id>
+				<id>23</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1851,7 +2051,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</line_configuration>
 			<line_configuration>
-				<id>23</id>
+				<id>24</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1884,7 +2084,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</line_configuration>
 			<line_configuration>
-				<id>24</id>
+				<id>25</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1916,7 +2116,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</line_configuration>
 			<line_configuration>
-				<id>25</id>
+				<id>26</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1949,7 +2149,7 @@
 				<rating.winter.emergency>+2000 A</rating.winter.emergency>
 			</line_configuration>
 			<line_configuration>
-				<id>26</id>
+				<id>27</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<clock>2000-01-01 00:00:00 AWST</clock>
@@ -1983,7 +2183,7 @@
 		</line_configuration_list>
 		<transformer_configuration_list>
 			<transformer_configuration>
-				<id>40</id>
+				<id>43</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<name>xfm_config_1</name>
@@ -2031,7 +2231,7 @@
 		<transformer_list>
 			<inherits_from>link</inherits_from>
 			<transformer>
-				<id>41</id>
+				<id>44</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<name>xfm_1</name>
@@ -2103,10 +2303,9 @@
 		<load_list>
 			<inherits_from>node</inherits_from>
 			<load>
-				<id>43</id>
-				<rank>2</rank>
+				<id>46</id>
+				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>ovl_632_645</parent>
 				<name>load_645</name>
 				<load_class>U</load_class>
 				<load_priority>DISCRETIONARY</load_priority>
@@ -2317,10 +2516,9 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</load>
 			<load>
-				<id>44</id>
+				<id>47</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>ovl_645_646</parent>
 				<name>load_646</name>
 				<load_class>U</load_class>
 				<load_priority>DISCRETIONARY</load_priority>
@@ -2531,7 +2729,7 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</load>
 			<load>
-				<id>45</id>
+				<id>48</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<name>load_652</name>
@@ -2744,10 +2942,9 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</load>
 			<load>
-				<id>46</id>
-				<rank>5</rank>
+				<id>49</id>
+				<rank>1</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>ovl_632_671</parent>
 				<name>load_671</name>
 				<load_class>U</load_class>
 				<load_priority>DISCRETIONARY</load_priority>
@@ -2958,10 +3155,9 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</load>
 			<load>
-				<id>47</id>
+				<id>50</id>
 				<rank>1</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>undgl_692_675</parent>
 				<name>load_675</name>
 				<load_class>U</load_class>
 				<load_priority>DISCRETIONARY</load_priority>
@@ -3172,8 +3368,8 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</load>
 			<load>
-				<id>48</id>
-				<rank>3</rank>
+				<id>51</id>
+				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<name>load_692</name>
 				<load_class>U</load_class>
@@ -3385,10 +3581,9 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</load>
 			<load>
-				<id>49</id>
+				<id>52</id>
 				<rank>1</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>ovl_684_611</parent>
 				<name>load_611</name>
 				<load_class>U</load_class>
 				<load_priority>DISCRETIONARY</load_priority>
@@ -3599,7 +3794,7 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</load>
 			<load>
-				<id>50</id>
+				<id>53</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<parent>load_671</parent>
@@ -3813,10 +4008,9 @@
 				<inrush_integration_method>TRAPEZOIDAL</inrush_integration_method>
 			</load>
 			<load>
-				<id>51</id>
+				<id>54</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
-				<parent>node_632</parent>
 				<name>load_632_1</name>
 				<load_class>U</load_class>
 				<load_priority>DISCRETIONARY</load_priority>
@@ -4029,7 +4223,7 @@
 		</load_list>
 		<regulator_configuration_list>
 			<regulator_configuration>
-				<id>38</id>
+				<id>41</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<name>reg_config_001</name>
@@ -4063,7 +4257,7 @@
 		<regulator_list>
 			<inherits_from>link</inherits_from>
 			<regulator>
-				<id>39</id>
+				<id>42</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<name>reg_001</name>
@@ -4145,7 +4339,7 @@
 		<switch_list>
 			<inherits_from>link</inherits_from>
 			<switch>
-				<id>42</id>
+				<id>45</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
 				<name>switch_001</name>
@@ -4214,10 +4408,10 @@
 		</pqload_list>
 		<voltdump_list>
 			<voltdump>
-				<id>52</id>
+				<id>55</id>
 				<rank>0</rank>
 				<out_svc>NEVER</out_svc>
-				<name>voltdump:52</name>
+				<name>voltdump:55</name>
 				<group>""</group>
 				<runtime>NEVER</runtime>
 				<filename>Quiz2.csv</filename>

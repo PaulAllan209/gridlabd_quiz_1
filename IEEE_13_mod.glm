@@ -100,7 +100,7 @@ object line_spacing:510 {  // done
 	distance_BN 0.0;
 }
 
-object line_configuration:601 {
+object line_configuration:601 {// done
 	conductor_A overhead_line_conductor:6010;
 	conductor_B overhead_line_conductor:6010;
 	conductor_C overhead_line_conductor:6010;
@@ -108,36 +108,36 @@ object line_configuration:601 {
 	spacing line_spacing:500601;
 }
 
-object line_configuration:602 {
+object line_configuration:602 { // done
 	conductor_A overhead_line_conductor:6020;
 	conductor_B overhead_line_conductor:6020;
 	conductor_C overhead_line_conductor:6020;
 	conductor_N overhead_line_conductor:6020;
 	spacing line_spacing:500602;
 }
-
-object line_configuration:603 {
+ 
+object line_configuration:603 { // done
 	conductor_B overhead_line_conductor:6030;
 	conductor_C overhead_line_conductor:6030;
 	conductor_N overhead_line_conductor:6030;
 	spacing line_spacing:505603;
 }
 
-object line_configuration:604 {
+object line_configuration:604 { // done
 	conductor_A overhead_line_conductor:6030;
 	conductor_C overhead_line_conductor:6030;
 	conductor_N overhead_line_conductor:6030;
 	spacing line_spacing:505604;
 }
 
-object line_configuration:605 {
+object line_configuration:605 { // done
 	conductor_C overhead_line_conductor:6030;
 	conductor_N overhead_line_conductor:6030;
 	spacing line_spacing:510;
 }
 
 //Underground line configuration
-object line_spacing:515 {
+object line_spacing:515 { // done
 	 distance_AB 0.500000;
 	 distance_BC 0.500000;
 	 distance_AC 1.000000;
@@ -146,7 +146,7 @@ object line_spacing:515 {
 	 distance_CN 0.000000;
 }
 
-object line_spacing:520 {
+object line_spacing:520 { // done
 	 distance_AB 0.000000;
 	 distance_BC 0.000000;
 	 distance_AC 0.000000;
@@ -155,21 +155,21 @@ object line_spacing:520 {
 	 distance_CN 0.000000;
 }
 
-object line_configuration:606 {
+object line_configuration:606 { // done
 	 conductor_A underground_line_conductor:6060;
 	 conductor_B underground_line_conductor:6060;
 	 conductor_C underground_line_conductor:6060;
 	 spacing line_spacing:515;
 }
 
-object line_configuration:607 {
+object line_configuration:607 { // done
 	 conductor_A underground_line_conductor:6070;
 	 conductor_N underground_line_conductor:6070;
 	 spacing line_spacing:520;
 }
 
 // Define line objects
-object overhead_line:632645 {
+object overhead_line:632645 { // done
      phases BCN;
      name 632-645;
      from 632;
@@ -178,7 +178,7 @@ object overhead_line:632645 {
      configuration line_configuration:603;
 }
 
-object overhead_line:645646 {
+object overhead_line:645646 { // done
      phases BCN;
      name 645-646;
      from 645;
@@ -187,7 +187,7 @@ object overhead_line:645646 {
      configuration line_configuration:603;
 }
 
-object overhead_line:630632 {
+object overhead_line:630632 { // done
      phases ABCN;
      name 630-632;
      from 630;
@@ -197,7 +197,7 @@ object overhead_line:630632 {
 }
 
 //Split line for distributed load
-object overhead_line:6326321 {
+object overhead_line:6326321 { // done
      phases ABCN;
      name 632-6321;
      from 632;
@@ -206,7 +206,7 @@ object overhead_line:6326321 {
      configuration line_configuration:601;
 }
 
-object overhead_line:6321671 {
+object overhead_line:6321671 { // done
      phases ABCN;
      name 6321-671;
      from 6321;
@@ -216,7 +216,7 @@ object overhead_line:6321671 {
 }
 //End split line
 
-object overhead_line:671680 {
+object overhead_line:671680 { // done
      phases ABCN;
      name 671-680;
      from 671;
@@ -225,7 +225,7 @@ object overhead_line:671680 {
      configuration line_configuration:601;
 }
 
-object overhead_line:671684 {
+object overhead_line:671684 { // done
      phases ACN;
      name 671-684;
      from 671;
@@ -234,7 +234,7 @@ object overhead_line:671684 {
      configuration line_configuration:604;
 }
 
- object overhead_line:684611 {
+ object overhead_line:684611 { // done
       phases CN;
       name 684-611;
       from 684;
@@ -243,7 +243,7 @@ object overhead_line:671684 {
       configuration line_configuration:605;
 }
 
-object underground_line:684652 {
+object underground_line:684652 { // done
       phases AN;
       name 684-652;
       from 684;
@@ -252,7 +252,7 @@ object underground_line:684652 {
       configuration line_configuration:607;
 }
 
-object underground_line:692675 {
+object underground_line:692675 { // done
      phases ABC;
      name 692-675;
      from 692;
@@ -261,7 +261,7 @@ object underground_line:692675 {
      configuration line_configuration:606;
 }
 
-object overhead_line:632633 {
+object overhead_line:632633 { // done
      phases ABCN;
      name 632-633;
      from 632;
@@ -451,7 +451,7 @@ object load { // done
 
  
 // Switch
-object switch:671692 {
+object switch:671692 { // done
      phases ABCN;
      name 671-692;
      from 671;
@@ -460,7 +460,7 @@ object switch:671692 {
 }
  
 // Transformer
-object transformer_configuration:400 {
+object transformer_configuration:400 { // done
 	connect_type WYE_WYE;
   	install_type PADMOUNT;
   	power_rating 500;

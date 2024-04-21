@@ -296,7 +296,7 @@ object line_configuration{
 }
 
 // Overhead line objects
-object overhead_line{
+object overhead_line{ // done
     name "ovl_632_645";
     from "node_632";
     to "load_645";
@@ -305,7 +305,7 @@ object overhead_line{
     configuration "ovl_config_603";
 }
 
-object overhead_line{
+object overhead_line{ // done
     name "ovl_632_633";
     from "node_632";
     to "node_633";
@@ -314,7 +314,7 @@ object overhead_line{
     configuration "ovl_config_602";
 }
 
-object overhead_line{
+object overhead_line{ // done
     name "ovl_645_646";
     from "load_645";
     to "load_646";
@@ -323,16 +323,16 @@ object overhead_line{
     configuration "ovl_config_603"; 
 }
 
-object overhead_line{
-    name "ovl_632_671";
-    from "node_632";
-    to "load_671";
+object overhead_line{ // done
+    name "ovl_632_1_632";
     phases "ABCN";
+    from "node_632_1";
+    to "node_632";
     length 2000;
-    configuration "ovl_config_601"; 
+    configuration "ovl_config_601";
 }
 
-object overhead_line{
+object overhead_line{ // done
     name "ovl_671_684";
     from "load_671";
     to "node_684";
@@ -341,7 +341,7 @@ object overhead_line{
     configuration "ovl_config_604"; 
 }
 
-object overhead_line{
+object overhead_line{ // done
     name "ovl_671_680";
     from "load_671";
     to "node_680";
@@ -350,7 +350,7 @@ object overhead_line{
     configuration "ovl_config_601"; 
 }
 
-object overhead_line{
+object overhead_line{ // done
     name "ovl_684_611";
     from "node_684";
     to "load_611";
@@ -359,7 +359,7 @@ object overhead_line{
     configuration "ovl_config_605"; 
 }
 
-object underground_line{
+object underground_line{ // done
     name "undgl_692_675";
     from "load_692";
     to "load_675";
@@ -368,13 +368,32 @@ object underground_line{
     configuration "undgl_config_606"; 
 }
 
-object underground_line{
+object underground_line{ // done
     name "undgl_684_652";
     from "node_684";
     to "load_652";
     phases "AN";
     length 800;
     configuration "undgl_config_607"; 
+}
+
+// split line loads
+object overhead_line{ // done
+    name "ovl_632_load_632_1";
+    phases "ABCN";
+    from "node_632";
+    to "load_632_1";
+    length 500;
+    configuration "ovl_config_601";
+}
+
+object overhead_line { // done
+    name "ovl_load_632_1_load_671";
+    phases "ABCN";
+    from "load_632_1";
+    to "load_671";
+    length 1500;
+    configuration "ovl_config_601";
 }
 
 // Capacitor
@@ -456,7 +475,7 @@ object regulator{
 }
 
 // Transformer objects
-object transformer_configuration{
+object transformer_configuration{ // done
     name "xfm_config_1";
 	connect_type 1;
 	install_type 2;
