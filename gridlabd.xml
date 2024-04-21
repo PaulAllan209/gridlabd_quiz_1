@@ -6,7 +6,7 @@
 	<version.patch>0</version.patch>
 	<version.build>19642</version.build>
 	<version.branch>0df31c0:HEAD</version.branch>
-	<command_line>"C:\Program Files\GridLAB-D 5.2.0\bin\gridlabd.exe quiz1.glm"</command_line>
+	<command_line>"C:\Program Files\GridLAB-D 5.2.0\bin\gridlabd.exe .\quiz1.glm"</command_line>
 	<environment>batch</environment>
 	<quiet>FALSE</quiet>
 	<warn>TRUE</warn>
@@ -38,12 +38,12 @@
 	<object_scan>%[^:]:%d</object_scan>
 	<object_tree_balance>FALSE</object_tree_balance>
 	<kmlfile>""</kmlfile>
-	<modelname>quiz1.glm</modelname>
+	<modelname>.\quiz1.glm</modelname>
 	<execdir>"C:\Program Files\GridLAB-D 5.2.0\bin"</execdir>
 	<strictnames>TRUE</strictnames>
 	<website>http://www.gridlabd.org/</website>
 	<urlbase>http://www.gridlabd.org/</urlbase>
-	<randomseed>425889112</randomseed>
+	<randomseed>256048636</randomseed>
 	<include>""</include>
 	<trace>""</trace>
 	<gdb_window>FALSE</gdb_window>

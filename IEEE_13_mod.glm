@@ -554,3 +554,7 @@ object capacitor {
 	nominal_voltage 2401.7771;
 }
 
+object voltdump {
+     file "dump.csv";
+}
+

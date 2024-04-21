@@ -7,7 +7,7 @@ clock {
 // Modules
 
 module powerflow {
-    // solver_method NR; // default is Gauss-Seidel; NR => Newton-Raphson
+    solver_method NR; // default is Gauss-Seidel; NR => Newton-Raphson
 }
 
 // Node Objects
@@ -20,25 +20,6 @@ object node {
     // PQ - constant power
     bustype 2; // in this quiz this will be determined depending sa load
     phases "ABCN";
-    nominal_voltage 2401.7771; //line to neutral voltage
-}
-
-object node {
-    name "node_646";
-
-    // Default values in busstype
-    //  enumeration {SWING_PQ=3, SWING=2, PV=1, PQ=0} bustype;  defines whether the node is a PQ, PV, or SWING node
-    // PV - constant voltage
-    // PQ - constant power
-    bustype 2; // in this quiz this will be determined depending sa load
-    phases "BC";
-    nominal_voltage 2401.7771; //line to neutral voltage
-}
-
-object node {
-    name "node_645";
-    bustype 2; // in this quiz this will be determined depending sa load
-    phases "BCN";
     nominal_voltage 2401.7771; //line to neutral voltage
 }
 
@@ -60,48 +41,13 @@ object node {
     name "node_634";
     bustype 2; // in this quiz this will be determined depending sa load
     phases "ABCN";
-    nominal_voltage 2401.7771; //line to neutral voltage
-}
-
-object node {
-    name "node_611";
-    bustype 2; // in this quiz this will be determined depending sa load
-    phases "CN";
-    nominal_voltage 2401.7771; //line to neutral voltage
+    nominal_voltage 480; //line to neutral voltage
 }
 
 object node {
     name "node_684";
     bustype 2; // in this quiz this will be determined depending sa load
     phases "ACN";
-    nominal_voltage 2401.7771; //line to neutral voltage
-}
-
-object node {
-    name "node_671";
-    bustype 2; // in this quiz this will be determined depending sa load
-    phases "ABCN";
-    nominal_voltage 2401.7771; //line to neutral voltage
-}
-
-object node {
-    name "node_692";
-    bustype 2; // in this quiz this will be determined depending sa load
-    phases "ABCN";
-    nominal_voltage 2401.7771; //line to neutral voltage
-}
-
-object node {
-    name "node_675";
-    bustype 2; // in this quiz this will be determined depending sa load
-    phases "ABCN";
-    nominal_voltage 2401.7771; //line to neutral voltage
-}
-
-object node {
-    name "node_652";
-    bustype 2; // in this quiz this will be determined depending sa load
-    phases "AN";
     nominal_voltage 2401.7771; //line to neutral voltage
 }
 
@@ -326,7 +272,7 @@ object line_configuration{
 object overhead_line{
     name "ovl_632_645";
     from "node_632";
-    to "node_645";
+    to "load_645";
     phases "CBN";
     length 500;
     configuration "ovl_config_603";
@@ -347,27 +293,17 @@ object overhead_line{
 
 object overhead_line{
     name "ovl_645_646";
-    from "node_645";
-    to "node_646";
+    from "load_645";
+    to "load_646";
     phases "CBN";
     length 300;
     configuration "ovl_config_603"; 
 }
 
 object overhead_line{
-    name "ovl_650_632";
-    from "node_650";
-    to "node_632";
-    phases "ABCN";
-    length 2000;
-    configuration "ovl_config_601"; 
-}
-
-
-object overhead_line{
     name "ovl_632_671";
     from "node_632";
-    to "node_671";
+    to "load_671";
     phases "ABCN";
     length 2000;
     configuration "ovl_config_601"; 
@@ -375,7 +311,7 @@ object overhead_line{
 
 object overhead_line{
     name "ovl_671_684";
-    from "node_671";
+    from "load_671";
     to "node_684";
     phases "ACN";
     length 300;
@@ -384,7 +320,7 @@ object overhead_line{
 
 object overhead_line{
     name "ovl_671_680";
-    from "node_671";
+    from "load_671";
     to "node_680";
     phases "ABCN";
     length 1000;
@@ -399,7 +335,7 @@ object overhead_line{
 object overhead_line{
     name "ovl_684_611";
     from "node_684";
-    to "node_611";
+    to "load_611";
     phases "CN";
     length 300;
     configuration "ovl_config_605"; 
@@ -407,8 +343,8 @@ object overhead_line{
 
 object underground_line{
     name "undgl_692_675";
-    from "node_692";
-    to "node_675";
+    from "load_692";
+    to "load_675";
     phases "ABCN";
     length 500;
     configuration "undgl_config_606"; 
@@ -417,7 +353,7 @@ object underground_line{
 object underground_line{
     name "undgl_684_652";
     from "node_684";
-    to "node_652";
+    to "load_652";
     phases "AN";
     length 800;
     configuration "undgl_config_607"; 
@@ -429,7 +365,7 @@ object capacitor{
     phases "ABCN";
     pt_phase "ABCN";
     phases_connected "ABCN";
-    parent "node_675";
+    parent "load_675";
     control VOLT;
     capacitor_A 200000;
     capacitor_B 200000;
@@ -450,7 +386,7 @@ object capacitor{
     phases "CN";
     pt_phase "CN";
     phases_connected "CN";
-    parent "node_611";
+    parent "load_611";
     control VOLT;
     capacitor_A 0.0;
     capacitor_B 0.0;
@@ -499,5 +435,143 @@ object regulator{
     from "node_650";
     to "node_632";
     configuration "reg_config_001";
+}
+
+// Transformer objects
+object transformer_configuration{
+    name "xfm_config_1";
+	connect_type 1;
+	install_type 2;
+    power_rating 500;
+    primary_voltage 4160;
+    secondary_voltage 480;
+    resistance 0.011;
+    reactance 0.02;
+}
+
+object transformer{
+    name "xfm_1";
+    phases "ABCN";
+    from "node_633";
+    to "node_634";
+    configuration "xfm_config_1";
+}
+
+// Switches
+object switch{
+    name "switch_001";
+    phases "ABCN";
+    from "load_671";
+    to "load_692";
+    status CLOSED;
+}
+
+// Load objects
+object load {
+    name "load_645";
+    phases "BCN";
+     voltage_A 2401.7771;
+     voltage_B -1200.8886-2080.0j;
+     voltage_C -1200.8886+2080.0j;
+     constant_power_B 170000+125000j;
+     nominal_voltage 2401.7771;
+}
+
+object load{
+    name "load_646";
+    phases "BC";
+    voltage_A 2401.7771;
+    voltage_B -1200.8886-2080.0j;
+    voltage_C -1200.8886+2080.0j;
+    constant_power_B 150000+115000j;
+    nominal_voltage 2401.7771;
+}
+
+object load {
+    name "load_652";
+    phases "AN";
+    voltage_A 2401.7771;
+    voltage_B -1200.8886-2080.0j;
+    voltage_C -1200.8886+2080.0j;
+    constant_power_A 325000+250000j;
+    nominal_voltage 2401.7771;
+}
+
+object load{
+    name "load_671";
+    phases "ABC";
+    voltage_A 2401.7771;
+    voltage_B -1200.8886-2080.0j;
+    voltage_C -1200.8886+2080.0j;
+    constant_power_A 325000+520000j;
+    constant_power_B 425000+360000j;
+    constant_power_C 455000+480000j;
+    nominal_voltage 2401.7771;
+}
+
+object load{
+    name "load_675";
+    phases "ABC";
+    voltage_A 2401.7771;
+    voltage_B -1200.8886-2080.0j;
+    voltage_C -1200.8886+2080.0j;
+    constant_power_A 565000+470000j;
+    constant_power_B 770000+820000j;
+    constant_power_C 450000+547200j;
+    nominal_voltage 2401.7771;
+}
+
+object load{
+    name "load_692";
+    phases "ABC";
+    voltage_A 2401.7771;
+    voltage_B -1200.8886-2080.0j;
+    voltage_C -1200.8886+2080.0j;
+    constant_power_A 385000+350000j;
+    constant_power_B 58000+80000j;
+    constant_power_C 24000+35200j;
+    nominal_voltage 2401.7771;
+}
+
+object load{
+    name "load_611";
+    phases "CN";
+    voltage_A 2401.7771;
+    voltage_B -1200.8886-2080.0j;
+    voltage_C -1200.8886+2080.0j;
+    constant_power_C 49000+38200j;
+    nominal_voltage 2401.7771;
+}
+
+// Distributed load
+object load{
+    name "load_671_1";
+    parent "load_671";
+    phases "ABC";
+    voltage_A 2401.7771;
+    voltage_B -1200.8886-2080.0j;
+    voltage_C -1200.8886+2080.0j;
+    constant_power_A 5666.6667+4333.3333j;
+    constant_power_B 25000+22666.6667j;
+    constant_power_C 36000+28666.6667j;
+    nominal_voltage 2401.7771;
+
+}
+
+object load{
+    name "load_632_1";
+	parent "node_632";
+    phases "ABCN";
+    voltage_A 2401.7771;
+    voltage_B -1200.8886-2080.0j;
+    voltage_C -1200.8886+2080.0j;
+    constant_power_A 11333.333+6666.6667j;
+    constant_power_B 44000+35333.3333j;
+    constant_power_C 78000+55333.3333j;
+    nominal_voltage 2401.7771;
+}
+
+object voltdump {
+	file "Quiz2.csv";
 }
 
