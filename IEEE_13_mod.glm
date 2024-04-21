@@ -470,7 +470,7 @@ object transformer_configuration:400 { // done
   	reactance 0.02;
 }
   
-object transformer:633634 {
+object transformer:633634 { // done
   	phases ABCN;
   	name 633-634;
   	from 633;
@@ -480,7 +480,7 @@ object transformer:633634 {
   
  
 // Regulator
-object regulator_configuration:6506321 {
+object regulator_configuration:6506321 { // done
 	connect_type 1;
 	band_center 2401;
 	band_width 40;
@@ -513,7 +513,7 @@ object regulator:650630 {
 	 configuration regulator_configuration:6506321;
 }
 
-object capacitor {
+object capacitor { // done
 	phases ABCN;
 	name CAP1;
 	pt_phase ABCN;

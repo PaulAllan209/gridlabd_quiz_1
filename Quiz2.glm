@@ -11,7 +11,7 @@ module powerflow {
 }
 
 // Node Objects
-object node {
+object node { // done
     name "node_650"; //this is probably the substation (check one line diagram)
 
     // Default values in busstype
@@ -26,7 +26,7 @@ object node {
     nominal_voltage 2401.7771; //line to neutral voltage
 }
 
-object node {
+object node { // done
     name "node_632_1";
     phases "ABCN";
     voltage_A 2401.7771+0j;
@@ -35,9 +35,8 @@ object node {
     nominal_voltage 2401.7771;
 }
 
-object node {
+object node { // done
     name "node_632";
-    // bustype 2; // in this quiz this will be determined depending sa load
     phases "ABCN";
     voltage_A 2401.7771;
     voltage_B -1200.8886-2080.000j;
@@ -45,9 +44,8 @@ object node {
     nominal_voltage 2401.7771; //line to neutral voltage
 }
 
-object node {
+object node { // done
     name "node_633";
-    bustype 2; 
     phases "ABCN";
     voltage_A 2401.7771;
     voltage_B -1200.8886-2080.000j;
@@ -55,9 +53,8 @@ object node {
     nominal_voltage 2401.7771; 
 }
 
-object node {
+object node { // done
     name "node_634";
-    bustype 2; 
     phases "ABCN";
     voltage_A 480.000+0j;
     voltage_B -240.000-415.6922j;
@@ -65,9 +62,8 @@ object node {
     nominal_voltage 480; 
 }
 
-object node {
+object node { // done
     name "node_684";
-    bustype 2; 
     phases "ACN";
     voltage_A 2401.7771;
     voltage_B -1200.8886-2080.000j;
@@ -75,9 +71,8 @@ object node {
     nominal_voltage 2401.7771; 
 }
 
-object node {
+object node { // done
     name "node_680";
-    bustype 2; 
     phases "ABCN";
     voltage_A 2401.7771;
     voltage_B -1200.8886-2080.000j;
@@ -397,7 +392,7 @@ object overhead_line { // done
 }
 
 // Capacitor
-object capacitor{
+object capacitor{ // done
     name "cap_001";
     phases "ABCN";
     pt_phase "ABCN";
@@ -440,11 +435,11 @@ object capacitor{
 }
 
 // Regulators
-object regulator_configuration{
+object regulator_configuration{ // done
     name "reg_config_001";
     connect_type 1;
     band_center 2401.7771;
-    band_width 2.0;
+    band_width 40;
     time_delay 30.0;
     raise_taps 16;
     lower_taps 16;
@@ -466,7 +461,7 @@ object regulator_configuration{
     tap_pos_C 1;
 }
 
-object regulator{
+object regulator{ // done
     name "reg_001";
     phases "ABC";
     from "node_650";
@@ -486,7 +481,7 @@ object transformer_configuration{ // done
     reactance 0.02;
 }
 
-object transformer{
+object transformer{ // done
     name "xfm_1";
     phases "ABCN";
     from "node_633";
@@ -495,7 +490,7 @@ object transformer{
 }
 
 // Switches
-object switch{
+object switch{ // done
     name "switch_001";
     phases "ABCN";
     from "load_671";
