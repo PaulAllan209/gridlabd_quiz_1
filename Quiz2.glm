@@ -242,7 +242,7 @@ object line_configuration{
     conductor_A "ovl_cond_601";
     conductor_B "ovl_cond_601";
     conductor_C "ovl_cond_601";
-    conductor_N "ovl_cond_601";
+    conductor_N "ovl_cond_602";
     spacing "ovl_ls_601";
 }
 
@@ -578,7 +578,7 @@ object load{
 
 object load{
     name "load_632_1";
-	parent "node_632";
+	// parent "node_632";
     phases "ABCN";
     voltage_A 2401.7771;
     voltage_B -1200.8886-2080.0j;

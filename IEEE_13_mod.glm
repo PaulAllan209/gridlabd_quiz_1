@@ -13,22 +13,22 @@ module powerflow {
 	solver_method NR;
 };
 
-object overhead_line_conductor:6010 {
+object overhead_line_conductor:6010 { // done
 	geometric_mean_radius 0.031300;
 	resistance 0.185900;
 }
 
-object overhead_line_conductor:6020 {
+object overhead_line_conductor:6020 { // done
 	geometric_mean_radius 0.00814;
 	resistance 0.592000;
 }
 
-object overhead_line_conductor:6030 {
+object overhead_line_conductor:6030 { // done
 	geometric_mean_radius 0.004460;
 	resistance 1.120000;
 }
 
-object underground_line_conductor:6060 { 
+object underground_line_conductor:6060 {  // done
 	 outer_diameter 1.290000;
 	 conductor_gmr 0.017100;
 	 conductor_diameter 0.567000;
@@ -41,7 +41,7 @@ object underground_line_conductor:6060 {
 	 shield_resistance 0.000000;
 }
 
-object underground_line_conductor:6070 { 
+object underground_line_conductor:6070 { // done
 	 outer_diameter 1.060000;
 	 conductor_gmr 0.011100;
 	 conductor_diameter 0.368000;
@@ -55,7 +55,7 @@ object underground_line_conductor:6070 {
 }
 
 // Overhead line configurations
-object line_spacing:500601 {
+object line_spacing:500601 {// done
 	distance_AB 2.5;
 	distance_AC 4.5;
 	distance_BC 7.0;
@@ -64,7 +64,7 @@ object line_spacing:500601 {
 	distance_CN 5.0;
 }
 
-object line_spacing:500602 {
+object line_spacing:500602 { // done
 	distance_AC 2.5;
 	distance_AB 4.5;
 	distance_BC 7.0;
@@ -73,7 +73,7 @@ object line_spacing:500602 {
 	distance_BN 5.0;
 }
 
-object line_spacing:505603 {
+object line_spacing:505603 { // done
 	distance_AC 0.0;
 	distance_AB 0.0;
 	distance_BC 7.0;
@@ -82,7 +82,7 @@ object line_spacing:505603 {
 	distance_BN 5.0;
 }
 
-object line_spacing:505604 {
+object line_spacing:505604 { // done
 	distance_AC 7.0;
 	distance_AB 0.0;
 	distance_BC 0.0;
@@ -91,7 +91,7 @@ object line_spacing:505604 {
 	distance_BN 0.0;
 }
 
-object line_spacing:510 {
+object line_spacing:510 {  // done
 	distance_AC 0.0;
 	distance_AB 0.0;
 	distance_BC 0.0;
@@ -340,7 +340,7 @@ object node { // done
      nominal_voltage 480.000;
 }
  
-object load {
+object load { // done
      name 645;
      phases BCN;
      voltage_A 2401.7771;
@@ -350,7 +350,7 @@ object load {
      nominal_voltage 2401.7771;
 }
  
-object load {
+object load { // done
      name 646;
 	 phases BC;
      voltage_A 2401.7771;
@@ -361,7 +361,7 @@ object load {
 }
  
  
-object load {
+object load { // done
      name 652;
      phases AN;
      voltage_A 2401.7771;
@@ -371,7 +371,7 @@ object load {
      nominal_voltage 2401.7771;
 }
  
-object load {
+object load { // done
      name 671;
 	 phases ABC;
      voltage_A 2401.7771;
@@ -383,7 +383,7 @@ object load {
      nominal_voltage 2401.7771;
 }
  
-object load {
+object load { // done
      name 675;
      phases ABC;
      voltage_A 2401.7771;
@@ -397,7 +397,7 @@ object load {
 
 
  
-object load {
+object load { // done
      name 692;
 	 phases ABC;
      voltage_A 2401.7771;
@@ -409,7 +409,7 @@ object load {
      nominal_voltage 2401.7771;
 }
  
-object load {
+object load { // done
      name 611;
      phases CN;
      voltage_A 2401.7771;
@@ -423,7 +423,7 @@ object load {
  
 // distributed load between node 632 and 671
 // 2/3 of load 1/4 of length
-object load {
+object load { // done
      name 6711;
      parent 671;
      phases ABC;
@@ -436,7 +436,7 @@ object load {
      nominal_voltage 2401.7771;
 }
 
-object load {
+object load { // done
      name 6321;
      phases ABCN;
      voltage_A 2401.7771;
