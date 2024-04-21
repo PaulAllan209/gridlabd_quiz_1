@@ -336,7 +336,7 @@ object underground_line{
     name "undgl_692_675";
     from "load_692";
     to "load_675";
-    phases "ABCN";
+    phases "ABC";
     length 500;
     configuration "undgl_config_606"; 
 }
