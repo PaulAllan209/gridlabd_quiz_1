@@ -7,7 +7,7 @@ clock {
 // Modules
 
 module powerflow {
-    solver_method NR; // default is Gauss-Seidel; NR => Newton-Raphson
+    // solver_method NR; // default is Gauss-Seidel; NR => Newton-Raphson
 }
 
 // Node Objects
@@ -25,7 +25,7 @@ object node {
 
 object node {
     name "node_632";
-    bustype 2; // in this quiz this will be determined depending sa load
+    // bustype 2; // in this quiz this will be determined depending sa load
     phases "ABCN";
     nominal_voltage 2401.7771; //line to neutral voltage
 }
@@ -99,16 +99,16 @@ object overhead_line_conductor{
 // Underground line conductors
 object underground_line_conductor{
     name "undgl_cond_606";
-    outer_diameter 1.290000;
-    conductor_gmr 0.017100;
-    conductor_diameter 0.567000;
-    conductor_resistance 0.410000;
-    neutral_gmr 0.0020800; 
-    neutral_resistance 14.87200;  
+    outer_diameter 1.29
+    conductor_gmr 0.0171;
+    conductor_diameter 0.567;
+    conductor_resistance 0.41;
+    neutral_gmr 0.00208; 
+    neutral_resistance 14.872;  
     neutral_diameter 0.0640837;
-    neutral_strands 13.000000;
-    shield_gmr 0.000000;
-    shield_resistance 0.000000;
+    neutral_strands 13.0;
+    shield_gmr 0.0;
+    shield_resistance 0.0;
 }
 
 object underground_line_conductor{
