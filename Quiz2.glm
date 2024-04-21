@@ -562,7 +562,7 @@ object load{
     nominal_voltage 2401.7771;
 }
 
-object voltdump {
-	file "Quiz2.csv";
-}
+// object voltdump {
+// 	file "Quiz2.csv";
+// }
 
