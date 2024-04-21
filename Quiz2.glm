@@ -99,7 +99,7 @@ object overhead_line_conductor{
 // Underground line conductors
 object underground_line_conductor{
     name "undgl_cond_606";
-    outer_diameter 1.29
+    outer_diameter 1.29;
     conductor_gmr 0.0171;
     conductor_diameter 0.567;
     conductor_resistance 0.41;
@@ -257,7 +257,7 @@ object line_configuration{
     conductor_A "undgl_cond_606";
     conductor_B "undgl_cond_606";
     conductor_C "undgl_cond_606";
-    conductor_N "undgl_cond_606";
+    // conductor_N "undgl_cond_606";
     spacing "undgl_ls_515";
 }
 
