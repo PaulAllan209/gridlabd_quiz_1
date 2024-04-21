@@ -32,30 +32,30 @@ object node {
 
 object node {
     name "node_633";
-    bustype 2; // in this quiz this will be determined depending sa load
+    bustype 2; 
     phases "ABCN";
-    nominal_voltage 2401.7771; //line to neutral voltage
+    nominal_voltage 2401.7771; 
 }
 
 object node {
     name "node_634";
-    bustype 2; // in this quiz this will be determined depending sa load
+    bustype 2; 
     phases "ABCN";
-    nominal_voltage 480; //line to neutral voltage
+    nominal_voltage 480; 
 }
 
 object node {
     name "node_684";
-    bustype 2; // in this quiz this will be determined depending sa load
+    bustype 2; 
     phases "ACN";
-    nominal_voltage 2401.7771; //line to neutral voltage
+    nominal_voltage 2401.7771; 
 }
 
 object node {
     name "node_680";
-    bustype 2; // in this quiz this will be determined depending sa load
+    bustype 2; 
     phases "ABCN";
-    nominal_voltage 2401.7771; //line to neutral voltage
+    nominal_voltage 2401.7771; 
 }
 
 
@@ -287,10 +287,6 @@ object overhead_line{
     configuration "ovl_config_602";
 }
 
-// object overhead_line{ //TODO:for transformer line
-
-// }
-
 object overhead_line{
     name "ovl_645_646";
     from "load_645";
@@ -326,11 +322,6 @@ object overhead_line{
     length 1000;
     configuration "ovl_config_601"; 
 }
-
-// object overhead_line{ //TODO: object line segment for switch 671-692
-
-
-// }
 
 object overhead_line{
     name "ovl_684_611";
