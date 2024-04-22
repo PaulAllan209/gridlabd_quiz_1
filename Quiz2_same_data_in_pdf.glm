@@ -1,7 +1,6 @@
 // Clock
 clock {
-    // timezone AWST-8;
-    timezone EST+5EDT;
+    timezone AWST-8;
     timestamp '2000-01-01 00:00:00';
 }
 
