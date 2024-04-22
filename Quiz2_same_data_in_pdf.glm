@@ -449,7 +449,7 @@ object regulator{
     name "reg_001";
     phases "ABC";
     from "node_650";
-    to "node_632";
+    to "node_632_1"; 
     configuration "reg_config_001";
 }
 
