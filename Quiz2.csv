@@ -1,4 +1,4 @@
-# Quiz2.csv run at 2000-01-01 00:00:00 AWST on 56 powerflow objects (not all are nodes)
+# Quiz2.csv run at 2000-01-01 00:00:00 EST on 56 powerflow objects (not all are nodes)
 node_name,voltA_real,voltA_imag,voltB_real,voltB_imag,voltC_real,voltC_imag
 node_650,2401.777100,0.000000,-1200.888600,-2080.000000,-1200.888600,2080.000000
 node_632_1,2416.715268,0.070986,-1208.305923,-2092.973001,-1208.405274,2092.939420

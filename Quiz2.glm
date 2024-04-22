@@ -1,6 +1,7 @@
 // Clock
 clock {
-    timezone AWST-8;
+    // timezone AWST-8;
+    timezone EST+5EDT;
     timestamp '2000-01-01 00:00:00';
 }
 
@@ -91,7 +92,7 @@ object overhead_line_conductor{
 object overhead_line_conductor{
     name "ovl_cond_602";
     geometric_mean_radius 0.00814;
-    resistance 0.410;
+    resistance 0.592;
     diameter 0.563;
 }
 
@@ -499,7 +500,7 @@ object switch{ // done
 }
 
 // Load objects
-object load {
+object load { // done
     name "load_645";
     phases "BCN";
      voltage_A 2401.7771;
@@ -509,7 +510,7 @@ object load {
      nominal_voltage 2401.7771;
 }
 
-object load{
+object load{ // done
     name "load_646";
     phases "BC";
     voltage_A 2401.7771;
@@ -519,7 +520,7 @@ object load{
     nominal_voltage 2401.7771;
 }
 
-object load {
+object load { // done
     name "load_652";
     phases "AN";
     voltage_A 2401.7771;
@@ -529,7 +530,7 @@ object load {
     nominal_voltage 2401.7771;
 }
 
-object load{
+object load{ // done
     name "load_671";
     phases "ABC";
     voltage_A 2401.7771;
@@ -541,7 +542,7 @@ object load{
     nominal_voltage 2401.7771;
 }
 
-object load{
+object load{ // done
     name "load_675";
     phases "ABC";
     voltage_A 2401.7771;
@@ -553,8 +554,8 @@ object load{
     nominal_voltage 2401.7771;
 }
 
-object load{
-    name "load_692";
+object load{ // done
+    name "load_692"; 
     phases "ABC";
     voltage_A 2401.7771;
     voltage_B -1200.8886-2080.0j;
@@ -565,7 +566,7 @@ object load{
     nominal_voltage 2401.7771;
 }
 
-object load{
+object load{ // done
     name "load_611";
     phases "CN";
     voltage_A 2401.7771;
@@ -576,7 +577,7 @@ object load{
 }
 
 // Distributed load
-object load{
+object load{ // done
     name "load_671_1";
     parent "load_671";
     phases "ABC";
@@ -590,7 +591,7 @@ object load{
 
 }
 
-object load{
+object load{ // done
     name "load_632_1";
 	// parent "node_632";
     phases "ABCN";
