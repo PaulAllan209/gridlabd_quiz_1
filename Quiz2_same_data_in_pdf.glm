@@ -12,18 +12,13 @@ module powerflow {
 
 // Node Objects
 object node { 
-    name "node_650"; //this is probably the substation (check one line diagram)
-
-    // Default values in busstype
-    //  enumeration {SWING_PQ=3, SWING=2, PV=1, PQ=0} bustype;  defines whether the node is a PQ, PV, or SWING node
-    // PV - constant voltage
-    // PQ - constant power
-    bustype 2; // in this quiz this will be determined depending sa load
+    name "node_650"; 
+    bustype 2; 
     phases "ABCN";
     voltage_A 2401.7771;
     voltage_B -1200.8886-2080.000j;
     voltage_C -1200.8886+2080.000j;
-    nominal_voltage 2401.7771; //line to neutral voltage
+    nominal_voltage 2401.7771; 
 }
 
 object node { 
@@ -41,7 +36,7 @@ object node {
     voltage_A 2401.7771;
     voltage_B -1200.8886-2080.000j;
     voltage_C -1200.8886+2080.000j;
-    nominal_voltage 2401.7771; //line to neutral voltage
+    nominal_voltage 2401.7771; 
 }
 
 object node { 
@@ -107,8 +102,6 @@ object overhead_line_conductor{
     diameter 0.398;
 }
 
-
-// TODO: Recheck values for underground line conductors
 // Underground line conductors
 object underground_line_conductor{
     name "undgl_cond_606";
@@ -195,7 +188,7 @@ object line_spacing{
 	distance_AB 0.0;
 	distance_BC 0.0;
 	distance_AN 0.0;
-	distance_CN 5.02494; // magkaiba ito sa IEEE 13 na file
+	distance_CN 5.02494;
 	distance_BN 0.0;
 }
 

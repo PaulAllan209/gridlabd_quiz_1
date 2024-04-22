@@ -117,7 +117,6 @@ object overhead_line_conductor{
 }
 
 
-// TODO: Recheck values for underground line conductors
 // Underground line conductors
 object underground_line_conductor{
     name "undgl_cond_606";
